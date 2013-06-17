@@ -3,7 +3,9 @@
 
 
 <head>
+
 	<!-- metadata -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="description" content="Das Bundesamt für Energie übt die direkte Sicherheitsaufsicht über die 206 grössten Stauanlagen der Schweiz aus, von denen drei Viertel der Wasserkraftnutzung dienen. 25 dieser Stauanlagen sind höher als 100 Meter, vier sogar höher als 200 Meter."/>
 	<link rel="image_src" href="http://storymaps.geo.admin.ch/storymaps/storymap3/img/preview.jpg" /> 
@@ -21,36 +23,119 @@
 	<meta itemprop="description" content="Das Bundesamt für Energie übt die direkte Sicherheitsaufsicht über die 206 grössten Stauanlagen der Schweiz aus. 25 dieser Stauanlagen sind höher als 100 Meter, vier sogar höher als 200 Meter.">
 	<meta itemprop="image" content="http://storymaps.geo.admin.ch/storymaps/storymap3/img/preview.jpg">
 
-	<!-- js files -->
-	<script type="text/javascript" src="js/mainPart.js"></script>
-	<script type="text/javascript" src="js/mustache.js"></script>
-	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="js/jquery.tipsy.js"></script>
-	<script type="text/javascript" src="js/i18n.js"></script>
-	<script type="text/javascript" src="js/browseralert.js"></script>
+	<!-- js script files -->
+	<script type="text/javascript" src="./js/jquery-1.8.3.js"></script>
+	<script type="text/javascript" src="./js/i18next-1.6.3.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.js"></script>
+	<script type="text/javascript" src="https://api.geo.admin.ch/loader.js?mode=light"></script>
 	
 	<!-- css files -->
-	<link rel="stylesheet" type="text/css" href="styles/storymap.css">
-	<link href="styles/tipsy.css" rel="stylesheet" type="text/css" />
-	<style type="text/css" media="all">
-		@import url(./styles/styles_text.css);
-		@import url(./styles/styles_forms.css);
-		@import url(./styles/styles_layout.css);
-		@import url(./styles/styles_amt.css);
-	</style>
+	<link rel="stylesheet" type="text/css" href="./css/storymap.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap-storymap.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap-responsive-storymap.css">
+
 </head>
 
 
-<body onload="init()">
+<body onload="mapLoad()">
+<div class="container-fluid">
+
+<div class="row-fluid"> 
+	<div class="span12">
+		<!-- header desktop -->
+		<div id="header" class="hidden-phone">
+			<div class="header_sub">  
+				<div style="left: 0px; position: absolute; top: 0;">
+    	  			<img src="./img/storymaps-banner-left.jpg" width="613" height="103">
+    	 	 	</div> 
+  				<div style="right: 0px; position: absolute; top: 0;">
+    		  		<img src="./img/storymaps-banner-right.jpg" width="549" height="103" />
+				</div>    
+			</div>
+			<div class="navServiceBackground">
+				<div id="lang" style="float: right">
+					<ul class="inline-list">
+						<li><b>Share:</b></li>
+						<li>&nbsp;</li>
+						<li><a href="http://www.facebook.com/sharer.php?u=http%3a%2f%2fstorymaps.geo.admin.ch/storymaps/storymap3/?&t=geo.admin.ch%20Storymaps" title="Facebook" target="_blank"><img src="./img/facebook.gif" alt="Facebook"></a></li> 
+						<li>&nbsp;</li>
+						<li>&nbsp;</li>
+						<li><a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fstorymaps.geo.admin.ch/storymaps/storymap3&t=geo.admin.ch%20Storymaps" title="Twitter" target="_blank"><img src="./img/twitter.gif" alt="Facebook"></a></li> 
+						<li>&nbsp;</li>
+						<li>&nbsp;</li>
+						<li><a href="http://google.com/bookmarks/mark?op=edit&bkmk=http%3a%2f%2fstorymaps.geo.admin.ch/storymaps/storymap3&t=geo.admin.ch%20Storymaps" title="Google Bookmarks" target="_blank"><img src="./img/google.gif" alt="Google Bookmarks"></a></li> 
+						<li>&nbsp;</li>
+						<li>&nbsp;</li>
+						<li><a href="https://plus.google.com/share?url=http%3a%2f%2fstorymaps.geo.admin.ch/storymaps/storymap3&t=geo.admin.ch%20Storymaps" title="Google+" target="_blank"><img src="./img/googleplus.gif" alt="Google+"></a></li> 
+						<li><img src="./img/space.gif"></li>
+						<li id="de" onclick="toggleLang('de');">Deutsch</li>
+						<li class="pipe">&nbsp;</li>
+						<li id="fr" onclick="toggleLang('fr');">Français</li>
+						<li class="pipe">&nbsp;</li>
+						<li id="it" onclick="toggleLang('it');">Italiano</li>
+						<li class="pipe">&nbsp;</li>
+						<li id="en" onclick="toggleLang('en');">English</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- navigation mobile -->
+		<div id="navi" class="visible-phone">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="container">
+<ul class="nav">  
+  <li><a href="#">About</a></li>  
+  <li><a href="#">Portfolio</a></li>  
+  <li><a href="#">Contact</a></li>  
+</ul>  
+
+					</div>
+				</div>
+			</div> 			
+		</div>
+	</div>
+</div>
 
 
+<div class="row-fluid">
+	<!-- overview map -->
+	<div class="span4">
+		<div id="overviewMap"></div>
+	</div>
+	<!-- overview map -->
+	<div class="span8">
+		<div id="detailMap"></div>
+	</div>
+</div>
 
 
+<div class="row-fluid">
+	<!-- object info -->
+	<div class="span4">
+		<ul class="nav">
+			<li> test1 </li>
+			<li><a href="#" data-i18n="app.name"></a></li>
+			<li data-i18n="nav.home"> navhome ersatz</li>
+			<li>test</li>
+	    </ul>
+	</div>
+	<!-- chart -->
+	<div class="span8" style="background-color: red;">
+			ajsflköasfj </br>
+			ajsflköasfj </br>
+			ajsflköasfj </br>
+			ajsflköasfj </br>
+	</div>
+</div>
 
+</div>
 
-
+	<!-- load js files -->
+	<script type="text/javascript" src="./js/mapLoad.js"></script>
+	<script type="text/javascript" src="./js/toggleLang.js"></script>
+	<script type="text/javascript" src="./js/translate.js"></script>
 </body>
-
 
 
 </html>

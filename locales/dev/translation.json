@@ -1,0 +1,9 @@
+{
+	"ap.pme": "i18nextdev"
+ },
+  "nav": {
+    "home": "Homedev",
+    "page1": "Page One dev",
+    "page2": "Page Two dev"
+  }
+}

@@ -118,3 +118,13 @@ a, a:hover{
 .inner {
   margin: 10px;
 }
+
+#detailMap { 
+	height: 300px;
+	width: 100%;
+}
+
+#overviewMap { 
+	height: 300px;
+	width: 100%;
+}
