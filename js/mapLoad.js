@@ -33,6 +33,19 @@ function mapLoad() {
 		doZoomToMaxExtent: true //delete this line
 	});
 
+	// create vecotr layer containing hydrological measurement stations
+	measurmentStationsDetailMap = new OpenLayers.Layer.Vector("", {
+	styleMap: styleMap,
+		strategies: [new OpenLayers.Strategy.Fixed()],
+		protocol: new OpenLayers.Protocol.HTTP({
+			url: "data/hydromessstationen.geojson",
+			format: new OpenLayers.Format.GeoJSON()
+		})
+	});
+	
+	//add vector to detail map 
+	detailMap.addLayers([measurmentStationsDetailMap]);
+
 	// create overview map 
 	overviewMap = new GeoAdmin.Map("overviewMap", {
 		doZoomToMaxExtent: true
@@ -43,7 +56,18 @@ function mapLoad() {
 		opacity: 1
 	});
 
-
+	// create vecotr layer containing hydrological measurement stations
+	measurmentStationsDetailMap = new OpenLayers.Layer.Vector("", {
+	styleMap: styleMap,
+		strategies: [new OpenLayers.Strategy.Fixed()],
+		protocol: new OpenLayers.Protocol.HTTP({
+			url: "data/hydromessstationen.geojson",
+			format: new OpenLayers.Format.GeoJSON()
+		})
+	});
+	
+	//add vector to overview map
+	overviewMap.addLayers([measurmentStationsDetailMap]);
 
 
 
