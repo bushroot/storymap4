@@ -1,0 +1,256 @@
+{"name":"hydromessstationen","type":"FeatureCollection"
+,"crs":{"type":"name","properties":{"name":"EPSG:21781"}}
+,"features":[
+{"type":"Feature","geometry":{"type":"Point","coordinates":[623610,200430]},"properties":{"git":0,"lhg_name":"Emme-Emmenmatt, Totalstation","lhg_url":"70.htm","lhg_code":"lhg_fluss","edv_nr4":70}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[803490,130530]},"properties":{"git":1,"lhg_name":"Poschiavino-Le Prese, Totalstation","lhg_url":"78.htm","lhg_code":"lhg_fluss","edv_nr4":78}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[608220,223250]},"properties":{"git":2,"lhg_name":"Emme-Wiler, Limpachmündung, Totalstation","lhg_url":"155.htm","lhg_code":"lhg_fluss","edv_nr4":155}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[757975,191935]},"properties":{"git":3,"lhg_name":"Plessur-Chur, Totalstation","lhg_url":"185.htm","lhg_code":"lhg_fluss","edv_nr4":185}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[753190,261600]},"properties":{"git":4,"lhg_name":"Goldach-Goldach, Bleiche, Totalstation","lhg_url":"308.htm","lhg_code":"lhg_fluss","edv_nr4":308}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[718285,197320]},"properties":{"git":5,"lhg_name":"Linth-Linthal, Ausgleichsbecken KLL, Totalstation","lhg_url":"352.htm","lhg_code":"lhg_fluss","edv_nr4":352}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[797700,168180]},"properties":{"git":6,"lhg_name":"Inn-Cinuos-chel, Totalstation","lhg_url":"403.htm","lhg_code":"lhg_fluss","edv_nr4":403}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[610680,167850]},"properties":{"git":7,"lhg_name":"Simme-Latterbach, Totalstation","lhg_url":"488.htm","lhg_code":"lhg_fluss","edv_nr4":488}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[692480,191810]},"properties":{"git":8,"lhg_name":"Schächen-Bürglen, Galgenwäldli, Totalstation","lhg_url":"491.htm","lhg_code":"lhg_fluss","edv_nr4":491}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[714110,95690]},"properties":{"git":9,"lhg_name":"Vedeggio-Agno, Totalstation","lhg_url":"629.htm","lhg_code":"lhg_fluss","edv_nr4":629}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[702700,203700]},"properties":{"git":10,"lhg_name":"Hochwasseraustritt H-Muotathal (HQ)","lhg_url":"1098.htm","lhg_code":"lhg_fluss","edv_nr4":1098}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[575500,197790]},"properties":{"git":11,"lhg_name":"Murtensee-Murten","lhg_url":"2004.htm","lhg_code":"lhg_see","edv_nr4":2004}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[514700,168840]},"properties":{"git":12,"lhg_name":"Lac de Joux-Le Pont","lhg_url":"2007.htm","lhg_code":"lhg_see","edv_nr4":2007}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[557660,133280]},"properties":{"git":13,"lhg_name":"Rhône-Porte du Scex","lhg_url":"2009.htm","lhg_code":"lhg_fluss","edv_nr4":2009}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[593770,118630]},"properties":{"git":14,"lhg_name":"Rhône-Sion","lhg_url":"2011.htm","lhg_code":"lhg_fluss","edv_nr4":2011}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[657000,259360]},"properties":{"git":15,"lhg_name":"Aare-Brugg","lhg_url":"2016.htm","lhg_code":"lhg_fluss","edv_nr4":2016}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[681555,224660]},"properties":{"git":16,"lhg_name":"Zugersee-Zug","lhg_url":"2017.htm","lhg_code":"lhg_see","edv_nr4":2017}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[662830,252580]},"properties":{"git":17,"lhg_name":"Reuss-Mellingen","lhg_url":"2018.htm","lhg_code":"lhg_fluss","edv_nr4":2018}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[649930,177380]},"properties":{"git":18,"lhg_name":"Aare-Brienzwiler","lhg_url":"2019.htm","lhg_code":"lhg_fluss","edv_nr4":2019}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[721245,117025]},"properties":{"git":19,"lhg_name":"Ticino-Bellinzona","lhg_url":"2020.htm","lhg_code":"lhg_fluss","edv_nr4":2020}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[710200,91800]},"properties":{"git":20,"lhg_name":"Lago di Lugano-Ponte Tresa","lhg_url":"2021.htm","lhg_code":"lhg_see","edv_nr4":2021}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[705480,113380]},"properties":{"git":21,"lhg_name":"Lago Maggiore-Locarno","lhg_url":"2022.htm","lhg_code":"lhg_see","edv_nr4":2022}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[635150,172340]},"properties":{"git":22,"lhg_name":"Brienzersee-Ringgenberg","lhg_url":"2023.htm","lhg_code":"lhg_see","edv_nr4":2023}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[573150,108300]},"properties":{"git":23,"lhg_name":"Rhône-Branson","lhg_url":"2024.htm","lhg_code":"lhg_fluss","edv_nr4":2024}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[688625,205370]},"properties":{"git":24,"lhg_name":"Vierwaldstättersee-Brunnen","lhg_url":"2025.htm","lhg_code":"lhg_see","edv_nr4":2025}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[560720,140490]},"properties":{"git":25,"lhg_name":"Lac Léman-Chillon","lhg_url":"2026.htm","lhg_code":"lhg_see","edv_nr4":2026}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[524940,148410]},"properties":{"git":26,"lhg_name":"Lac Léman-St-Prex","lhg_url":"2027.htm","lhg_code":"lhg_see","edv_nr4":2027}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[500750,119390]},"properties":{"git":27,"lhg_name":"Lac Léman-Genève, Sécheron","lhg_url":"2028.htm","lhg_code":"lhg_see","edv_nr4":2028}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[588220,219020]},"properties":{"git":28,"lhg_name":"Aare-Brügg, Aegerten","lhg_url":"2029.htm","lhg_code":"lhg_fluss","edv_nr4":2029}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[613230,179280]},"properties":{"git":29,"lhg_name":"Aare-Thun","lhg_url":"2030.htm","lhg_code":"lhg_fluss","edv_nr4":2030}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[687480,221420]},"properties":{"git":30,"lhg_name":"Ägerisee-Unterägeri","lhg_url":"2031.htm","lhg_code":"lhg_see","edv_nr4":2031}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[746160,270040]},"properties":{"git":31,"lhg_name":"Bodensee (Obersee)-Romanshorn","lhg_url":"2032.htm","lhg_code":"lhg_see","edv_nr4":2032}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[735000,182030]},"properties":{"git":32,"lhg_name":"Vorderrhein-Ilanz","lhg_url":"2033.htm","lhg_code":"lhg_fluss","edv_nr4":2033}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[561660,187320]},"properties":{"git":33,"lhg_name":"Broye-Payerne, Caserne d'aviation","lhg_url":"2034.htm","lhg_code":"lhg_fluss","edv_nr4":2034}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[761215,241750]},"properties":{"git":34,"lhg_name":"Rhein-Oberriet, Blatten","lhg_url":"2041.htm","lhg_code":"lhg_fluss","edv_nr4":2041}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[718570,281730]},"properties":{"git":35,"lhg_name":"Bodensee (Untersee)-Berlingen","lhg_url":"2043.htm","lhg_code":"lhg_see","edv_nr4":2043}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[693510,272500]},"properties":{"git":36,"lhg_name":"Thur-Andelfingen","lhg_url":"2044.htm","lhg_code":"lhg_fluss","edv_nr4":2044}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[570930,105200]},"properties":{"git":37,"lhg_name":"Drance-Martigny, Pont de Rossettan","lhg_url":"2053.htm","lhg_code":"lhg_fluss","edv_nr4":2053}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[690085,193210]},"properties":{"git":38,"lhg_name":"Reuss-Seedorf","lhg_url":"2056.htm","lhg_code":"lhg_fluss","edv_nr4":2056}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[544560,214880]},"properties":{"git":39,"lhg_name":"Les Brenets-Lac des Brenets","lhg_url":"2057.htm","lhg_code":"lhg_see","edv_nr4":2057}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[629530,235090]},"properties":{"git":40,"lhg_name":"Aare-Murgenthal","lhg_url":"2063.htm","lhg_code":"lhg_fluss","edv_nr4":2063}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[784940,152420]},"properties":{"git":41,"lhg_name":"St. Moritzersee-St. Moritz","lhg_url":"2066.htm","lhg_code":"lhg_see","edv_nr4":2066}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[830640,197190]},"properties":{"git":42,"lhg_name":"Inn-Martina","lhg_url":"2067.htm","lhg_code":"lhg_fluss","edv_nr4":2067}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[713670,113500]},"properties":{"git":43,"lhg_name":"Ticino-Riazzino","lhg_url":"2068.htm","lhg_code":"lhg_fluss","edv_nr4":2068}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[623610,200430]},"properties":{"git":44,"lhg_name":"Emme-Emmenmatt, nur Hauptstation","lhg_url":"2070.htm","lhg_code":"lhg_fluss","edv_nr4":2070}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[623820,200325]},"properties":{"git":45,"lhg_name":"Ilfiskanal-Emmenmatt","lhg_url":"2071.htm","lhg_code":"lhg_fluss","edv_nr4":2071}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[777870,145180]},"properties":{"git":46,"lhg_name":"Silsersee-Sils Baselgia","lhg_url":"2072.htm","lhg_code":"lhg_see","edv_nr4":2072}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[781560,148150]},"properties":{"git":47,"lhg_name":"Silvaplanersee-Silvaplana","lhg_url":"2073.htm","lhg_code":"lhg_see","edv_nr4":2073}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[698350,108200]},"properties":{"git":48,"lhg_name":"Lago Maggiore-Brissago","lhg_url":"2074.htm","lhg_code":"lhg_see","edv_nr4":2074}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[803490,130530]},"properties":{"git":49,"lhg_name":"Poschiavino-Le Prese, stazione principale","lhg_url":"2078.htm","lhg_code":"lhg_fluss","edv_nr4":2078}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[803460,130460]},"properties":{"git":50,"lhg_name":"Canale industriale-Le Prese","lhg_url":"2079.htm","lhg_code":"lhg_fluss","edv_nr4":2079}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[701460,246705]},"properties":{"git":51,"lhg_name":"Pfäffikersee-Pfäffikon","lhg_url":"2081.htm","lhg_code":"lhg_see","edv_nr4":2081}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[693380,246690]},"properties":{"git":52,"lhg_name":"Greifensee-Greifensee","lhg_url":"2082.htm","lhg_code":"lhg_see","edv_nr4":2082}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[688230,206140]},"properties":{"git":53,"lhg_name":"Muota-Ingenbohl","lhg_url":"2084.htm","lhg_code":"lhg_fluss","edv_nr4":2084}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[580680,211650]},"properties":{"git":54,"lhg_name":"Aare-Hagneck","lhg_url":"2085.htm","lhg_code":"lhg_fluss","edv_nr4":2085}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[717770,137270]},"properties":{"git":55,"lhg_name":"Brenno-Loderio","lhg_url":"2086.htm","lhg_code":"lhg_fluss","edv_nr4":2086}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[688120,166320]},"properties":{"git":56,"lhg_name":"Reuss-Andermatt","lhg_url":"2087.htm","lhg_code":"lhg_fluss","edv_nr4":2087}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[661260,193270]},"properties":{"git":57,"lhg_name":"Sarnersee-Sarnen","lhg_url":"2088.htm","lhg_code":"lhg_see","edv_nr4":2088}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[627190,267840]},"properties":{"git":58,"lhg_name":"Rhein-Rheinfelden, Messstation","lhg_url":"2091.htm","lhg_code":"lhg_fluss","edv_nr4":2091}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[617280,171750]},"properties":{"git":59,"lhg_name":"Thunersee-Spiez, Kraftwerk BKW","lhg_url":"2093.htm","lhg_code":"lhg_see","edv_nr4":2093}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[659125,238615]},"properties":{"git":60,"lhg_name":"Hallwilersee-Meisterschwanden","lhg_url":"2097.htm","lhg_code":"lhg_see","edv_nr4":2097}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[682055,249430]},"properties":{"git":61,"lhg_name":"Limmat-Zürich, Unterhard","lhg_url":"2099.htm","lhg_code":"lhg_fluss","edv_nr4":2099}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[717070,91650]},"properties":{"git":62,"lhg_name":"Lago di Lugano-Melide, Ferrera","lhg_url":"2101.htm","lhg_code":"lhg_see","edv_nr4":2101}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[661460,194220]},"properties":{"git":63,"lhg_name":"Sarner Aa-Sarnen","lhg_url":"2102.htm","lhg_code":"lhg_fluss","edv_nr4":2102}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[725160,221380]},"properties":{"git":64,"lhg_name":"Linth-Weesen, Biäsche","lhg_url":"2104.htm","lhg_code":"lhg_fluss","edv_nr4":2104}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[783910,150960]},"properties":{"git":65,"lhg_name":"Inn-St. Moritzbad","lhg_url":"2105.htm","lhg_code":"lhg_fluss","edv_nr4":2105}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[613570,263080]},"properties":{"git":66,"lhg_name":"Birs-Münchenstein, Hofmatt","lhg_url":"2106.htm","lhg_code":"lhg_fluss","edv_nr4":2106}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[633130,168200]},"properties":{"git":67,"lhg_name":"Lütschine-Gsteig","lhg_url":"2109.htm","lhg_code":"lhg_fluss","edv_nr4":2109}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[672520,230600]},"properties":{"git":68,"lhg_name":"Reuss-Mühlau, Hünenberg","lhg_url":"2110.htm","lhg_code":"lhg_fluss","edv_nr4":2110}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[749040,244220]},"properties":{"git":69,"lhg_name":"Sitter-Appenzell","lhg_url":"2112.htm","lhg_code":"lhg_fluss","edv_nr4":2112}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[659150,271790]},"properties":{"git":70,"lhg_name":"Aare-Felsenau, K.W. Klingnau (U.W.)","lhg_url":"2113.htm","lhg_code":"lhg_fluss","edv_nr4":2113}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[659790,273390]},"properties":{"git":71,"lhg_name":"Rhein-Koblenz","lhg_url":"2116.htm","lhg_code":"lhg_fluss","edv_nr4":2116}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[582550,103270]},"properties":{"git":72,"lhg_name":"Drance de Bagnes-Le Châble, Villette","lhg_url":"2117.htm","lhg_code":"lhg_fluss","edv_nr4":2117}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[734430,219560]},"properties":{"git":73,"lhg_name":"Walensee-Murg","lhg_url":"2118.htm","lhg_code":"lhg_see","edv_nr4":2118}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[579420,183670]},"properties":{"git":74,"lhg_name":"Sarine-Fribourg","lhg_url":"2119.htm","lhg_code":"lhg_fluss","edv_nr4":2119}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[595740,237010]},"properties":{"git":75,"lhg_name":"Birse-Moutier, La Charrue","lhg_url":"2122.htm","lhg_code":"lhg_fluss","edv_nr4":2122}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[674715,229845]},"properties":{"git":76,"lhg_name":"Lorze-Frauenthal","lhg_url":"2125.htm","lhg_code":"lhg_fluss","edv_nr4":2125}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[714105,261720]},"properties":{"git":77,"lhg_name":"Murg-Wängi","lhg_url":"2126.htm","lhg_code":"lhg_fluss","edv_nr4":2126}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[646000,267410]},"properties":{"git":78,"lhg_name":"Rhein (Oberwasser)-Laufenburg","lhg_url":"2130.htm","lhg_code":"lhg_fluss","edv_nr4":2130}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[691460,263820]},"properties":{"git":79,"lhg_name":"Töss-Neftenbach","lhg_url":"2132.htm","lhg_code":"lhg_fluss","edv_nr4":2132}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[600710,198000]},"properties":{"git":80,"lhg_name":"Aare-Bern, Schönau","lhg_url":"2135.htm","lhg_code":"lhg_fluss","edv_nr4":2135}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[662710,229100]},"properties":{"git":81,"lhg_name":"Baldeggersee-Gelfingen","lhg_url":"2137.htm","lhg_code":"lhg_see","edv_nr4":2137}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[767160,257780]},"properties":{"git":82,"lhg_name":"Rheintaler Binnenkan-St. Margrethen","lhg_url":"2139.htm","lhg_code":"lhg_fluss","edv_nr4":2139}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[763420,170145]},"properties":{"git":83,"lhg_name":"Albula-Tiefencastel","lhg_url":"2141.htm","lhg_code":"lhg_fluss","edv_nr4":2141}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[667060,269230]},"properties":{"git":84,"lhg_name":"Rhein-Rekingen","lhg_url":"2143.htm","lhg_code":"lhg_fluss","edv_nr4":2143}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[547110,217230]},"properties":{"git":85,"lhg_name":"Doubs-Le Châtelot","lhg_url":"2148.htm","lhg_code":"lhg_fluss","edv_nr4":2148}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[561580,204570]},"properties":{"git":86,"lhg_name":"Lac de Neuchâtel-Neuchâtel, Port","lhg_url":"2149.htm","lhg_code":"lhg_see","edv_nr4":2149}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[765365,204910]},"properties":{"git":87,"lhg_name":"Landquart-Felsenbach","lhg_url":"2150.htm","lhg_code":"lhg_fluss","edv_nr4":2150}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[600060,167090]},"properties":{"git":88,"lhg_name":"Simme-Oberwil","lhg_url":"2151.htm","lhg_code":"lhg_fluss","edv_nr4":2151}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[665330,211800]},"properties":{"git":89,"lhg_name":"Reuss-Luzern, Geissmattbrücke","lhg_url":"2152.htm","lhg_code":"lhg_fluss","edv_nr4":2152}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[539220,184155]},"properties":{"git":90,"lhg_name":"Lac de Neuchâtel-Grandson","lhg_url":"2154.htm","lhg_code":"lhg_see","edv_nr4":2154}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[608220,223250]},"properties":{"git":91,"lhg_name":"Emme-Wiler, Limpachmündung, nur Hauptstation","lhg_url":"2155.htm","lhg_code":"lhg_fluss","edv_nr4":2155}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[608770,223650]},"properties":{"git":92,"lhg_name":"Werkkanal-Gerlafingen","lhg_url":"2156.htm","lhg_code":"lhg_fluss","edv_nr4":2156}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[609270,223300]},"properties":{"git":93,"lhg_name":"Strackbach-Gerlafingen","lhg_url":"2157.htm","lhg_code":"lhg_fluss","edv_nr4":2157}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[604810,192680]},"properties":{"git":94,"lhg_name":"Gürbe-Belp, Mülimatt","lhg_url":"2159.htm","lhg_code":"lhg_fluss","edv_nr4":2159}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[573520,161345]},"properties":{"git":95,"lhg_name":"Sarine-Broc, Château d'en bas","lhg_url":"2160.htm","lhg_code":"lhg_fluss","edv_nr4":2160}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[643700,137290]},"properties":{"git":96,"lhg_name":"Massa-Blatten bei Naters","lhg_url":"2161.htm","lhg_code":"lhg_fluss","edv_nr4":2161}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[709580,92145]},"properties":{"git":97,"lhg_name":"Tresa-Ponte Tresa, Rocchetta","lhg_url":"2167.htm","lhg_code":"lhg_fluss","edv_nr4":2167}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[656940,220640]},"properties":{"git":98,"lhg_name":"Baldeggersee-Sempach","lhg_url":"2168.htm","lhg_code":"lhg_see","edv_nr4":2168}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[501220,115120]},"properties":{"git":99,"lhg_name":"Arve-Genève, Bout du Monde","lhg_url":"2170.htm","lhg_code":"lhg_fluss","edv_nr4":2170}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[486600,112340]},"properties":{"git":100,"lhg_name":"Rhône-Chancy, Aux Ripes","lhg_url":"2174.htm","lhg_code":"lhg_fluss","edv_nr4":2174}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[682145,246890]},"properties":{"git":101,"lhg_name":"Sihl-Zürich, Sihlhölzli","lhg_url":"2176.htm","lhg_code":"lhg_fluss","edv_nr4":2176}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[593350,193020]},"properties":{"git":102,"lhg_name":"Sense-Thörishaus, Sensematt","lhg_url":"2179.htm","lhg_code":"lhg_fluss","edv_nr4":2179}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[733560,263180]},"properties":{"git":103,"lhg_name":"Thur-Halden","lhg_url":"2181.htm","lhg_code":"lhg_fluss","edv_nr4":2181}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[757975,191935]},"properties":{"git":104,"lhg_name":"Plessur-Chur, nur Hauptstation","lhg_url":"2185.htm","lhg_code":"lhg_fluss","edv_nr4":2185}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[760310,190140]},"properties":{"git":105,"lhg_name":"Mühlbach-Chur, Sand","lhg_url":"2186.htm","lhg_code":"lhg_fluss","edv_nr4":2186}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[756795,234005]},"properties":{"git":106,"lhg_name":"Werdenberger Binnenk-Salez","lhg_url":"2187.htm","lhg_code":"lhg_fluss","edv_nr4":2187}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[611800,269700]},"properties":{"git":107,"lhg_name":"Wiese-Basel","lhg_url":"2199.htm","lhg_code":"lhg_fluss","edv_nr4":2199}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[635310,164550]},"properties":{"git":108,"lhg_name":"Weisse Lütschine-Zweilütschinen","lhg_url":"2200.htm","lhg_code":"lhg_fluss","edv_nr4":2200}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[622270,259750]},"properties":{"git":109,"lhg_name":"Ergolz-Liestal","lhg_url":"2202.htm","lhg_code":"lhg_fluss","edv_nr4":2202}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[563975,129825]},"properties":{"git":110,"lhg_name":"Grande Eau-Aigle","lhg_url":"2203.htm","lhg_code":"lhg_fluss","edv_nr4":2203}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[659970,263180]},"properties":{"git":111,"lhg_name":"Aare-Untersiggenthal, Stilli","lhg_url":"2205.htm","lhg_code":"lhg_fluss","edv_nr4":2205}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[726988,114670]},"properties":{"git":112,"lhg_name":"Melera-Melera (Valle Morobbia)","lhg_url":"2206.htm","lhg_code":"lhg_fluss","edv_nr4":2206}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[666950,211915]},"properties":{"git":113,"lhg_name":"Vierwaldstättersee-Luzern","lhg_url":"2207.htm","lhg_code":"lhg_see","edv_nr4":2207}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[578320,215670]},"properties":{"git":114,"lhg_name":"Bielersee-Ligerz, Klein Twann","lhg_url":"2208.htm","lhg_code":"lhg_see","edv_nr4":2208}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[684000,245475]},"properties":{"git":115,"lhg_name":"Zürichsee-Zürich","lhg_url":"2209.htm","lhg_code":"lhg_see","edv_nr4":2209}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[572530,244460]},"properties":{"git":116,"lhg_name":"Doubs-Ocourt","lhg_url":"2210.htm","lhg_code":"lhg_fluss","edv_nr4":2210}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[584440,195300]},"properties":{"git":117,"lhg_name":"Saane-Laupen","lhg_url":"2215.htm","lhg_code":"lhg_fluss","edv_nr4":2215}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[485440,110040]},"properties":{"git":118,"lhg_name":"Rhône-Chancy, Vers Vaux","lhg_url":"2217.htm","lhg_code":"lhg_fluss","edv_nr4":2217}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[602630,141660]},"properties":{"git":119,"lhg_name":"Simme-Oberried / Lenk","lhg_url":"2219.htm","lhg_code":"lhg_fluss","edv_nr4":2219}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[735480,154680]},"properties":{"git":120,"lhg_name":"Hinterrhein-Hinterrhein","lhg_url":"2224.htm","lhg_code":"lhg_fluss","edv_nr4":2224}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[608710,148300]},"properties":{"git":121,"lhg_name":"Allenbach-Adelboden","lhg_url":"2232.htm","lhg_code":"lhg_fluss","edv_nr4":2232}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[811020,167920]},"properties":{"git":122,"lhg_name":"Spöl-Punt dal Gall","lhg_url":"2239.htm","lhg_code":"lhg_fluss","edv_nr4":2239}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[665640,258690]},"properties":{"git":123,"lhg_name":"Limmat-Baden, Limmatpromenade","lhg_url":"2243.htm","lhg_code":"lhg_fluss","edv_nr4":2243}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[644500,119420]},"properties":{"git":124,"lhg_name":"Krummbach-Klusmatten","lhg_url":"2244.htm","lhg_code":"lhg_fluss","edv_nr4":2244}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[544560,214880]},"properties":{"git":125,"lhg_name":"Doubs-Sortie du lac des Brenets","lhg_url":"2247.htm","lhg_code":"lhg_fluss","edv_nr4":2247}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[555975,223850]},"properties":{"git":126,"lhg_name":"Doubs-Biaufond","lhg_url":"2249.htm","lhg_code":"lhg_fluss","edv_nr4":2249}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[587980,170590]},"properties":{"git":127,"lhg_name":"Rotenbach-Plaffeien, Schweinsberg","lhg_url":"2251.htm","lhg_code":"lhg_fluss","edv_nr4":2251}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[588340,171015]},"properties":{"git":128,"lhg_name":"Schwändlibach-Plaffeien, Schweinsberg","lhg_url":"2252.htm","lhg_code":"lhg_fluss","edv_nr4":2252}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[788810,151690]},"properties":{"git":129,"lhg_name":"Rosegbach-Pontresina","lhg_url":"2256.htm","lhg_code":"lhg_fluss","edv_nr4":2256}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[789440,151320]},"properties":{"git":130,"lhg_name":"Berninabach-Pontresina","lhg_url":"2262.htm","lhg_code":"lhg_fluss","edv_nr4":2262}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[791430,160600]},"properties":{"git":131,"lhg_name":"Chamuerabach-La Punt-Chamues-ch","lhg_url":"2263.htm","lhg_code":"lhg_fluss","edv_nr4":2263}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[816800,185910]},"properties":{"git":132,"lhg_name":"Inn-Tarasp","lhg_url":"2265.htm","lhg_code":"lhg_fluss","edv_nr4":2265}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[670810,157200]},"properties":{"git":133,"lhg_name":"Rhone-Gletsch","lhg_url":"2268.htm","lhg_code":"lhg_fluss","edv_nr4":2268}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[629130,140910]},"properties":{"git":134,"lhg_name":"Lonza-Blatten","lhg_url":"2269.htm","lhg_code":"lhg_fluss","edv_nr4":2269}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[557530,227320]},"properties":{"git":135,"lhg_name":"Doubs-Combe des Sarrasins","lhg_url":"2270.htm","lhg_code":"lhg_fluss","edv_nr4":2270}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[685500,196050]},"properties":{"git":136,"lhg_name":"Grosstalbach-Isenthal","lhg_url":"2276.htm","lhg_code":"lhg_fluss","edv_nr4":2276}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[630725,207270]},"properties":{"git":137,"lhg_name":"Sperbelgraben-Wasen, Kurzeneialp","lhg_url":"2282.htm","lhg_code":"lhg_fluss","edv_nr4":2282}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[634340,207350]},"properties":{"git":138,"lhg_name":"Rappengraben-Wasen, Riedbad","lhg_url":"2283.htm","lhg_code":"lhg_fluss","edv_nr4":2283}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[689180,281880]},"properties":{"git":139,"lhg_name":"Rhein-Neuhausen, Flurlingerbrücke","lhg_url":"2288.htm","lhg_code":"lhg_fluss","edv_nr4":2288}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[613400,267650]},"properties":{"git":140,"lhg_name":"Rhein-Basel, Rheinhalle","lhg_url":"2289.htm","lhg_code":"lhg_fluss","edv_nr4":2289}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[532980,195880]},"properties":{"git":141,"lhg_name":"Areuse-St-Sulpice","lhg_url":"2290.htm","lhg_code":"lhg_fluss","edv_nr4":2290}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[688560,185120]},"properties":{"git":142,"lhg_name":"Alpbach-Erstfeld, Bodenberg","lhg_url":"2299.htm","lhg_code":"lhg_fluss","edv_nr4":2299}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[704425,215310]},"properties":{"git":143,"lhg_name":"Minster-Euthal, Rüti","lhg_url":"2300.htm","lhg_code":"lhg_fluss","edv_nr4":2300}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[723675,252720]},"properties":{"git":144,"lhg_name":"Thur-Jonschwil, Mühlau","lhg_url":"2303.htm","lhg_code":"lhg_fluss","edv_nr4":2303}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[810560,170790]},"properties":{"git":145,"lhg_name":"Ova dal Fuorn-Zernez, Punt la Drossa","lhg_url":"2304.htm","lhg_code":"lhg_fluss","edv_nr4":2304}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[737270,251290]},"properties":{"git":146,"lhg_name":"Glatt-Herisau, Zellersmühle","lhg_url":"2305.htm","lhg_code":"lhg_fluss","edv_nr4":2305}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[579810,227350]},"properties":{"git":147,"lhg_name":"Suze-Sonceboz","lhg_url":"2307.htm","lhg_code":"lhg_fluss","edv_nr4":2307}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[753190,261600]},"properties":{"git":148,"lhg_name":"Goldach-Goldach, Bleiche, nur Hauptstation","lhg_url":"2308.htm","lhg_code":"lhg_fluss","edv_nr4":2308}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[752895,261830]},"properties":{"git":149,"lhg_name":"Mühlebach-Horn, Farbmühle","lhg_url":"2309.htm","lhg_code":"lhg_fluss","edv_nr4":2309}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[744410,268400]},"properties":{"git":150,"lhg_name":"Aach-Salmsach, Hungerbühl","lhg_url":"2312.htm","lhg_code":"lhg_fluss","edv_nr4":2312}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[804930,174830]},"properties":{"git":151,"lhg_name":"Ova da Cluozza-Zernez","lhg_url":"2319.htm","lhg_code":"lhg_fluss","edv_nr4":2319}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[718010,97380]},"properties":{"git":152,"lhg_name":"Cassarate-Pregassona","lhg_url":"2321.htm","lhg_code":"lhg_fluss","edv_nr4":2321}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[786220,183370]},"properties":{"git":153,"lhg_name":"Dischmabach-Davos, Kriegsmatte","lhg_url":"2327.htm","lhg_code":"lhg_fluss","edv_nr4":2327}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[545025,211575]},"properties":{"git":154,"lhg_name":"Bied du Locle-La Rançonnière","lhg_url":"2333.htm","lhg_code":"lhg_fluss","edv_nr4":2333}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[642220,129630]},"properties":{"git":155,"lhg_name":"Saltina-Brig","lhg_url":"2342.htm","lhg_code":"lhg_fluss","edv_nr4":2342}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[629560,219135]},"properties":{"git":156,"lhg_name":"Langeten-Huttwil, Häberenbad","lhg_url":"2343.htm","lhg_code":"lhg_fluss","edv_nr4":2343}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[641340,129700]},"properties":{"git":157,"lhg_name":"Rhone-Brig","lhg_url":"2346.htm","lhg_code":"lhg_fluss","edv_nr4":2346}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[733545,118160]},"properties":{"git":158,"lhg_name":"Riale di Roggiasca-Roveredo, Bacino di compenso","lhg_url":"2347.htm","lhg_code":"lhg_fluss","edv_nr4":2347}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[722315,78320]},"properties":{"git":159,"lhg_name":"Breggia-Chiasso, Ponte di Polenta","lhg_url":"2349.htm","lhg_code":"lhg_fluss","edv_nr4":2349}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[634150,124850]},"properties":{"git":160,"lhg_name":"Vispa-Visp","lhg_url":"2351.htm","lhg_code":"lhg_fluss","edv_nr4":2351}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[718285,197320]},"properties":{"git":161,"lhg_name":"Linth-Linthal, Ausgleichsbecken KLL, nur Haupt","lhg_url":"2352.htm","lhg_code":"lhg_fluss","edv_nr4":2352}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[718360,197409]},"properties":{"git":162,"lhg_name":"Betriebswasser KLL-Linthal, Wasserrückgabe KLL","lhg_url":"2353.htm","lhg_code":"lhg_fluss","edv_nr4":2353}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[779640,181200]},"properties":{"git":163,"lhg_name":"Landwasser-Davos, Frauenkirch","lhg_url":"2355.htm","lhg_code":"lhg_fluss","edv_nr4":2355}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[684970,135960]},"properties":{"git":164,"lhg_name":"Riale di Calneggia-Cavergno, Pontit","lhg_url":"2356.htm","lhg_code":"lhg_fluss","edv_nr4":2356}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[694610,152450]},"properties":{"git":165,"lhg_name":"Ticino-Piotta","lhg_url":"2364.htm","lhg_code":"lhg_fluss","edv_nr4":2364}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[802120,142010]},"properties":{"git":166,"lhg_name":"Poschiavino-La Rösa","lhg_url":"2366.htm","lhg_code":"lhg_fluss","edv_nr4":2366}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[703100,113860]},"properties":{"git":167,"lhg_name":"Maggia-Locarno, Solduno","lhg_url":"2368.htm","lhg_code":"lhg_fluss","edv_nr4":2368}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[545440,180875]},"properties":{"git":168,"lhg_name":"Mentue-Yvonand, La Mauguettaz","lhg_url":"2369.htm","lhg_code":"lhg_fluss","edv_nr4":2369}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[561430,231050]},"properties":{"git":169,"lhg_name":"Doubs-Le Noirmont, La Goule","lhg_url":"2370.htm","lhg_code":"lhg_fluss","edv_nr4":2370}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[501445,156305]},"properties":{"git":170,"lhg_name":"Orbe-Le Chenit, Frontière","lhg_url":"2371.htm","lhg_code":"lhg_fluss","edv_nr4":2371}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[723985,217965]},"properties":{"git":171,"lhg_name":"Linth-Mollis, Linthbrücke","lhg_url":"2372.htm","lhg_code":"lhg_fluss","edv_nr4":2372}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[727110,247290]},"properties":{"git":172,"lhg_name":"Necker-Mogelsberg, Aachsäge","lhg_url":"2374.htm","lhg_code":"lhg_fluss","edv_nr4":2374}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[700750,218230]},"properties":{"git":173,"lhg_name":"Grossbach-Gross, Säge","lhg_url":"2375.htm","lhg_code":"lhg_fluss","edv_nr4":2375}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[530080,175560]},"properties":{"git":174,"lhg_name":"Orbe-Orbe, Le Chalet","lhg_url":"2378.htm","lhg_code":"lhg_fluss","edv_nr4":2378}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[646080,121780]},"properties":{"git":175,"lhg_name":"Bisse Kalte Wasser-Simplonpass, Rotelsee","lhg_url":"2384.htm","lhg_code":"lhg_fluss","edv_nr4":2384}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[709540,269660]},"properties":{"git":176,"lhg_name":"Murg-Frauenfeld","lhg_url":"2386.htm","lhg_code":"lhg_fluss","edv_nr4":2386}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[753570,175730]},"properties":{"git":177,"lhg_name":"Hinterrhein-Fürstenau","lhg_url":"2387.htm","lhg_code":"lhg_fluss","edv_nr4":2387}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[687420,277140]},"properties":{"git":178,"lhg_name":"Rhein (Oberwasser)-Rheinau","lhg_url":"2392.htm","lhg_code":"lhg_fluss","edv_nr4":2392}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[797700,168180]},"properties":{"git":179,"lhg_name":"Inn-Cinuos-chel, nur Hauptstation","lhg_url":"2403.htm","lhg_code":"lhg_fluss","edv_nr4":2403}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[798460,169040]},"properties":{"git":180,"lhg_name":"Innableitung EKW-Cinuos-chel, Val Torta","lhg_url":"2404.htm","lhg_code":"lhg_fluss","edv_nr4":2404}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[627910,191180]},"properties":{"git":181,"lhg_name":"Emme-Eggiwil, Heidbüel","lhg_url":"2409.htm","lhg_code":"lhg_fluss","edv_nr4":2409}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[757750,234590]},"properties":{"git":182,"lhg_name":"Liechtensteiner Binn-Ruggell","lhg_url":"2410.htm","lhg_code":"lhg_fluss","edv_nr4":2410}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[572420,167540]},"properties":{"git":183,"lhg_name":"Sionge-Vuippens, Château","lhg_url":"2412.htm","lhg_code":"lhg_fluss","edv_nr4":2412}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[718840,248440]},"properties":{"git":184,"lhg_name":"Rietholzbach-Mosnang, Rietholz","lhg_url":"2414.htm","lhg_code":"lhg_fluss","edv_nr4":2414}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[678040,269720]},"properties":{"git":185,"lhg_name":"Glatt-Rheinsfelden","lhg_url":"2415.htm","lhg_code":"lhg_fluss","edv_nr4":2415}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[661390,230220]},"properties":{"git":186,"lhg_name":"Aabach-Hitzkirch, Richensee","lhg_url":"2416.htm","lhg_code":"lhg_fluss","edv_nr4":2416}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[651320,223140]},"properties":{"git":187,"lhg_name":"Suhre-Oberkirch","lhg_url":"2417.htm","lhg_code":"lhg_fluss","edv_nr4":2417}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[763570,169910]},"properties":{"git":188,"lhg_name":"Julia-Tiefencastel","lhg_url":"2418.htm","lhg_code":"lhg_fluss","edv_nr4":2418}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[661910,146780]},"properties":{"git":189,"lhg_name":"Rhone-Reckingen","lhg_url":"2419.htm","lhg_code":"lhg_fluss","edv_nr4":2419}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[724765,120360]},"properties":{"git":190,"lhg_name":"Moesa-Lumino, Sassello","lhg_url":"2420.htm","lhg_code":"lhg_fluss","edv_nr4":2420}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[664220,213200]},"properties":{"git":191,"lhg_name":"Kleine Emme-Littau, Reussbühl","lhg_url":"2425.htm","lhg_code":"lhg_fluss","edv_nr4":2425}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[750410,212510]},"properties":{"git":192,"lhg_name":"Seez-Mels","lhg_url":"2426.htm","lhg_code":"lhg_fluss","edv_nr4":2426}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[718810,167690]},"properties":{"git":193,"lhg_name":"Rein da Sumvitg-Sumvitg, Encardens","lhg_url":"2430.htm","lhg_code":"lhg_fluss","edv_nr4":2430}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[532040,154160]},"properties":{"git":194,"lhg_name":"Venoge-Ecublens, Les Bois","lhg_url":"2432.htm","lhg_code":"lhg_fluss","edv_nr4":2432}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[520720,147410]},"properties":{"git":195,"lhg_name":"Aubonne-Allaman, Le Coulet","lhg_url":"2433.htm","lhg_code":"lhg_fluss","edv_nr4":2433}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[634330,244480]},"properties":{"git":196,"lhg_name":"Dünnern-Olten, Hammermühle","lhg_url":"2434.htm","lhg_code":"lhg_fluss","edv_nr4":2434}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[663800,199570]},"properties":{"git":197,"lhg_name":"Chli Schliere-Alpnach, Chilch Erli","lhg_url":"2436.htm","lhg_code":"lhg_fluss","edv_nr4":2436}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[552060,161650]},"properties":{"git":198,"lhg_name":"Parimbot-Ecublens, Eschiens","lhg_url":"2437.htm","lhg_code":"lhg_fluss","edv_nr4":2437}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[569250,207860]},"properties":{"git":199,"lhg_name":"Zihlkanal-Gampelen, Zihlbrücke","lhg_url":"2446.htm","lhg_code":"lhg_fluss","edv_nr4":2446}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[575340,201450]},"properties":{"git":200,"lhg_name":"Canal de la Broye-Sugiez","lhg_url":"2447.htm","lhg_code":"lhg_fluss","edv_nr4":2447}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[637580,237080]},"properties":{"git":201,"lhg_name":"Wigger-Zofingen","lhg_url":"2450.htm","lhg_code":"lhg_fluss","edv_nr4":2450}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[633730,171510]},"properties":{"git":202,"lhg_name":"Aare-Ringgenberg, Goldswil","lhg_url":"2457.htm","lhg_code":"lhg_fluss","edv_nr4":2457}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[559370,206810]},"properties":{"git":203,"lhg_name":"Seyon-Valangin","lhg_url":"2458.htm","lhg_code":"lhg_fluss","edv_nr4":2458}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[711620,93290]},"properties":{"git":204,"lhg_name":"Magliasina-Magliaso, Ponte","lhg_url":"2461.htm","lhg_code":"lhg_fluss","edv_nr4":2461}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[795800,165910]},"properties":{"git":205,"lhg_name":"Inn-S-Chanf","lhg_url":"2462.htm","lhg_code":"lhg_fluss","edv_nr4":2462}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[714340,96590]},"properties":{"git":206,"lhg_name":"Vecchio Vedeggio-Bioggio, Campagna","lhg_url":"2463.htm","lhg_code":"lhg_fluss","edv_nr4":2463}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[585100,199240]},"properties":{"git":207,"lhg_name":"Saane-Gümmenen","lhg_url":"2467.htm","lhg_code":"lhg_fluss","edv_nr4":2467}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[742540,253230]},"properties":{"git":208,"lhg_name":"Sitter-St. Gallen, Bruggen / Au","lhg_url":"2468.htm","lhg_code":"lhg_fluss","edv_nr4":2468}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[617790,168400]},"properties":{"git":209,"lhg_name":"Kander-Hondrich","lhg_url":"2469.htm","lhg_code":"lhg_fluss","edv_nr4":2469}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[629340,233555]},"properties":{"git":210,"lhg_name":"Murg-Murgenthal, Walliswil","lhg_url":"2471.htm","lhg_code":"lhg_fluss","edv_nr4":2471}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[605890,181880]},"properties":{"git":211,"lhg_name":"Gürbe-Burgistein, Pfandersmatt","lhg_url":"2472.htm","lhg_code":"lhg_fluss","edv_nr4":2472}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[766280,250360]},"properties":{"git":212,"lhg_name":"Rhein-Diepoldsau, Rietbrücke","lhg_url":"2473.htm","lhg_code":"lhg_fluss","edv_nr4":2473}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[729440,127180]},"properties":{"git":213,"lhg_name":"Calancasca-Buseno","lhg_url":"2474.htm","lhg_code":"lhg_fluss","edv_nr4":2474}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[690040,132550]},"properties":{"git":214,"lhg_name":"Maggia-Bignasco, Ponte nuovo","lhg_url":"2475.htm","lhg_code":"lhg_fluss","edv_nr4":2475}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[680600,226070]},"properties":{"git":215,"lhg_name":"Lorze-Zug, Letzi","lhg_url":"2477.htm","lhg_code":"lhg_fluss","edv_nr4":2477}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[596780,249070]},"properties":{"git":216,"lhg_name":"Birse-Soyhières, Bois du Treuil","lhg_url":"2478.htm","lhg_code":"lhg_fluss","edv_nr4":2478}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[593520,246290]},"properties":{"git":217,"lhg_name":"Sorne-Delémont","lhg_url":"2479.htm","lhg_code":"lhg_fluss","edv_nr4":2479}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[554350,199940]},"properties":{"git":218,"lhg_name":"Areuse-Boudry","lhg_url":"2480.htm","lhg_code":"lhg_fluss","edv_nr4":2480}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[673555,202870]},"properties":{"git":219,"lhg_name":"Engelberger Aa-Buochs, Flugplatz","lhg_url":"2481.htm","lhg_code":"lhg_fluss","edv_nr4":2481}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[688020,209530]},"properties":{"git":220,"lhg_name":"Lauerzersee-Lauerz, Chlostermatt","lhg_url":"2484.htm","lhg_code":"lhg_see","edv_nr4":2484}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[567830,261200]},"properties":{"git":221,"lhg_name":"Allaine-Boncourt, Frontière","lhg_url":"2485.htm","lhg_code":"lhg_fluss","edv_nr4":2485}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[554675,146565]},"properties":{"git":222,"lhg_name":"Veveyse-Vevey, Copet","lhg_url":"2486.htm","lhg_code":"lhg_fluss","edv_nr4":2486}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[647870,209510]},"properties":{"git":223,"lhg_name":"Kleine Emme-Werthenstein, Chappelboden","lhg_url":"2487.htm","lhg_code":"lhg_fluss","edv_nr4":2487}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[610680,167850]},"properties":{"git":224,"lhg_name":"Simme-Latterbach, nur Hauptstation","lhg_url":"2488.htm","lhg_code":"lhg_fluss","edv_nr4":2488}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[614280,169270]},"properties":{"git":225,"lhg_name":"Betriebswasser KW Si-Wimmis","lhg_url":"2489.htm","lhg_code":"lhg_fluss","edv_nr4":2489}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[488880,119460]},"properties":{"git":226,"lhg_name":"Allondon-Dardagny, Les Granges","lhg_url":"2490.htm","lhg_code":"lhg_fluss","edv_nr4":2490}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[692480,191810]},"properties":{"git":227,"lhg_name":"Schächen-Bürglen, Galgenwäldli, nur Hauptstation","lhg_url":"2491.htm","lhg_code":"lhg_fluss","edv_nr4":2491}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[693040,192350]},"properties":{"git":228,"lhg_name":"Dorfbachableitung-Bürglen, EW Altdorf","lhg_url":"2492.htm","lhg_code":"lhg_fluss","edv_nr4":2492}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[510080,140080]},"properties":{"git":229,"lhg_name":"Promenthouse-Gland, Route Suisse","lhg_url":"2493.htm","lhg_code":"lhg_fluss","edv_nr4":2493}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[716120,135330]},"properties":{"git":230,"lhg_name":"Ticino-Pollegio, Campagna","lhg_url":"2494.htm","lhg_code":"lhg_fluss","edv_nr4":2494}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[640560,226740]},"properties":{"git":231,"lhg_name":"Luthern-Nebikon","lhg_url":"2497.htm","lhg_code":"lhg_fluss","edv_nr4":2497}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[735330,181790]},"properties":{"git":232,"lhg_name":"Glenner-Castrisch","lhg_url":"2498.htm","lhg_code":"lhg_fluss","edv_nr4":2498}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[702392,203328]},"properties":{"git":233,"lhg_name":"Schlichenden Brünnen-Muotathal","lhg_url":"2499.htm","lhg_code":"lhg_fluss","edv_nr4":2499}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[603005,202455]},"properties":{"git":234,"lhg_name":"Worble-Ittigen","lhg_url":"2500.htm","lhg_code":"lhg_fluss","edv_nr4":2500}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[753890,189370]},"properties":{"git":235,"lhg_name":"Rhein-Domat/Ems","lhg_url":"2602.htm","lhg_code":"lhg_fluss","edv_nr4":2602}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[627320,198600]},"properties":{"git":236,"lhg_name":"Ilfis-Langnau","lhg_url":"2603.htm","lhg_code":"lhg_fluss","edv_nr4":2603}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[697240,223280]},"properties":{"git":237,"lhg_name":"Biber-Biberbrugg","lhg_url":"2604.htm","lhg_code":"lhg_fluss","edv_nr4":2604}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[708420,122920]},"properties":{"git":238,"lhg_name":"Verzasca-Lavertezzo, Campiòi","lhg_url":"2605.htm","lhg_code":"lhg_fluss","edv_nr4":2605}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[499890,117850]},"properties":{"git":239,"lhg_name":"Rhône-Genève, Halle de l'île","lhg_url":"2606.htm","lhg_code":"lhg_fluss","edv_nr4":2606}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[670520,153830]},"properties":{"git":240,"lhg_name":"Goneri-Oberwald","lhg_url":"2607.htm","lhg_code":"lhg_fluss","edv_nr4":2607}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[658530,218290]},"properties":{"git":241,"lhg_name":"Sellenbodenbach-Neuenkirch","lhg_url":"2608.htm","lhg_code":"lhg_fluss","edv_nr4":2608}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[698640,223020]},"properties":{"git":242,"lhg_name":"Alp-Einsiedeln","lhg_url":"2609.htm","lhg_code":"lhg_fluss","edv_nr4":2609}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[599485,244150]},"properties":{"git":243,"lhg_name":"Scheulte-Vicques","lhg_url":"2610.htm","lhg_code":"lhg_fluss","edv_nr4":2610}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[708060,123950]},"properties":{"git":244,"lhg_name":"Riale di Pincascia-Lavertezzo","lhg_url":"2612.htm","lhg_code":"lhg_fluss","edv_nr4":2612}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[611740,272310]},"properties":{"git":245,"lhg_name":"Rhein-Weil, Palmrainbrücke","lhg_url":"2613.htm","lhg_code":"lhg_fluss","edv_nr4":2613}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[611140,267900]},"properties":{"git":246,"lhg_name":"Rhein-Basel, Klingenthalfähre","lhg_url":"2615.htm","lhg_code":"lhg_fluss","edv_nr4":2615}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[830800,168700]},"properties":{"git":247,"lhg_name":"Rom-Müstair","lhg_url":"2617.htm","lhg_code":"lhg_fluss","edv_nr4":2617}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[760770,133450]},"properties":{"git":248,"lhg_name":"Mera-Soglio","lhg_url":"2620.htm","lhg_code":"lhg_fluss","edv_nr4":2620}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[669900,154075]},"properties":{"git":249,"lhg_name":"Rhone-Oberwald","lhg_url":"2623.htm","lhg_code":"lhg_fluss","edv_nr4":2623}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[714110,95690]},"properties":{"git":250,"lhg_name":"Vedeggio-Agno, stazione principale","lhg_url":"2629.htm","lhg_code":"lhg_fluss","edv_nr4":2629}}
+,{"type":"Feature","geometry":{"type":"Point","coordinates":[594400,119900]},"properties":{"git":251,"lhg_name":"Sionne-Sion","lhg_url":"2630.htm","lhg_code":"lhg_fluss","edv_nr4":2630}}
+]}
