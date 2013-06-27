@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"  itemscope itemtype="http://schema.org/BlogPosting">
+<!DOCTYPE html PUBLIC>
+<html xmlns="http://ww.w3.org/1999/xhtml"  itemscope itemtype="http://schema.org/BlogPosting">
 
 
 <head>
@@ -30,9 +30,9 @@
 	<script type="text/javascript" src="https://api.geo.admin.ch/loader.js?mode=light"></script>
 	
 	<!-- css files -->
-	<link rel="stylesheet" type="text/css" href="./css/storymap.css">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap-storymap.css">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap-responsive-storymap.css">
+	<link rel="stylesheet" type="text/css" href="./css/storymap.css">
 
 </head>
 
@@ -84,12 +84,12 @@
 			<div class="navbar">
 				<div class="navbar-inner">
 					<div class="container">
-<ul class="nav">  
-  <li><a href="#">About</a></li>  
-  <li><a href="#">Portfolio</a></li>  
-  <li><a href="#">Contact</a></li>  
-</ul>  
-
+						<ul class="nav">  
+							<li><a href="#" data-i18n="nav.overviewMap" onclick="toggleElements('overviewMapSpan')">Overview Map</a></li>  
+							<li><a href="#" onclick="toggleElements('detailMapSpan')" >Detail Map</a></li>  
+							<li><a href="#" onclick="toggleElements('objectInfo')" >Object Infop</a></li>  
+							<li><a href="#" onclick="toggleElements('barChart')" >Chart</a></li>  
+						</ul>  
 					</div>
 				</div>
 			</div> 			
@@ -100,11 +100,11 @@
 
 <div class="row-fluid">
 	<!-- overview map -->
-	<div class="span4">
+	<div id="overviewMapSpan" class="span4">
 		<div id="overviewMap"></div>
 	</div>
 	<!-- overview map -->
-	<div class="span8">
+	<div id="detailMapSpan" class="span8">
 		<div id="detailMap"></div>
 	</div>
 </div>
@@ -112,7 +112,7 @@
 
 <div class="row-fluid">
 	<!-- object info -->
-	<div class="span4">
+	<div  id="objectInfo" class="span4">
 		<ul class="nav">
 			<li> test1 </li>
 			<li><a href="#" data-i18n="app.name"></a></li>
@@ -120,12 +120,13 @@
 			<li>test</li>
 	    </ul>
 	</div>
-	<!-- chart -->
-	<div class="span8" style="background-color: red;">
+	<!-- bar chart -->
+	<div id="barChart" class="span8" style="background-color: red;">
 			ajsflköasfj </br>
 			ajsflköasfj </br>
 			ajsflköasfj </br>
 			ajsflköasfj </br>
+			<div id="xmlData"> </div>
 	</div>
 </div>
 
@@ -135,6 +136,8 @@
 	<script type="text/javascript" src="./js/mapLoad.js"></script>
 	<script type="text/javascript" src="./js/toggleLang.js"></script>
 	<script type="text/javascript" src="./js/translate.js"></script>
+	<script type="text/javascript" src="./js/visibilityFunctions.js"></script>
+	<script type="text/javascript" src="./js/dataHandling.js"></script>
 </body>
 
 
