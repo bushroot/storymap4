@@ -30,20 +30,19 @@
 	<script type="text/javascript" src="https://api.geo.admin.ch/loader.js?mode=light"></script>
 	
 	<!-- css files -->
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap-storymap.css">
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap-responsive-storymap.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap-responsive.css">
 	<link rel="stylesheet" type="text/css" href="./css/storymap.css">
+	<link rel="stylesheet" type="text/css" href="./css/storymap-responsive.css">
 
 </head>
 
 
 <body onload="mapLoad()">
-<div class="container-fluid">
+<div id="mainContainer">
 
-<div class="row-fluid"> 
-	<div class="span12">
 		<!-- header desktop -->
-		<div id="header" class="hidden-phone">
+		<div id="header">
 			<div class="header_sub">  
 				<div style="left: 0px; position: absolute; top: 0;">
     	  			<img src="./img/storymaps-banner-left.jpg" width="613" height="103">
@@ -80,7 +79,7 @@
 			</div>
 		</div>
 		<!-- navigation mobile -->
-		<div id="navi" class="visible-phone">
+		<div id="navi">
 			<div class="navbar">
 				<div class="navbar-inner">
 					<div class="container">
@@ -94,41 +93,44 @@
 				</div>
 			</div> 			
 		</div>
-	</div>
-</div>
 
+<div id="mainContent">
 
-<div class="row-fluid">
-	<!-- overview map -->
-	<div id="overviewMapSpan" class="span4">
-		<div id="overviewMap"></div>
+	<div id="maps">	
+		<div id="overviewMapContainer">
+		<!-- overview map -->
+			<div id="overviewMap"></div>
+		</div>
+		<div id="detailMapContainer">
+		<!-- overview map -->
+			<div id="detailMap"></div>
+		</div>
 	</div>
-	<!-- overview map -->
-	<div id="detailMapSpan" class="span8">
-		<div id="detailMap"></div>
-	</div>
-</div>
-
-
-<div class="row-fluid">
-	<!-- object info -->
-	<div  id="objectInfo" class="span4">
-		<ul class="nav">
-			<li> test1 </li>
-			<li><a href="#" data-i18n="app.name"></a></li>
-			<li data-i18n="nav.home"> navhome ersatz</li>
-			<li>test</li>
-	    </ul>
-	</div>
-	<!-- bar chart -->
-	<div id="barChart" class="span8" style="background-color: red;">
-			ajsflköasfj </br>
-			ajsflköasfj </br>
-			ajsflköasfj </br>
-			ajsflköasfj </br>
+	
+	<div id="infos">
+		<div id="objectInfoContainer">
+			<!-- object info -->
+			<div  id="objectInfo">
+				<ul class="nav">
+					<li> test1 </li>
+					<li><a href="#" data-i18n="app.name"></a></li>
+					<li data-i18n="nav.home"> navhome ersatz</li>
+					<li>test</li>
+			    </ul>
+			</div>
+		</div>
+		<div id="barChartContainer">
+			<!-- bar chart -->
+			<div id="barChart" style="background-color: red;">
+				ajsflköasfj </br>
+				ajsflköasfj </br>
+				ajsflköasfj </br>
+				ajsflköasfj </br>
 			<div id="xmlData"> </div>
+		</div>
 	</div>
-</div>
+	
+</div> 
 
 </div>
 
