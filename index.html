@@ -42,96 +42,137 @@
 <body onload="mapLoad()">
 <div id="mainContainer">
 
-		<!-- header desktop -->
-		<div id="header">
-			<div class="header_sub">  
-				<div style="left: 0px; position: absolute; top: 0;">
-    	  			<img src="./img/storymaps-banner-left.jpg" width="613" height="103">
-    	 	 	</div> 
-  				<div style="right: 0px; position: absolute; top: 0;">
-    		  		<img src="./img/storymaps-banner-right.jpg" width="549" height="103" />
-				</div>    
+	<!-- header desktop -->
+	<div id="header">
+		<div class="header_sub">  
+			<div style="left: 0px; position: absolute; top: 0;">
+   	  			<img src="./img/storymaps-banner-left.jpg" width="613" height="103">
+   	 	 	</div> 
+			<div style="right: 0px; position: absolute; top: 0;">
+   		  		<img src="./img/storymaps-banner-right.jpg" width="549" height="103" />
+			</div>    
+		</div>
+		<div class="navServiceBackground">
+			<div id="lang" style="float: right">
+				<ul class="inline-list">
+					<li><b>Share:</b></li>
+					<li>&nbsp;</li>
+					<li><a href="http://www.facebook.com/sharer.php?u=http%3a%2f%2fstorymaps.geo.admin.ch/storymaps/storymap3/?&t=geo.admin.ch%20Storymaps" title="Facebook" target="_blank"><img src="./img/facebook.gif" alt="Facebook"></a></li> 
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+					<li><a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fstorymaps.geo.admin.ch/storymaps/storymap3&t=geo.admin.ch%20Storymaps" title="Twitter" target="_blank"><img src="./img/twitter.gif" alt="Facebook"></a></li> 
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+					<li><a href="http://google.com/bookmarks/mark?op=edit&bkmk=http%3a%2f%2fstorymaps.geo.admin.ch/storymaps/storymap3&t=geo.admin.ch%20Storymaps" title="Google Bookmarks" target="_blank"><img src="./img/google.gif" alt="Google Bookmarks"></a></li> 
+					<li>&nbsp;</li>
+					<li>&nbsp;</li>
+					<li><a href="https://plus.google.com/share?url=http%3a%2f%2fstorymaps.geo.admin.ch/storymaps/storymap3&t=geo.admin.ch%20Storymaps" title="Google+" target="_blank"><img src="./img/googleplus.gif" alt="Google+"></a></li> 
+					<li><img src="./img/space.gif"></li>
+					<li id="de" onclick="toggleLang('de');">Deutsch</li>
+					<li class="pipe">&nbsp;</li>
+					<li id="fr" onclick="toggleLang('fr');">Français</li>
+					<li class="pipe">&nbsp;</li>
+					<li id="it" onclick="toggleLang('it');">Italiano</li>
+					<li class="pipe">&nbsp;</li>
+					<li id="en" onclick="toggleLang('en');">English</li>
+				</ul>
 			</div>
-			<div class="navServiceBackground">
-				<div id="lang" style="float: right">
-					<ul class="inline-list">
-						<li><b>Share:</b></li>
-						<li>&nbsp;</li>
-						<li><a href="http://www.facebook.com/sharer.php?u=http%3a%2f%2fstorymaps.geo.admin.ch/storymaps/storymap3/?&t=geo.admin.ch%20Storymaps" title="Facebook" target="_blank"><img src="./img/facebook.gif" alt="Facebook"></a></li> 
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-						<li><a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fstorymaps.geo.admin.ch/storymaps/storymap3&t=geo.admin.ch%20Storymaps" title="Twitter" target="_blank"><img src="./img/twitter.gif" alt="Facebook"></a></li> 
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-						<li><a href="http://google.com/bookmarks/mark?op=edit&bkmk=http%3a%2f%2fstorymaps.geo.admin.ch/storymaps/storymap3&t=geo.admin.ch%20Storymaps" title="Google Bookmarks" target="_blank"><img src="./img/google.gif" alt="Google Bookmarks"></a></li> 
-						<li>&nbsp;</li>
-						<li>&nbsp;</li>
-						<li><a href="https://plus.google.com/share?url=http%3a%2f%2fstorymaps.geo.admin.ch/storymaps/storymap3&t=geo.admin.ch%20Storymaps" title="Google+" target="_blank"><img src="./img/googleplus.gif" alt="Google+"></a></li> 
-						<li><img src="./img/space.gif"></li>
-						<li id="de" onclick="toggleLang('de');">Deutsch</li>
-						<li class="pipe">&nbsp;</li>
-						<li id="fr" onclick="toggleLang('fr');">Français</li>
-						<li class="pipe">&nbsp;</li>
-						<li id="it" onclick="toggleLang('it');">Italiano</li>
-						<li class="pipe">&nbsp;</li>
-						<li id="en" onclick="toggleLang('en');">English</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!-- navigation mobile -->
-		<div id="navi">
-			<div class="navbar">
-				<div class="navbar-inner">
-					<div class="container">
-						<ul class="nav">  
-							<li><a href="#" data-i18n="nav.overviewMap" onclick="toggleElements('overviewMapSpan')">Overview Map</a></li>  
-							<li><a href="#" onclick="toggleElements('detailMapSpan')" >Detail Map</a></li>  
-							<li><a href="#" onclick="toggleElements('objectInfo')" >Object Infop</a></li>  
-							<li><a href="#" onclick="toggleElements('barChart')" >Chart</a></li>  
-						</ul>  
-					</div>
-				</div>
-			</div> 			
-		</div>
-
-<div id="mainContent">
-
-	<div id="maps">	
-		<div id="overviewMapContainer">
-		<!-- overview map -->
-			<div id="overviewMap"></div>
-		</div>
-		<div id="detailMapContainer">
-		<!-- overview map -->
-			<div id="detailMap"></div>
 		</div>
 	</div>
-	
-	<div id="infos">
-		<div id="objectInfoContainer">
-			<!-- object info -->
-			<div  id="objectInfo">
-				<ul class="nav">
-					<li> test1 </li>
-					<li><a href="#" data-i18n="app.name"></a></li>
-					<li data-i18n="nav.home"> navhome ersatz</li>
-					<li>test</li>
-			    </ul>
+
+	<!-- header mobile -->
+	<div id="navi">
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="container">
+					<ul class="nav">  
+						<li><a href="#" data-i18n="nav.overviewMap" onclick="toggleElements('overviewMapSpan')">Overview Map</a></li>  
+						<li><a href="#" onclick="toggleElements('detailMapSpan')" >Detail Map</a></li>  
+						<li><a href="#" onclick="toggleElements('objectInfo')" >Object Infop</a></li>  
+						<li><a href="#" onclick="toggleElements('barChart')" >Chart</a></li>  
+					</ul>  
+				</div>
+			</div>
+		</div> 			
+	</div>
+
+	<!-- mainContent Desktop -->
+	<div id="mainContentDesktop">
+		<div id="maps">	
+			<div id="overviewMapContainer">
+			<!-- overview map -->
+				<div id="overviewMap"></div>
+			</div>
+			<div id="detailMapContainer">
+			<!-- overview map -->
+				<div id="detailMap"></div>
 			</div>
 		</div>
-		<div id="barChartContainer">
-			<!-- bar chart -->
-			<div id="barChart" style="background-color: red;">
-				ajsflköasfj </br>
-				ajsflköasfj </br>
-				ajsflköasfj </br>
-				ajsflköasfj </br>
-			<div id="xmlData"> </div>
+		<div id="infos">
+			<div id="objectInfoContainer">
+				<!-- object info -->
+				<div  id="objectInfo">
+					<ul class="nav">
+						<li> test1 </li>
+						<li><a href="#" data-i18n="app.name"></a></li>
+						<li data-i18n="nav.home"> navhome ersatz</li>
+						<li>test</li>
+				    </ul>
+				</div>
+			</div>
+			<div id="barChartContainer">
+				<!-- bar chart -->
+				<div id="barChart" style="background-color: red;">
+					ajsflköasfj </br>
+					ajsflköasfj </br>
+					ajsflköasfj </br>
+					ajsflköasfj </br>
+				<div id="xmlData"> </div>
+			</div>
 		</div>
-	</div>
-	
-</div> 
+	</div> 
+
+	<!-- mainContent Mobile -->
+	<div id="mainContentDesktop">
+		<div id="maps">	
+			<div id="overviewMapContainer">
+			<!-- overview map -->
+				<div id="overviewMap"></div>
+			</div>
+			<div id="detailMapContainer">
+			<!-- overview map -->
+				<div id="detailMap"></div>
+			</div>
+		</div>
+		<div id="infos">
+			<div id="objectInfoContainer">
+				<!-- object info -->
+				<div  id="objectInfo">
+					<ul class="nav">
+						<li> test1 </li>
+						<li><a href="#" data-i18n="app.name"></a></li>
+						<li data-i18n="nav.home"> navhome ersatz</li>
+						<li>test</li>
+				    </ul>
+				</div>
+			</div>
+			<div id="barChartContainer">
+				<!-- bar chart -->
+				<div id="barChart" style="background-color: red;">
+					ajsflköasfj </br>
+					ajsflköasfj </br>
+					ajsflköasfj </br>
+					ajsflköasfj </br>
+				<div id="xmlData"> </div>
+			</div>
+		</div>
+	</div> 
+
+
+
+
+
+
 
 </div>
 
