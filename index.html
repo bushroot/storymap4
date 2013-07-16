@@ -34,7 +34,9 @@
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap-responsive.css">
 	<link rel="stylesheet" type="text/css" href="./css/storymap.css">
-	<link rel="stylesheet" type="text/css" href="./css/storymap-responsive.css">
+<!--	<link rel="stylesheet" type="text/css" href="./css/storymap-alternative-info.css"> -->
+<!--	<link rel="stylesheet" type="text/css" href="./css/storymap-alternative-overview.css"> -->
+	<link rel="stylesheet" type="text/css" media="screen and (max-width: 760px)" href="./css/storymap-mobile-portrait.css">
 
 </head>
 
@@ -43,7 +45,7 @@
 <div id="mainContainer">
 
 	<!-- header desktop -->
-	<div id="header">
+	<div id="header-desktop">
 		<div class="header_sub">  
 			<div style="left: 0px; position: absolute; top: 0;">
    	  			<img src="./img/storymaps-banner-left.jpg" width="613" height="103">
@@ -81,30 +83,28 @@
 	</div>
 
 	<!-- header mobile -->
-	<div id="navi">
+	<div id="header-mobile">
 		<div class="navbar">
 			<div class="navbar-inner">
 				<div class="container">
 					<ul class="nav">  
-						<li><a href="#" data-i18n="nav.overviewMap" onclick="toggleElements('overviewMapSpan')">Overview Map</a></li>  
-						<li><a href="#" onclick="toggleElements('detailMapSpan')" >Detail Map</a></li>  
-						<li><a href="#" onclick="toggleElements('objectInfo')" >Object Infop</a></li>  
-						<li><a href="#" onclick="toggleElements('barChart')" >Chart</a></li>  
+						<li><a href="#" data-i18n="nav.overview" onclick=" ">Overview</a></li>  
+						<li><a href="#" data-i18n="nav.details" onclick=" " >Details</a></li>  
 					</ul>  
 				</div>
 			</div>
 		</div> 			
 	</div>
 
-	<!-- mainContent Desktop -->
-	<div id="mainContentDesktop">
+	<!-- mainContent -->
+	<div id="mainContent">
 		<div id="maps">	
 			<div id="overviewMapContainer">
 			<!-- overview map -->
 				<div id="overviewMap"></div>
 			</div>
 			<div id="detailMapContainer">
-			<!-- overview map -->
+			<!-- detail map -->
 				<div id="detailMap"></div>
 			</div>
 		</div>
@@ -127,51 +127,10 @@
 					ajsflköasfj </br>
 					ajsflköasfj </br>
 					ajsflköasfj </br>
-				<div id="xmlData"> </div>
-			</div>
-		</div>
-	</div> 
-
-	<!-- mainContent Mobile -->
-	<div id="mainContentDesktop">
-		<div id="maps">	
-			<div id="overviewMapContainer">
-			<!-- overview map -->
-				<div id="overviewMap"></div>
-			</div>
-			<div id="detailMapContainer">
-			<!-- overview map -->
-				<div id="detailMap"></div>
-			</div>
-		</div>
-		<div id="infos">
-			<div id="objectInfoContainer">
-				<!-- object info -->
-				<div  id="objectInfo">
-					<ul class="nav">
-						<li> test1 </li>
-						<li><a href="#" data-i18n="app.name"></a></li>
-						<li data-i18n="nav.home"> navhome ersatz</li>
-						<li>test</li>
-				    </ul>
 				</div>
 			</div>
-			<div id="barChartContainer">
-				<!-- bar chart -->
-				<div id="barChart" style="background-color: red;">
-					ajsflköasfj </br>
-					ajsflköasfj </br>
-					ajsflköasfj </br>
-					ajsflköasfj </br>
-				<div id="xmlData"> </div>
-			</div>
 		</div>
 	</div> 
-
-
-
-
-
 
 
 </div>
