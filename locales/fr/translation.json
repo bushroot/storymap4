@@ -5,6 +5,8 @@
   "nav": {
     "home": "Home fr",
     "page1": "Page One fr",
-    "page2": "Page Two fr"
+    "page2": "Page Two fr",
+ 	"overview": "Aperçu",
+	"details": "Détails"
   }
 }

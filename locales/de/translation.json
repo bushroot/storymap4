@@ -6,6 +6,8 @@
     "home": "Home de",
     "page1": "Page One de",
     "page2": "Page Two de",
-    "overviewMap": "Übersichtskarte"
+    "overview": "Übersicht",
+	"details": "Details"
+
   }
 }
