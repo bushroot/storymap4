@@ -14,11 +14,21 @@ a, a:hover{
     text-decoration: underline;
 }
 
-#header {
+
+/* ************************************* */
+/*  header */
+/* ************************************* */
+
+
+#header-desktop {
   background-color: white;
   width: 100%;
   top: 0px;
   bottom: 125px;
+}
+
+#header-mobile {
+  display: none;
 }
 
 #header a {
@@ -65,6 +75,11 @@ a, a:hover{
   background-position: center bottom;
   width: 9px;
 }
+
+
+/* ************************************* */
+/*  infoboxinfobox*/
+/* ************************************* */
 
 #infobox {
   position: absolute;
@@ -124,9 +139,9 @@ a, a:hover{
 
 
 
-#navi {
-	display: none;
-}
+/* ************************************* */
+/* main content */
+/* ************************************* */
 	
 #mainContent{
 	overflow: hidden;
@@ -137,12 +152,20 @@ a, a:hover{
 	left: 0px;
 	right: 0px;
 }
+
+
+/********* horisontal split *********/
+
 #maps{
 	height:60%;
 }
 #infos{
 	height: 40%;
 }
+
+
+/********* containers *********/
+
 #overviewMapContainer { 
 	float: left;	
 	height:100%;
@@ -167,6 +190,9 @@ a, a:hover{
 	width: 60%;
 	right: 0px;		
 }
+
+/********* main elements *********/
+
 #overviewMap { 
 	height:100%;
 	width: 100%;
