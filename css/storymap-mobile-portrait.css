@@ -1,0 +1,23 @@
+
+#header-mobile {
+	display: inline;	
+}
+#header-desktop {
+	display: none;	
+}	
+#mainContent{
+	top: 41px;
+}	
+#overviewMapContainer { 
+	width: 0%;
+}
+#detailMapContainer { 
+	width: 100%;
+}
+#objectInfoContainer { 
+	width: 100%;
+}		
+#barChartContainer { 
+	width: 0%;
+}
+
