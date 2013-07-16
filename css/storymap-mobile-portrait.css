@@ -9,15 +9,15 @@
 	top: 41px;
 }	
 #overviewMapContainer { 
-	width: 0%;
+	width: 100%;
 }
 #detailMapContainer { 
+	width: 0%;
+}
+		
+#barChartContainer { 
 	width: 100%;
 }
 #objectInfoContainer { 
-	width: 100%;
-}		
-#barChartContainer { 
 	width: 0%;
 }
-

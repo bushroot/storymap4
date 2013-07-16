@@ -1,32 +1,39 @@
-    
 
 
 
-
-function changeCSS(cssFile, cssLinkIndex) {
-	var oldlink = document.getElementsByTagName("link").item(cssLinkIndex);
-	
-	var newlink = document.createElement("link")
-	newlink.setAttribute("rel", "stylesheet");
-	newlink.setAttribute("type", "text/css");
-	newlink.setAttribute("href", cssFile);
-	
-	document.getElementsByTagName("head").item(0).replaceChild(newlink, oldlink);
-}
-
-
-
-
-/*
-// does not work! change variable in css instead!
-var mapArrays = new Array("overviewMapSpan", "detailMapSpan");
-function toggleElements(id){
-	document.getElementById(id).style.width = "100%";
-    ide = id.toString(); 
-	for (i=0;i<elements.length;i++){
-		if (elements[i] != ide){
-			document.getElementById(elements[i]).style.width = "0%";
-		}		
+// reset with of div that are defined when toggle the view in the mobile view
+$(window).resize (function makeDefaultCss() {
+	var omcwidth = document.getElementById("overviewMapContainer").style.width;
+	if ((omcwidth != '""') && ($(window).width() > 760)) {
+		document.getElementById("overviewMapContainer").style.width = "";
+		document.getElementById("barChartContainer").style.width = "";
 	}
+	var dmcwidth = document.getElementById("detailMapContainer").style.width;
+	if ((dmcwidth != '""') && ($(window).width() > 760)) {
+		document.getElementById("detailMapContainer").style.width = "";
+		document.getElementById("objectInfoContainer").style.width = "";
+	}    
+})
+
+
+
+
+function changeToDetails(){
+	$("#overviewMapContainer").width("0%");
+	$("#detailMapContainer").width("100%");
+	detailMap.destroy();
+	loadDetailMap();	
+	$("#barChartContainer").width("0%");
+	$("#objectInfoContainer").width("100%");
 }
-*/
+
+
+function changeToOverview(){
+	$("#overviewMapContainer").width("100%");
+	$("#detailMapContainer").width("0%");
+	overviewMap.destroy();
+	loadOverviewMap();	
+	$("#barChartContainer").width("100%");
+	$("#objectInfoContainer").width("0%");
+}
+

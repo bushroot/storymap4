@@ -1,8 +1,5 @@
 
-
-function mapLoad() {
-
-	// define colors	
+// define colors	
 	var	fillColor = "#2d578b";
 	var	highlightColor = "red";
 
@@ -28,6 +25,10 @@ function mapLoad() {
 		}
 	});
 
+
+// -------  detail map -------------------------- 
+
+function loadDetailMap() {
 	// create detail map 
 	detailMap = new GeoAdmin.Map("detailMap", {
 		doZoomToMaxExtent: true //delete this line
@@ -45,6 +46,13 @@ function mapLoad() {
 	
 	//add vector to detail map 
 	detailMap.addLayers([measurmentStationsDetailMap]);
+
+}
+
+
+// -------  overview map  ----------------------- 
+
+function loadOverviewMap() {
 
 	// create overview map 
 	overviewMap = new GeoAdmin.Map("overviewMap", {
@@ -68,7 +76,5 @@ function mapLoad() {
 	
 	//add vector to overview map
 	overviewMap.addLayers([measurmentStationsDetailMap]);
-
-
 
 }

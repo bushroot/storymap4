@@ -39,7 +39,7 @@
 </head>
 
 
-<body onload="mapLoad()">
+<body onload="loadDetailMap(); loadOverviewMap()">
 <div id="mainContainer">
 
 	<!-- header desktop -->
@@ -86,8 +86,8 @@
 			<div class="navbar-inner">
 				<div class="container">
 					<ul class="nav">  
-						<li><a href="#" data-i18n="nav.overview" onclick=" ">Overview</a></li>  
-						<li><a href="#" data-i18n="nav.details" onclick=" " >Details</a></li>  
+						<li><a href="#" data-i18n="nav.overview" onclick="changeToOverview()">Overview</a></li>  
+						<li><a href="#" data-i18n="nav.details" onclick="changeToDetails() " >Details</a></li>  
 					</ul>  
 				</div>
 			</div>
