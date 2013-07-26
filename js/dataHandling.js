@@ -71,13 +71,19 @@ function filterStations(xml){
 	for (var j=0; j<selection.length; j++){
 		idSelection[j] = selection[j].strnr;
 	}
-
 }
 
 
+function selectRandomId(idArray){
+	var randomIdx = Math.floor(Math.random()*25);
+	console.log(randomIdx);
+	var id = idArray[randomIdx];
+	return id; 
+}
+ 
 
 
-
+var selectedId = selectRandomId(idSelection);
 
 
 

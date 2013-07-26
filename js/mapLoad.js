@@ -33,7 +33,6 @@ var styleMap = new OpenLayers.StyleMap({
 
 
 
-var selectedFeatureId = "2415";
 
 
 
