@@ -15,7 +15,6 @@ OpenLayers.Request.GET({
 	url: "data/sms.xml",
 	success: function(request) {
 		xml = format.read(request.responseText).documentElement;
-		console.log(xml);
 		filterStations(xml);
 	},
 	failure: function(request) {
@@ -34,8 +33,14 @@ function getfirstchild(n)	{
 }
 */
 
+//***********************************************
+// reduce XML data to warmes measurments (output JSON) 
+//***********************************************
+
 
 var selection = new Array();
+var idSelection = new Array();
+
 function filterStations(xml){
 	var tempRecords = new Array();
 	var records = xml.getElementsByTagName("MesPar");
@@ -51,8 +56,8 @@ function filterStations(xml){
 			var temp = records[i].childNodes[7].childNodes[0].nodeValue;
 			// add value to array
 			var rec = new Object();
-			rec.strnr = strnr;
-			rec.temp = temp;	
+			rec.strnr = parseInt(strnr);
+			rec.temp = parseFloat(temp);	
 			tempRecords.push(rec);
 		}
 	}
@@ -63,32 +68,13 @@ function filterStations(xml){
 		var x = tempRecords[j]	
 		selection.push(x);
 	}
+	for (var j=0; j<selection.length; j++){
+		idSelection[j] = selection[j].strnr;
+	}
+
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Openlayer Filter !
 
 
 
