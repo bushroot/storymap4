@@ -1,13 +1,16 @@
 {
-  "app": {
-    "name": "i18nextde"
-  },
-  "nav": {
-    "home": "Home de",
-    "page1": "Page One de",
-    "page2": "Page Two de",
-    "overview": "Übersicht",
-	"details": "Details"
-
-  }
+	"station": "Station:",
+	"rank": "Rang:",
+	"temperature": "Temperatur:",
+	"date": "Datum:",
+	"time": "Zeit:",
+	"detail": "Details:",
+	"stationNumber": "Stationsnummer:",
+	"": "",
+	"": "",
+	"": "",
+	"": "",
+	"": "",
+	"": "",
+	"": ""
 }

@@ -27,6 +27,7 @@
 	<!-- js script files -->
 	<script type="text/javascript" src="./js/jquery-1.8.3.js"></script>
 	<script type="text/javascript" src="./js/i18next-1.6.3.js"></script>
+	<script type="text/javascript" src="./lib/d3.v3.min.js"></script>
 	<script type="text/javascript" src="./js/bootstrap.js"></script>
 	<script type="text/javascript" src="https://api.geo.admin.ch/2407131501/main/wsgi/build/api-light.js"></script>
 	<script type="text/javascript" src="./js/OpenLayers.js"></script>
@@ -112,12 +113,69 @@
 			<div id="objectInfoContainer">
 				<!-- object info -->
 				<div  id="objectInfo">
-					<ul class="nav">
-						<li> test1 </li>
-						<li><a href="#" data-i18n="app.name"></a></li>
-						<li data-i18n="nav.home"> navhome ersatz</li>
-						<li>test</li>
-				    </ul>
+					
+					<table style="width: 100%;"> 
+						<tr style="height: 55px;">
+							<td>
+								<div class="multilang" data-i18n="station"></div>
+								<div>
+									<p id="stauanlage" style="margin:0;"></p>
+								</div>	
+							</td>
+							<td rowspan="2">
+								<div class="multilang" data-i18n="rank" style="width: 50px;"></div>
+								<div style="height:105px;width:60px;margin: auto;">
+									<div style="height:25%; ">
+										<svg width="60.00000000000001" height="30.000000000000004" xmlns="http://www.w3.org/2000/svg">
+											<g>
+												<class>countNav</class>
+													<path id="svg_1" d="m0.07216,25.77658l30.12131,-25.68195l29.70567,25.77727" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#000000" cursor="pointer" onclick="moveOneRank('up')" />
+											</g>
+										</svg>
+									</div>
+									<div id="rank" class="ranker"  style="height:33%;font-size:35px;text-align:center;">
+									</div>
+									<div style="height:25%;">
+										<svg width="60.00000000000001" height="30.000000000000004" xmlns="http://www.w3.org/2000/svg">
+											 <g>
+												<class>countNav</class>
+												<path transform="rotate(179.916 29.9618 19.2887)" id="svg_1" d="m-0.02337,34.23144l30.12131,-25.68195l29.70567,25.77727" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#000000" cursor="pointer" onclick="moveOneRank('down')" />
+											</g>
+										</svg>
+									</div>
+								</div>
+							</td>		
+						</tr>
+						<tr >
+							<td>
+								<div class="multilang" data-i18n="temperature"></div>
+								<div id="sperrenhöhe"></div>	
+							</td>						
+						</tr>
+						<tr>
+							<td>	
+								<div class="multilang" data-i18n="date"></div>
+							<div id="kronenkote"></div>	
+							</td>		
+						</tr>
+						<tr style="height: 42px;" >
+							<td>	
+								<div class="multilang" data-i18n="time"></div>
+								<div id="inbetriebnahme"> </div>
+							</td>
+							<td>	
+								<div id="details" class="multilang" data-i18n="stationNumber"></div>
+								<div id="sperrentyp" ></div>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="height: 15px;">
+								<div id="details" class="multilang" data-i18n="detail"></div>
+							</td>
+						</tr>
+					</table> 
+
+
 				</div>
 			</div>
 			<div id="barChartContainer">
