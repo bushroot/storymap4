@@ -87,4 +87,18 @@ var selectedId = selectRandomId(idSelection);
 
 
 
+///*********************************************************** 
+//  Get feature accoring to the "main" id (measuremen station id)
+//
+// 	Input: measurement station id {int} 
+// 	Input: OpenLayers feature object
+//*********************************************************** 
+
+function getFeatureFromId(id) {
+	var features = overviewLayer.getFeaturesByAttribute('edv_nr4',id);
+ 	var feature = features[0];
+	return feature;
+}
+
+
 
