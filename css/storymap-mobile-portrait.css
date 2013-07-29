@@ -21,3 +21,7 @@
 #objectInfoContainer { 
 	width: 0%;
 }
+#spanClasses{
+	z-Index: 100000;
+	background-color: white;
+}
