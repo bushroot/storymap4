@@ -33,10 +33,10 @@ var styleMap = new OpenLayers.StyleMap({
 
 
 
-
-
-
-// -------  detail map -------------------------- 
+//*********************************************************** 
+// Build and load detail map
+//
+//*********************************************************** 
 
 function loadDetailMap() {
 	
@@ -65,14 +65,16 @@ function loadDetailMap() {
 	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	detailMap.removeControl(detailMap.controls[4]);
 	
-
 	//add vector to detail map 
 	detailMap.addLayers([detailLayer]);
 
 }
 
 
-// -------  overview map  ----------------------- 
+//*********************************************************** 
+// Build and load detail map
+//
+//*********************************************************** 
 
 function loadOverviewMap() {
 
@@ -109,4 +111,47 @@ function loadOverviewMap() {
 	//add vector to overview map
 	overviewMap.addLayers([overviewLayer]);
 
+/*	//create select feature control  
+	selectFeature = new OpenLayers.Control.SelectFeature(overviewMap,{
+		clickout: false,	
+		hover: false
+	});
+	
+	// add select control to main map
+	overviewMap.addControl(selectFeature);
+*/
+	
+	overviewLayer.events.on({
+		'loadend': function(evt){
+			zoomToFeature(selectedId);
+			displayObjectData(selectedId);
+			loadChart()	
+		},
+		'featureselected': function(evt){
+			//zoomToFeature(2415);
+			//displayObjectData(2415);	
+			console.log("test");
+		}
+	})
+
 }
+
+
+
+//*********************************************************** 
+//  Zooms to given feature on detail map
+//
+// Input: OpenLayers feature object
+//*********************************************************** 
+
+function zoomToFeature(selectedId){
+	var feature = getFeatureFromId(selectedId);	
+	var center = feature.geometry.getBounds().getCenterLonLat();
+	center.lon = center.lon + 350;
+	detailMap.setCenter(center, 8, false, true); 
+	center.lon = center.lon -  350; 
+}
+
+
+
+

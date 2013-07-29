@@ -1,4 +1,8 @@
 
+
+var selectedId;
+
+
 function initiation(){
 
 	if ( $.browser.msie && $.browser.version <= 8) {
@@ -9,8 +13,9 @@ function initiation(){
 			+'</div)');
 	}
 	else{
-		loadOverviewMap();
+		loadXmlData();
 		loadDetailMap();
+		loadOverviewMap();
 	}
 
 }

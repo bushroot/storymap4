@@ -1,14 +1,25 @@
+//***********************************************
+// Define variables 
+//***********************************************
 
-// Proxy for cross domain data access
-// OpenLayers.ProxyHost= "../../../../cgi-bin/proxy.cgi?url=";
-
+var selection = new Array();
+var idSelection = new Array();
+var selectedId; 
 
 
 
 //***********************************************
 // Get XML file
+// 
+// Input: link to xml file
+// Returns: xml (object)
 //***********************************************
 
+
+// Proxy for cross domain data access
+// OpenLayers.ProxyHost= "../../../../cgi-bin/proxy.cgi?url=";
+
+function loadXmlData(){
 var format = new OpenLayers.Format.XML();
 OpenLayers.Request.GET({
 	//url: "http://www.hydrodaten.admin.ch/lhg/SMS.xml",
@@ -33,31 +44,40 @@ function getfirstchild(n)	{
 }
 */
 
+}
+
+
 //***********************************************
 // reduce XML data to warmes measurments (output JSON) 
 //***********************************************
 
-
-var selection = new Array();
-var idSelection = new Array();
 
 function filterStations(xml){
 	var tempRecords = new Array();
 	var records = xml.getElementsByTagName("MesPar");
 	for (var i =0; i < records.length; i++){
 	
-		// get the all records that measure the water temperature
+		// get all records that measure the water temperature
 		var typvalue = records[i].getAttributeNode("Typ").nodeValue;	
 
 		// get the required values from the records and write to array
 		if (typvalue == 03){
+			
+			var date = new String();			
+			var date = new String();			
+			
 			// get values
 			var strnr = records[i].getAttributeNode("StrNr").nodeValue;	
 			var temp = records[i].childNodes[7].childNodes[0].nodeValue;
+			date = records[i].childNodes[3].childNodes[0].nodeValue;
+			time = records[i].childNodes[5].childNodes[0].nodeValue;
+			
 			// add value to array
 			var rec = new Object();
 			rec.strnr = parseInt(strnr);
 			rec.temp = parseFloat(temp);	
+			rec.date = date;	
+			rec.time = time;	
 			tempRecords.push(rec);
 		}
 	}
@@ -71,34 +91,99 @@ function filterStations(xml){
 	for (var j=0; j<selection.length; j++){
 		idSelection[j] = selection[j].strnr;
 	}
+
+
+	selectedId = selectRandomId(idSelection);
+
 }
 
 
+
+///*********************************************************** 
+//  Select a random id from measure station subset
+//
+// 	Input: ids of measure stations subset (Array)  
+// 	Returns: id (int) 
+///*********************************************************** 
+
 function selectRandomId(idArray){
 	var randomIdx = Math.floor(Math.random()*25);
-	console.log(randomIdx);
 	var id = idArray[randomIdx];
 	return id; 
 }
  
 
 
-var selectedId = selectRandomId(idSelection);
-
-
-
 ///*********************************************************** 
 //  Get feature accoring to the "main" id (measuremen station id)
 //
 // 	Input: measurement station id {int} 
-// 	Input: OpenLayers feature object
+// 	Returns: OpenLayers feature object
 //*********************************************************** 
 
 function getFeatureFromId(id) {
-	var features = overviewLayer.getFeaturesByAttribute('edv_nr4',id);
+	var features = overviewLayer.getFeaturesByAttribute('edv_nr4', id);
  	var feature = features[0];
 	return feature;
 }
+
+
+
+///*********************************************************** 
+//  Get information of a measument from the xml file
+//
+// 	Input: measurement station id {int}, property {string} 
+// 	Returns: temperature {float} 
+//*********************************************************** 
+
+function getPropertyFromId(id, property){
+	for(var i=0; i<selection.length; i++){
+		if (selection[i].strnr == id){
+			var x = selection[i];
+			var temp = x[property];
+		}
+	}
+	return temp;
+}
+
+
+
+///*********************************************************** 
+//  Get ranking of the temperature measurment 
+//
+// 	Input: measurement station id {int} 
+// 	Returns: rank {int} 
+//*********************************************************** 
+
+function getRankFromId(id) {
+	for(var i=0; i<selection.length; i++){
+		if(selection[i].strnr == id){
+			var rank = i + 1;
+		}
+	}
+	return rank;
+}
+
+///*********************************************************** 
+//  Get ranking of the temperature measurment 
+//
+// 	Input: measurement station id {int} 
+// 	Returns: index {int} 
+//*********************************************************** 
+
+function getIndexFromId(id) {
+	for(var i=0; i<selection.length; i++){
+		if(selection[i].strnr == id){
+			var index = i;
+		}
+	}
+	return index;
+}
+
+
+
+
+
 
 
 
