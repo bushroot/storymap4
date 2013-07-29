@@ -157,10 +157,19 @@ a, a:hover{
 /********* horisontal split *********/
 
 #maps{
-	height:60%;
+	position: absolute;
+	top: 0px;
+	bottom:250px;
+	left: 0px; 
+	right: 0px;
 }
+
 #infos{
-	height: 40%;
+	position: absolute;
+	height: 250px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
 }
 
 
@@ -191,6 +200,9 @@ a, a:hover{
 	right: 0px;		
 }
 
+
+
+
 /********* main elements *********/
 
 #overviewMap { 
@@ -209,4 +221,5 @@ a, a:hover{
 	height: 100%;
 	width: 100%;
 }
+
 

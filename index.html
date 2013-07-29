@@ -118,9 +118,7 @@
 						<tr style="height: 55px;">
 							<td>
 								<div class="multilang" data-i18n="station"></div>
-								<div>
-									<p id="stationName" style="margin:0;"></p>
-								</div>	
+								<div id="d-station" style="margin:0;"></div>	
 							</td>
 							<td rowspan="2">
 								<div class="multilang" data-i18n="rank" style="width: 50px;"></div>
@@ -133,7 +131,7 @@
 											</g>
 										</svg>
 									</div>
-									<div id="rank" class="ranker"  style="height:33%;font-size:35px;text-align:center;">
+									<div id="d-rank" class="ranker"  style="height:33%;font-size:35px;text-align:center;">
 									</div>
 									<div style="height:25%;">
 										<svg width="60.00000000000001" height="30.000000000000004" xmlns="http://www.w3.org/2000/svg">
@@ -149,28 +147,28 @@
 						<tr >
 							<td>
 								<div class="multilang" data-i18n="temperature"></div>
-								<div id="sperrenhöhe"></div>	
+								<div id="d-temperature"></div>	
 							</td>						
 						</tr>
 						<tr>
 							<td>	
 								<div class="multilang" data-i18n="date"></div>
-							<div id="kronenkote"></div>	
+							<div id="d-date"></div>	
 							</td>		
 						</tr>
 						<tr style="height: 42px;" >
 							<td>	
 								<div class="multilang" data-i18n="time"></div>
-								<div id="inbetriebnahme"> </div>
+								<div id="d-time"> </div>
 							</td>
 							<td>	
-								<div id="details" class="multilang" data-i18n="stationNumber"></div>
-								<div id="sperrentyp" ></div>
+								<div class="multilang" data-i18n="stationNumber"></div>
+								<div id="d-stationNumber" ></div>
 							</td>
 						</tr>
 						<tr>
 							<td colspan="2" style="height: 15px;">
-								<div id="details" class="multilang" data-i18n="detail"></div>
+								<a href="" target="_blank" id="details" class="multilang" data-i18n="detail"></a>
 							</td>
 						</tr>
 					</table> 
@@ -180,12 +178,7 @@
 			</div>
 			<div id="barChartContainer">
 				<!-- bar chart -->
-				<div id="barChart" style="background-color: red;">
-					ajsflköasfj </br>
-					ajsflköasfj </br>
-					ajsflköasfj </br>
-					ajsflköasfj </br>
-				</div>
+				<div id="barChart" style="background-color: red;"></div>
 			</div>
 		</div>
 	</div> 
@@ -199,9 +192,10 @@
 	<script type="text/javascript" src="./js/displayData.js"></script>
 	<script type="text/javascript" src="./js/toggleLang.js"></script>
 	<script type="text/javascript" src="./js/translate.js"></script>
+	<script type="text/javascript" src="./js/barchart.js"></script>
 	<script type="text/javascript" src="./js/visibilityFunctions.js"></script>
+	<script type="text/javascript" src="./js/displayData.js"></script>
 	<script type="text/javascript" src="./js/loadMaps.js"></script>
-	<script type="text/javascript" src="./js/navigateMaps.js"></script>
 	<script type="text/javascript" src="./js/initiation.js"></script>
 </body>
 
