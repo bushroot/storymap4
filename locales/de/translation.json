@@ -1,4 +1,9 @@
 {
+	"overview": "Übersicht",
+	"detailview": "Detailansicht",
+	"moreInfo": "Informationen",
+	"share": "Teilen",	
+	"language": "Sprache",
 	"station": "Station:",
 	"rank": "Rang:",
 	"temperature": "Temperatur:",
