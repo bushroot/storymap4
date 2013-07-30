@@ -5,7 +5,7 @@
 var selection = new Array();
 var idSelection = new Array();
 var selectedId; 
-
+var previousId;
 
 
 //***********************************************
@@ -91,7 +91,7 @@ function filterStations(xml){
 		idSelection[j] = selection[j].strnr;
 	}
 
-
+	// select random measurment station id
 	selectedId = selectRandomId(idSelection);
 
 }
@@ -184,5 +184,16 @@ function getIndexFromId(id) {
 
 
 
+///*********************************************************** 
+//  Change data 
+//
+// 	Input: measurement station id {int} 
+//*********************************************************** 
 
-
+function changeStation(selectedId) {
+	
+	zoomToFeature(selectedId);
+	displayObjectData(selectedId);		
+	unHighlightBar(previousId);
+	highlightBar(selectedId);
+}

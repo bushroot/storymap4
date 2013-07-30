@@ -35,5 +35,6 @@ function changeToOverview(){
 	loadOverviewMap();	
 	$("#barChartContainer").width("100%");
 	$("#objectInfoContainer").width("0%");
+	
 }
 

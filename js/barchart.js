@@ -38,8 +38,6 @@ function loadChart(){
 			.attr("class", "axis")
 			.attr("transform", "translate(" + 0 + ",0)") 
 			.call(yAxis);
-     	
-		dataset = data.sort(function(a,b) {return b.damheight-a.damheight;});
 	
 */
 	
@@ -55,25 +53,28 @@ function loadChart(){
 		.attr("fill", fillColor)
 		.attr("class","bar")
 		.attr("cursor", "pointer")	
-/*		.on("click",function (d,i){
-						
-
+		.on("click",function (d,i){
+			var barId = data[i].strnr;
+			previousId = selectedId;
+			selectedId = barId;
+			changeStation(selectedId);
+			overviewMap.zoomToMaxExtent();	
+/*
 			fid = dataset[i].reservoir_stabil_id;
 			ii = i;
 			getObjectinfo(fid);				
 			zoomToFeature(fid);	
 			selectOverviewFeature(fid);
 			highlightBar(fid);	
-			overviewMap.zoomToMaxExtent();
 			$("#rank").text(ii+1);
 			var cl  =  "#rect-" + dataset[i].reservoir_stabil_id;
 			$(cl).tipsy('show');
 	
-
-		})
-					
 */
+		})
+	
 
+			highlightBar(selectedId);
 	
 //		$(".bar").tooltip();
 /*
@@ -89,14 +90,33 @@ function loadChart(){
 			}
 		});
 	});
-
-
-
-
+	
+	
 */
 
 
+}
 
 
 
+//***********************************************
+// Change color of clicked bar
+// 
+// Input: id of curently selected measure station {int}
+//***********************************************
+
+function highlightBar(selectedId){
+	d3.select("#rect-" + selectedId).style("fill", highlightColor);
+}
+
+
+
+//***********************************************
+// Change color of clicked bar
+// 
+// Input: id of the previously selected measur station {int}
+//***********************************************
+
+function unHighlightBar(previousId){
+	d3.select("#rect-" + previousId).style("fill", fillColor);
 }

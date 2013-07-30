@@ -134,7 +134,6 @@ function loadOverviewMap() {
 		}
 	})
 */
-	console.log("endloadoverview");
 }
 
 
@@ -148,9 +147,9 @@ function loadOverviewMap() {
 function zoomToFeature(selectedId){
 	var feature = getFeatureFromId(selectedId);	
 	var center = feature.geometry.getBounds().getCenterLonLat();
-	center.lon = center.lon + 350;
-	detailMap.setCenter(center, 8, false, true); 
-	center.lon = center.lon -  350; 
+	center.lon = center.lon + 50;
+	detailMap.setCenter(center, 10, false, true); 
+	center.lon = center.lon -  50;
 }
 
 

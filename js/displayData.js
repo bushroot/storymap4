@@ -44,9 +44,9 @@ function moveOneRank(direction){
 	var idx = getIndexFromId(selectedId)
 	if (direction == "up" && idx > 0){idx = idx-1};
 	if (direction == "down" && idx < 24){idx = idx+1};
+	previousId = selectedId;
 	selectedId = selection[idx].strnr;
-	zoomToFeature(selectedId);
-	displayObjectData(selectedId);		
+	changeStation(selectedId);
 }
 
 

@@ -14,7 +14,6 @@
 #detailMapContainer { 
 	width: 0%;
 }
-		
 #barChartContainer { 
 	width: 100%;
 }
@@ -25,3 +24,7 @@
 	z-Index: 100000;
 	background-color: white;
 }
+
+
+
+
