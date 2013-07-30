@@ -20,19 +20,18 @@ var selectedId;
 // OpenLayers.ProxyHost= "../../../../cgi-bin/proxy.cgi?url=";
 
 function loadXmlData(){
-var format = new OpenLayers.Format.XML();
-OpenLayers.Request.GET({
-	//url: "http://www.hydrodaten.admin.ch/lhg/SMS.xml",
-	url: "data/sms.xml",
-	success: function(request) {
-		xml = format.read(request.responseText).documentElement;
-		filterStations(xml);
-	},
-	failure: function(request) {
-		console.log("XML loading failed!");
-	}
-});
-
+	var format = new OpenLayers.Format.XML();
+	OpenLayers.Request.GET({
+		//url: "http://www.hydrodaten.admin.ch/lhg/SMS.xml",
+		url: "data/sms.xml",
+		success: function(request) {
+			xml = format.read(request.responseText).documentElement;
+			filterStations(xml);
+		},
+		failure: function(request) {
+			console.log("XML loading failed!");
+		}
+	});
 /*
 //check if the first node is an element node
 function getfirstchild(n)	{
@@ -122,7 +121,7 @@ function selectRandomId(idArray){
 //*********************************************************** 
 
 function getFeatureFromId(id) {
-	var features = overviewLayer.getFeaturesByAttribute('edv_nr4', id);
+	var features = detailLayer.getFeaturesByAttribute('edv_nr4', id);
  	var feature = features[0];
 	return feature;
 }

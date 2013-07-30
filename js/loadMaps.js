@@ -45,17 +45,19 @@ function loadDetailMap() {
 		filter: new OpenLayers.Filter.DataId({
 			fids: idSelection
 		})
+	
 	})
-
+	
 	// create detail map 
 	detailMap = new GeoAdmin.Map("detailMap", {
 		doZoomToMaxExtent: true //delete this line
 	});
 
+
 	// create vecotr layer containing hydrological measurement stations
 	detailLayer = new OpenLayers.Layer.Vector("detailStations", {
 		styleMap: styleMap,
-		strategies: [filterStrategy, new OpenLayers.Strategy.Fixed()],      
+		strategies: [filterStrategy, new OpenLayers.Strategy.Fixed()],
 		protocol: new OpenLayers.Protocol.HTTP({
 			url: "data/hydromessstationen.geojson",
 			format: new OpenLayers.Format.GeoJSON()
@@ -77,7 +79,6 @@ function loadDetailMap() {
 //*********************************************************** 
 
 function loadOverviewMap() {
-
 	// filter the loaded features according to the selected measure stations
 	var filterStrategy = new OpenLayers.Strategy.Filter({
 		filter: new OpenLayers.Filter.DataId({
@@ -99,12 +100,12 @@ function loadOverviewMap() {
 	overviewLayer = new OpenLayers.Layer.Vector("overviewStations", {
 		styleMap: styleMap,
 		strategies: [filterStrategy, new OpenLayers.Strategy.Fixed()],
-		protocol: new OpenLayers.Protocol.HTTP({
+			protocol: new OpenLayers.Protocol.HTTP({
 			url: "data/hydromessstationen.geojson",
 			format: new OpenLayers.Format.GeoJSON()
 		})
 	});
-
+	
 	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	overviewMap.removeControl(overviewMap.controls[4]);
 	
@@ -120,7 +121,7 @@ function loadOverviewMap() {
 	// add select control to main map
 	overviewMap.addControl(selectFeature);
 */
-	
+/*	
 	overviewLayer.events.on({
 		'loadend': function(evt){
 			zoomToFeature(selectedId);
@@ -130,10 +131,10 @@ function loadOverviewMap() {
 		'featureselected': function(evt){
 			//zoomToFeature(2415);
 			//displayObjectData(2415);	
-			console.log("test");
 		}
 	})
-
+*/
+	console.log("endloadoverview");
 }
 
 

@@ -1,6 +1,5 @@
 
 
-var selectedId;
 
 
 function initiation(){
@@ -14,8 +13,12 @@ function initiation(){
 	}
 	else{
 		loadXmlData();
-		loadDetailMap();
-		loadOverviewMap();
+		// Find a better solution: solve empty "filterStrategy issue" !!!!!!! 
+		setTimeout(function(){loadDetailMap()},100);
+		setTimeout(function(){loadOverviewMap()},200);
+		setTimeout(function(){displayObjectData(selectedId)},200);
+		setTimeout(function(){loadChart()},200);
+			
 	}
 
 }
