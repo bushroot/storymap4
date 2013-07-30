@@ -80,7 +80,7 @@ function loadDetailMap() {
 
 function loadOverviewMap() {
 	// filter the loaded features according to the selected measure stations
-	var filterStrategy = new OpenLayers.Strategy.Filter({
+	filterStrategy = new OpenLayers.Strategy.Filter({
 		filter: new OpenLayers.Filter.DataId({
 			fids: idSelection
 		})
@@ -112,7 +112,7 @@ function loadOverviewMap() {
 	//add vector to overview map
 	overviewMap.addLayers([overviewLayer]);
 
-/*	//create select feature control  
+	//create select feature control  
 	selectFeature = new OpenLayers.Control.SelectFeature(overviewMap,{
 		clickout: false,	
 		hover: false
@@ -120,8 +120,8 @@ function loadOverviewMap() {
 	
 	// add select control to main map
 	overviewMap.addControl(selectFeature);
-*/
-/*	
+	selectFeature.activate();
+	
 	overviewLayer.events.on({
 		'loadend': function(evt){
 			zoomToFeature(selectedId);
@@ -133,7 +133,7 @@ function loadOverviewMap() {
 			//displayObjectData(2415);	
 		}
 	})
-*/
+
 }
 
 
