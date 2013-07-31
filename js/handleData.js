@@ -42,7 +42,6 @@ function getfirstchild(n)	{
 	return x;
 }
 */
-
 }
 
 

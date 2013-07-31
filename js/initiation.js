@@ -14,11 +14,12 @@ function initiation(){
 	else{
 		loadXmlData();
 		// Find a better solution: solve empty "filterStrategy issue" !!!!!!! 
-		setTimeout(function(){loadDetailMap()},100);
-		setTimeout(function(){loadOverviewMap()},200);
-		setTimeout(function(){displayObjectData(selectedId)},200);
-		setTimeout(function(){loadChart()},200);
-			
+		setTimeout(function(){loadDetailMap(),600});
+		setTimeout(function(){loadOverviewMap(),600});
+		setTimeout(function(){displayObjectData(selectedId)},800);
+		setTimeout(function(){loadChart(),800});
+
+		
 	}
 
 }

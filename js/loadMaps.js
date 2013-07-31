@@ -38,16 +38,21 @@ var styleMap = new OpenLayers.StyleMap({
 //
 //*********************************************************** 
 
-function loadDetailMap() {
-	
-	// filter the loaded features according to the selected measure stations
-	var filterStrategy = new OpenLayers.Strategy.Filter({
+// filter the loaded features according to the selected measure stations
+function buildFilterStrategy(idSel)	{
+	filterStrategy = new OpenLayers.Strategy.Filter({
 		filter: new OpenLayers.Filter.DataId({
-			fids: idSelection
+			fids: idSel
 		})
 	
 	})
-	
+	return filterStrategy;
+}
+
+var filterStrategy = buildFilterStrategy(idSelection);
+
+function loadDetailMap(){ 
+
 	// create detail map 
 	detailMap = new GeoAdmin.Map("detailMap", {
 		doZoomToMaxExtent: true //delete this line
@@ -69,6 +74,7 @@ function loadDetailMap() {
 	
 	//add vector to detail map 
 	detailMap.addLayers([detailLayer]);
+
 
 }
 
@@ -133,6 +139,7 @@ function loadOverviewMap() {
 			//displayObjectData(2415);	
 		}
 	})
+
 
 }
 
