@@ -7,14 +7,6 @@ function loadChart(){
 	var svgHeight = $("#barChart").height(); 
 	var barPadding = 5;
 
-	// add svg variale to chart div
-	 var svg= d3.select('#barChart').append('svg').attr({
-		'id': "svgChart",
-		'width': svgWidth,
-		'height': svgHeight 
-	});
-
-
 		// define scale of x-axis
 		var xScale = d3.scale.linear().domain([0, data.length]).range([0, svgWidth]);
 		
@@ -25,7 +17,15 @@ function loadChart(){
 		})]).rangeRound([svgHeight-padding,padding]);
 
 
-/*
+	// add svg variale to chart div
+	 var svg= d3.select('#barChart').append('svg').attr({
+	//	'id': "svgChart",
+		'width': svgWidth,
+		'height': svgHeight 
+	});
+
+
+	/*
     
 		// set up yAxis 
 		var yAxis = d3.svg.axis()
@@ -41,8 +41,8 @@ function loadChart(){
 	
 */
 	
-	dataset = svg.selectAll("rect").data().length; 
-	bars = svg.selectAll("rect")
+	//dataset = svg.selectAll("rect").data().length; 
+	svg.selectAll("rect")
 		.data(data).enter()
 		.append("svg:rect")
 		.attr("x", function(datum, index) { return xScale(index);})

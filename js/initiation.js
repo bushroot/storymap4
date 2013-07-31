@@ -1,5 +1,10 @@
 
-
+function afterDataLoad(){
+		loadDetailMap();
+		setTimeout(function(){loadOverviewMap(),600});
+		setTimeout(function(){displayObjectData(selectedId)},800);
+		setTimeout(function(){loadChart(),800});
+		}
 
 
 function initiation(){
@@ -12,13 +17,9 @@ function initiation(){
 			+'</div)');
 	}
 	else{
-		loadXmlData();
+		loadXmlData(afterDataLoad);
 		// Find a better solution: solve empty "filterStrategy issue" !!!!!!! 
-		setTimeout(function(){loadDetailMap(),600});
-		setTimeout(function(){loadOverviewMap(),600});
-		setTimeout(function(){displayObjectData(selectedId)},800);
-		setTimeout(function(){loadChart(),800});
-
+		
 		
 	}
 

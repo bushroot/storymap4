@@ -26,7 +26,7 @@ function loadXmlData(){
 		url: "data/sms.xml",
 		success: function(request) {
 			xml = format.read(request.responseText).documentElement;
-			filterStations(xml);
+			filterStations(xml, afterDataLoad);
 		},
 		failure: function(request) {
 			console.log("XML loading failed!");
@@ -42,6 +42,7 @@ function getfirstchild(n)	{
 	return x;
 }
 */
+
 }
 
 
@@ -50,7 +51,7 @@ function getfirstchild(n)	{
 //***********************************************
 
 
-function filterStations(xml){
+function filterStations(xml, callback){
 	var tempRecords = new Array();
 	var records = xml.getElementsByTagName("MesPar");
 	for (var i =0; i < records.length; i++){
@@ -93,6 +94,7 @@ function filterStations(xml){
 	// select random measurment station id
 	selectedId = selectRandomId(idSelection);
 
+callback();
 }
 
 

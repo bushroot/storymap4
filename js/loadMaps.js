@@ -126,7 +126,6 @@ function loadOverviewMap() {
 	
 	// add select control to main map
 	overviewMap.addControl(selectFeature);
-	selectFeature.activate();
 	
 	overviewLayer.events.on({
 		'loadend': function(evt){
