@@ -17,17 +17,14 @@
 
 #barChartContainer { 
 	width: 100%;
+	visibility: visible;
 }
 #objectInfoContainer { 
 	width: 0%;
+	visibility: hidden;
 }
 #spanClasses{
 	z-Index: 100000;
 	background-color: white;
 }
-
-
-
-
-
 

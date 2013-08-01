@@ -7,11 +7,13 @@ $(window).resize (function makeDefaultCss() {
 	if ((omcwidth != '""') && ($(window).width() > 760)) {
 		document.getElementById("overviewMapContainer").style.width = "";
 		document.getElementById("barChartContainer").style.width = "";
+		$("#barChartContainer").css({"visibility": "visible"});
 	}
 	var dmcwidth = document.getElementById("detailMapContainer").style.width;
 	if ((dmcwidth != '""') && ($(window).width() > 760)) {
 		document.getElementById("detailMapContainer").style.width = "";
 		document.getElementById("objectInfoContainer").style.width = "";
+		$("#objectInfoContainer").css({"visibility": "visible"});
 	}    
 })
 
@@ -24,7 +26,9 @@ function changeToDetails(){
 	detailMap.destroy();
 	loadDetailMap();	
 	$("#barChartContainer").width("0%");
+	$("#barChartContainer").css({"visibility": "hidden"});
 	$("#objectInfoContainer").width("100%");
+	$("#objectInfoContainer").css({"visibility": "visible"});
 }
 
 
@@ -34,7 +38,9 @@ function changeToOverview(){
 	overviewMap.destroy();
 	loadOverviewMap();	
 	$("#barChartContainer").width("100%");
+	$("#barChartContainer").css({"visibility": "visible"});
 	$("#objectInfoContainer").width("0%");
+	$("#objectInfoContainer").css({"visibility": "hidden"});
 	
 }
 
