@@ -222,3 +222,54 @@ a, a:hover{
 	width: 100%;
 }
 
+
+
+/********* Object infos *********/
+
+
+table.objectDetails{
+	width: 100%;
+	margin: 10px 15px;
+	font-size: 0.75em;
+}
+
+
+
+td.objectDetails {
+	padding: 5px;
+	width: 50%;
+	vertical-align: top;	
+}
+
+#d-station{
+	font-weight: bold;
+}
+
+#d-temperature{
+	font-weight: bold;
+	font-size: 160%;
+}
+
+#d-date{
+	font-weight: bold;
+}
+
+#d-time{
+	font-weight: bold;
+}
+
+#d-stationNumber{
+	font-weight: bold;
+}
+
+#counter{
+	margin-top: 10px;
+	text-align: center;
+	margin-right: 40px;
+}
+
+#d-rank{
+	font-weight: bold;
+	font-size: 300%;
+}
+	
