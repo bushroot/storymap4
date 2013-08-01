@@ -130,6 +130,24 @@ function getFeatureFromId(id) {
 
 
 ///*********************************************************** 
+//  create an pbject containing all information  
+//
+// Returns: upsdated selection {array}
+//*********************************************************** 
+
+function createMatrix(){
+	for(var i=0; i<selection.length; i++){
+		var id = selection[i].strnr;
+		var feature = getFeatureFromId(id);
+		try {var name = feature.data['lhg_name'];} catch(err) {var name = "unknown"; }
+		selection[i].name = name; 
+	}
+}
+
+
+
+
+///*********************************************************** 
 //  Get information of a measument from the xml file
 //
 // 	Input: measurement station id {int}, property {string} 

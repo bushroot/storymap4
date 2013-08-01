@@ -2,6 +2,8 @@
 function loadChart(){
 
 	var data = selection;
+	
+
 
 	var svgWidth = $('#barChart').width()-40;
 	var svgHeight = $("#barChart").height()-80; 
@@ -41,6 +43,7 @@ function loadChart(){
 	
 */
 	
+	
 	//dataset = svg.selectAll("rect").data().length; 
 	svg.selectAll("rect")
 		.data(data).enter()
@@ -50,6 +53,7 @@ function loadChart(){
 		.attr("height", function(datum) { return svgHeight - yScale(datum.temp); })
 		.attr("width", svgWidth / data.length * 0.6)
 		.attr("id", function(datum, i) { return "rect-" + datum.strnr; })
+		.attr("name", function(datum, i) { return datum.name; })
 		.attr("fill", fillColor)
 		.attr("class","bar")
 		.attr("cursor", "pointer")	
