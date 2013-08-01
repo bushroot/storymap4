@@ -128,12 +128,12 @@
 				<div  id="objectInfo">
 					
 					<table class="objectDetails"> 
-						<tr class="objectDetails">
+						<tr class="objectDetails firstrow">
 							<td class="objectDetails leftcolumn" id="stName">
 								<div class="multilang" data-i18n="station"></div>
 								<div id="d-station"></div>	
 							</td>
-							<td class="objectDetails right column" rowspan="3">
+							<td class="objectDetails right column" rowspan="2">
 								<div class="multilang" data-i18n="rank"></div>
 								<div id="counter">
 									<div>
@@ -160,16 +160,17 @@
 						<tr class="objectDetails">
 							<td class="objectDetails leftcolumn">
 								<div class="multilang" data-i18n="temperature"></div>
-								<div id="d-temperature"></div>	
+								<div style="float: left;"id="d-temperature"></div>	
+								<div id="celcius">&nbsp;C°</div>	
 							</td>						
 						</tr>
-						<tr class="objectDetails">
+						<tr class="objectDetails leftcolumn" >
 							<td class="objectDetails">	
 								<div class="multilang" data-i18n="date"></div>
-							<div id="d-date"></div>	
-							</td>		
+								<div id="d-date"></div>	
+							</td>
 						</tr>
-						<tr class="objectDetails leftcolumn" >
+						<tr class="objectDetails">
 							<td class="objectDetails">	
 								<div class="multilang" data-i18n="time"></div>
 								<div id="d-time"> </div>
@@ -179,11 +180,12 @@
 								<div id="d-stationNumber" ></div>
 							</td>
 						</tr>
-						<tr class="objectDetails">
-							<td class="objectDetails" colspan="2">
+						<tr class="objectDetails lastrow">
+							<td class="objectDetails lastrow" colspan="2">
 								<a href="" target="_blank" id="details" class="multilang" data-i18n="detail"></a>
 							</td>
 						</tr>
+					</table> 
 					</table> 
 
 

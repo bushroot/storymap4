@@ -3,8 +3,8 @@ function loadChart(){
 
 	var data = selection;
 
-	var svgWidth = $('#barChart').width();
-	var svgHeight = $("#barChart").height(); 
+	var svgWidth = $('#barChart').width()-40;
+	var svgHeight = $("#barChart").height()-80; 
 	var barPadding = 5;
 
 		// define scale of x-axis
