@@ -19,7 +19,7 @@ function loadChart(){
 
 	// add svg variale to chart div
 	 var svg= d3.select('#barChart').append('svg').attr({
-	//	'id': "svgChart",
+		'id': "svgChart",
 		'width': svgWidth,
 		'height': svgHeight 
 	});

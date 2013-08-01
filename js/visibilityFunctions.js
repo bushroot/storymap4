@@ -7,13 +7,13 @@ $(window).resize (function makeDefaultCss() {
 	if ((omcwidth != '""') && ($(window).width() > 760)) {
 		document.getElementById("overviewMapContainer").style.width = "";
 		document.getElementById("barChartContainer").style.width = "";
-		$("#barChartContainer").css({"visibility": "visible"});
+		$("#barChartContainer").css({"visibility": ""});
 	}
 	var dmcwidth = document.getElementById("detailMapContainer").style.width;
 	if ((dmcwidth != '""') && ($(window).width() > 760)) {
 		document.getElementById("detailMapContainer").style.width = "";
 		document.getElementById("objectInfoContainer").style.width = "";
-		$("#objectInfoContainer").css({"visibility": "visible"});
+		$("#objectInfoContainer").css({"visibility": ""});
 	}    
 })
 

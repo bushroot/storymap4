@@ -131,7 +131,6 @@ function loadOverviewMap() {
 		'loadend': function(evt){
 			zoomToFeature(selectedId);
 			displayObjectData(selectedId);
-			loadChart()	
 		},
 		'featureselected': function(evt){
 			//zoomToFeature(2415);
