@@ -49,9 +49,14 @@ function buildFilterStrategy(idSel)	{
 	return filterStrategy;
 }
 
-var filterStrategy = buildFilterStrategy(idSelection);
 
 function loadDetailMap(){ 
+
+	var filterStrategy = buildFilterStrategy(idSelection);
+
+	console.log(idSelection);
+	console.log(filterStrategy);
+	
 
 	// create detail map 
 	detailMap = new GeoAdmin.Map("detailMap", {
@@ -60,20 +65,21 @@ function loadDetailMap(){
 
 
 	// create vecotr layer containing hydrological measurement stations
-	detailLayer = new OpenLayers.Layer.Vector("detailStations", {
+	detailLayer = new OpenLayers.Layer.Vector("detailLayer", {
 		styleMap: styleMap,
-		strategies: [filterStrategy, new OpenLayers.Strategy.Fixed()],
+		strategies: [new OpenLayers.Strategy.Fixed()],
 		protocol: new OpenLayers.Protocol.HTTP({
 			url: "data/hydromessstationen.geojson",
 			format: new OpenLayers.Format.GeoJSON()
 		})
 	});
+	console.log(detailLayer);
 
 	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	detailMap.removeControl(detailMap.controls[4]);
 	
 	//add vector to detail map 
-	detailMap.addLayers([detailLayer]);
+	detailMap.addLayer(detailLayer);
 
 
 }
@@ -85,13 +91,8 @@ function loadDetailMap(){
 //*********************************************************** 
 
 function loadOverviewMap() {
-	// filter the loaded features according to the selected measure stations
-	filterStrategy = new OpenLayers.Strategy.Filter({
-		filter: new OpenLayers.Filter.DataId({
-			fids: idSelection
-		})
-	})
 
+	var filterStrategy = buildFilterStrategy(idSelection);
 	// create overview map 
 	overviewMap = new GeoAdmin.Map("overviewMap", {
 		doZoomToMaxExtent: true
@@ -103,7 +104,7 @@ function loadOverviewMap() {
 	});
 
 	// create vecotr layer containing hydrological measurement stations
-	overviewLayer = new OpenLayers.Layer.Vector("overviewStations", {
+	overviewLayer = new OpenLayers.Layer.Vector("overviewLayer", {
 		styleMap: styleMap,
 		strategies: [filterStrategy, new OpenLayers.Strategy.Fixed()],
 			protocol: new OpenLayers.Protocol.HTTP({
@@ -116,16 +117,17 @@ function loadOverviewMap() {
 	overviewMap.removeControl(overviewMap.controls[4]);
 	
 	//add vector to overview map
-	overviewMap.addLayers([overviewLayer]);
+	overviewMap.addLayer(overviewLayer);
 
 	//create select feature control  
-	selectFeature = new OpenLayers.Control.SelectFeature(overviewMap,{
+	selectFeature = new OpenLayers.Control.SelectFeature(overviewLayer,{
 		clickout: false,	
 		hover: false
 	});
 	
 	// add select control to main map
 	overviewMap.addControl(selectFeature);
+	selectFeature.activate();
 	
 	overviewLayer.events.on({
 		'loadend': function(evt){
@@ -133,8 +135,8 @@ function loadOverviewMap() {
 			displayObjectData(selectedId);
 		},
 		'featureselected': function(evt){
-			//zoomToFeature(2415);
-			//displayObjectData(2415);	
+			zoomToFeature(2415);
+			displayObjectData(2415);	
 		}
 	})
 
