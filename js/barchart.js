@@ -6,17 +6,22 @@ function loadChart(){
 
 
 	var svgWidth = $('#barChart').width()-40;
-	var svgHeight = $("#barChart").height()-80; 
-	var barPadding = 5;
+	var svgHeight = $("#barChart").height()-40; 
+	var yAxisWidth = 25;	
+	var histoWidth = svgWidth - yAxisWidth;
+	var histoHeight = svgHeight - 60;
+	var horPadding = 35; 
+	var verPadding = -5; 
+	
 
-		// define scale of x-axis
-		var xScale = d3.scale.linear().domain([0, data.length]).range([0, svgWidth]);
+	// define scale of x-axis
+	var xScale = d3.scale.linear().domain([0, data.length]).range([20, histoWidth - 20]);
 		
-		// define scale of y-axis
-		var padding = 5; 
-		var yScale = d3.scale.linear().domain([0, d3.max(data, function(datum) {
-			return datum.temp;
-		})]).rangeRound([svgHeight-padding,padding]);
+	// define scale of y-axis
+	var yScale = d3.scale.linear().domain([0, d3.max(data, function(datum) {
+		return datum.temp;
+	})])
+	.range([histoHeight, 0]);
 
 
 	// add svg variale to chart div
@@ -26,32 +31,36 @@ function loadChart(){
 		'height': svgHeight 
 	});
 
+	// text label for the y axis
+	svg.append("text")      
+        	.attr("x", 0)
+        	.attr("y", 40)
+        	.style("text-anchor", "left")
+        	.text("T (C°)");
 
-	/*
-    
-		// set up yAxis 
-		var yAxis = d3.svg.axis()
-			.scale(yScale)
-			.orient("rightdth: 100%;                 ")
-			.ticks(5)
-			;
-        
-		svg.append("g")
-			.attr("class", "axis")
-			.attr("transform", "translate(" + 0 + ",0)") 
-			.call(yAxis);
+
+	// set up yAxis 
+	var yAxis = d3.svg.axis()
+		.scale(yScale)
+		.orient("left")
+		.ticks(5);
 	
-*/
-	
+	// add chart element
+	var padding =  svgHeight - histoHeight + verPadding;  
+	var chart = svg.append("g")
+		.attr("class", "axis")
+		.attr("transform", "translate(" + horPadding + ", " + padding + ")") 
+		.call(yAxis);
+		
 	
 	//dataset = svg.selectAll("rect").data().length; 
-	svg.selectAll("rect")
+	chart.selectAll("rect")
 		.data(data).enter()
 		.append("svg:rect")
 		.attr("x", function(datum, index) { return xScale(index);})
 		.attr("y", function(datum) { return yScale(datum.temp);  })
-		.attr("height", function(datum) { return svgHeight - yScale(datum.temp); })
-		.attr("width", svgWidth / data.length * 0.6)
+		.attr("height", function(datum) { return histoHeight - yScale(datum.temp); })
+		.attr("width", histoWidth / data.length * 0.6)
 		.attr("id", function(datum, i) { return "rect-" + datum.strnr; })
 		.attr("name", function(datum, i) { return datum.name; })
 		.attr("fill", fillColor)
