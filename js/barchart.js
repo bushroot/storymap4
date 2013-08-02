@@ -62,7 +62,8 @@ function loadChart(){
 		.attr("height", function(datum) { return histoHeight - yScale(datum.temp); })
 		.attr("width", histoWidth / data.length * 0.6)
 		.attr("id", function(datum, i) { return "rect-" + datum.strnr; })
-		.attr("name", function(datum, i) { return datum.name; })
+		//.attr("name", function(datum, i) { return datum.name; })
+		.attr("name", function(datum, i) { return "datum.name"; })
 		.attr("fill", fillColor)
 		.attr("class","bar")
 		.attr("cursor", "pointer")	
@@ -72,6 +73,9 @@ function loadChart(){
 			selectedId = barId;
 			changeStation(selectedId);
 			overviewMap.zoomToMaxExtent();	
+		})
+
+		
 /*
 			fid = dataset[i].reservoir_stabil_id;
 			ii = i;
@@ -79,36 +83,25 @@ function loadChart(){
 			zoomToFeature(fid);	
 			selectOverviewFeature(fid);
 			highlightBar(fid);	
-			$("#rank").text(ii+1);
-			var cl  =  "#rect-" + dataset[i].reservoir_stabil_id;
-			$(cl).tipsy('show');
-	
 */
-		})
 	
-
-			highlightBar(selectedId);
-	
-//		$(".bar").tooltip();
-/*
-
-		$(".bar").tipsy({
-			trigger:' manual', 
-			gravity: 's',
-			html: true,
-			title: function(){
-				var name = dataset[ii].damname;
-				var number = dataset[ii].damheight;
-				return '<h1 class="tips" >' + name + '<br>' + number + ' m  </h1>';
-			}
-		});
+	// define tipsy tooltip
+	$(".bar").tipsy({
+		trigger:' manual', 
+		gravity: 's',
+		html: true,
+		title: function(){
+		//	var name = dataset[ii].damname;
+			var number = getPropertyFromId(selectedId, "temp");
+			return '<h1 class="tips" >' +"name"+ '<br>' + number + ' C°  </h1>';
+		}
 	});
-	
-	
-*/
 
+	// apply highlight and tooltip when chart loaded
+	highlightBar(selectedId);
+	$("#rect-" + selectedId).tipsy('show');
+	
 }
-
 
 
 //***********************************************

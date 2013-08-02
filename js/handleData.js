@@ -200,9 +200,6 @@ function getIndexFromId(id) {
 
 
 
-
-
-
 ///*********************************************************** 
 //  Change data 
 //
@@ -215,4 +212,12 @@ function changeStation(selectedId) {
 	displayObjectData(selectedId);		
 	unHighlightBar(previousId);
 	highlightBar(selectedId);
+	$("#rect-" + previousId).tipsy('hide');
+	$("#rect-" + selectedId).tipsy('show');
+
+
 }
+
+
+
+

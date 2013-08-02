@@ -27,6 +27,7 @@ function changeToDetails(){
 	loadDetailMap();	
 	$("#barChartContainer").width("0%");
 	$("#barChartContainer").css({"visibility": "hidden"});
+	$(".tipsy").css({"visibility": "hidden"});
 	$("#objectInfoContainer").width("100%");
 	$("#objectInfoContainer").css({"visibility": "visible"});
 }
@@ -39,6 +40,7 @@ function changeToOverview(){
 	loadOverviewMap();	
 	$("#barChartContainer").width("100%");
 	$("#barChartContainer").css({"visibility": "visible"});
+	$(".tipsy").css({"visibility": "visible"});
 	$("#objectInfoContainer").width("0%");
 	$("#objectInfoContainer").css({"visibility": "hidden"});
 	

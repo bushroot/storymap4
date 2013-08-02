@@ -27,6 +27,7 @@
 	<!-- js script files -->
 	<script type="text/javascript" src="https://api.geo.admin.ch/2407131501/main/wsgi/build/api-light.js"></script>
 	<script type="text/javascript" src="./lib/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="./lib/jquery.tipsy.js"></script>
 	<script type="text/javascript" src="./lib/i18next-1.6.3.min.js"></script>
 	<script type="text/javascript" src="./lib/d3.v3.min.js"></script>
 	<script type="text/javascript" src="./lib/bootstrap.min.js"></script>
@@ -35,6 +36,7 @@
 	<!-- css files -->
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap-responsive.css">
+	<link rel="stylesheet" type="text/css" href="./css/tipsy.css">
 	<link rel="stylesheet" type="text/css" href="./css/storymap.css">
 	<link rel="stylesheet" type="text/css" media="screen and (max-width: 760px)" href="./css/storymap-mobile-portrait.css">
 	<link rel="stylesheet" type="text/css" href="https://api.geo.admin.ch/2407131501/main/wsgi/build/api-light.css">
@@ -102,8 +104,7 @@
         					<ul class="nav">
 							<li><a class="multilang" href="#" data-i18n="moreInfo"></a></li>  
 							<li class="dropdown open">
-								<a class="dropdown-toggle multilang" role="button" data-toggle="dropdown" data-target="#" href="#" data-i18n="language"> </a>	
-
+								<a class="dropdown-toggle multilang" role="button" data-toggle="dropdown" data-target="#" href="#" data-i18n="language"></a>	
 								<ul class="dropdown-menu">
 									<li id="de" onclick="toggleLang('de');"><a>Deutsch</a></li>
 									<li id="fr" onclick="toggleLang('fr');"><a>Français</a></li>
@@ -111,13 +112,9 @@
 									<li id="en" onclick="toggleLang('en');"><a>English</a></li>
 								</ul>
 							</li>
-
-
-
-
 							<li class="dropdown open">  
-                					        <a class="dropdown-toggle multilang" role="button" data-toggle="dropdown" data-target="#" href="#" data-i18n="share"></a>  
-                       						<ul class="dropdown-menu">  
+                				<a class="dropdown-toggle multilang" role="button" data-toggle="dropdown" data-target="#" href="#" data-i18n="share"></a>  
+                  				<ul class="dropdown-menu">  
 									<li><a href="http://www.facebook.com/sharer.php?u=http%3a%2f%2fstorymaps.geo.admin.ch/storymaps/storymap3/?&t=geo.admin.ch%20Storymaps" title="Facebook" target="_blank"><img class="icon" src="./img/facebook_big.png" alt="Facebook"></a></li> 
 									<li><a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fstorymaps.geo.admin.ch/storymaps/storymap3&t=geo.admin.ch%20Storymaps" title="Twitter" target="_blank"><img class="icon" src="./img/twitter_big.png" alt="Facebook"></a></li> 
 									<li><a href="https://plus.google.com/share?url=http%3a%2f%2fstorymaps.geo.admin.ch/storymaps/storymap3&t=geo.admin.ch%20Storymaps" title="Google+" target="_blank"><img class="icon" src="./img/googleplus_big.png" alt="Google+"></a></li> 
