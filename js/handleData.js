@@ -126,7 +126,7 @@ function selectRandomId(idArray){
 //*********************************************************** 
 
 function getFeatureFromId(id) {
-	var features = detailLayer.getFeaturesByAttribute('edv_nr4', id);
+	var features = detailLayer.getFeaturesByAttribute('nr', id);
  	var feature = features[0];
 	return feature;
 }
@@ -143,7 +143,7 @@ function createMatrix(){
 	for(var i=0; i<selection.length; i++){
 		var id = selection[i].strnr;
 		var feature = getFeatureFromId(id);
-		try {var name = feature.data['lhg_name'];} catch(err) {var name = "unknown"; }
+		try {var name = feature.data['nr'];} catch(err) {var name = "unknown"; }
 		selection[i].name = name; 
 	}
 }
@@ -212,7 +212,7 @@ function getIndexFromId(id) {
 //*********************************************************** 
 
 function selectFeatureById(selectedId){
-	var featDetail = detailLayer.getFeaturesByAttribute("edv_nr4", selectedId)[0];
+	var featDetail = detailLayer.getFeaturesByAttribute("nr", selectedId)[0];
 	selectFeature.select(featDetail);
 }
 

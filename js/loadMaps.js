@@ -63,7 +63,7 @@ function loadDetailMap(){
 	// create vecotr layer containing hydrological measurement stations
 	detailLayer = new OpenLayers.Layer.Vector("detailLayer", {
 		styleMap: styleMap,
-		strategies: [filterStrategy, new OpenLayers.Strategy.Fixed()],
+		strategies: [new OpenLayers.Strategy.Fixed()],
 		protocol: new OpenLayers.Protocol.HTTP({
 			url: "data/hydromessstationen.geojson",
 			format: new OpenLayers.Format.GeoJSON()
@@ -121,7 +121,7 @@ function loadOverviewMap() {
 	});
 	
 	// add select control to main map
-	overviewMap.addConLaol(selectFeature);
+	overviewMap.addControl(selectFeature);
 	selectFeature.activate();
 	
 	overviewLayer.events.on({
@@ -131,7 +131,7 @@ function loadOverviewMap() {
 		},
 		'featureselected': function(evt){
 			previousId = selectedId;
-			selectedId = evt.feature.data['edv_nr4'];
+			selectedId = evt.feature.data['nr'];
 			changeStation(selectedId);
 		}
 	})
