@@ -35,9 +35,7 @@ function loadChart(){
 	svg.append("text")      
         	.attr("x", 0)
         	.attr("y", 40)
-        	.style("text-anchor", "left")
         	.text("T (C°)");
-
 
 	// set up yAxis 
 	var yAxis = d3.svg.axis()
