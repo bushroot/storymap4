@@ -25,7 +25,11 @@ function loadXmlData(){
 		//url: "http://www.hydrodaten.admin.ch/lhg/SMS.xml",
 		url: "data/sms.xml",
 		success: function(request) {
-			xml = format.read(request.responseText).documentElement;
+			if(!request.responseXML.documentElement) {
+        		xml = format.read(request.responseText).documentElement; //Chrome and FF
+			} else {
+    			xml = request.responseXML; // IE
+			}
 			filterStations(xml, afterDataLoad);
 		},
 		failure: function(request) {
