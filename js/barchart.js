@@ -125,3 +125,28 @@ function highlightBar(selectedId){
 function unHighlightBar(previousId){
 	d3.select("#rect-" + previousId).style("fill", fillColor);
 }
+
+
+
+//***********************************************
+// Reload bar chart when  windows is being resized
+// 
+//***********************************************
+
+$(window).resize(function(){
+	$("#rect-" + selectedId).tipsy('hide');
+	$("#svgChart").remove();	
+	loadChart();
+});
+
+
+
+
+
+
+
+
+
+
+
+
