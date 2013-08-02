@@ -204,6 +204,20 @@ function getIndexFromId(id) {
 
 
 
+
+///*********************************************************** 
+//  Select feature by Id (edv_nr4)
+//
+// 	Input: id {int} 
+//*********************************************************** 
+
+function selectFeatureById(selectedId){
+	var featDetail = detailLayer.getFeaturesByAttribute("edv_nr4", selectedId)[0];
+	selectFeature.select(featDetail);
+}
+
+
+
 ///*********************************************************** 
 //  Change data 
 //
@@ -211,15 +225,13 @@ function getIndexFromId(id) {
 //*********************************************************** 
 
 function changeStation(selectedId) {
-	
 	zoomToFeature(selectedId);
 	displayObjectData(selectedId);		
 	unHighlightBar(previousId);
 	highlightBar(selectedId);
 	$("#rect-" + previousId).tipsy('hide');
 	$("#rect-" + selectedId).tipsy('show');
-
-
+	selectFeatureById(selectedId);
 }
 
 

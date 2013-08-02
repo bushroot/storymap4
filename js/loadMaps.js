@@ -54,10 +54,6 @@ function loadDetailMap(){
 
 	var filterStrategy = buildFilterStrategy(idSelection);
 
-	console.log(idSelection);
-	console.log(filterStrategy);
-	
-
 	// create detail map 
 	detailMap = new GeoAdmin.Map("detailMap", {
 		doZoomToMaxExtent: true //delete this line
@@ -67,13 +63,12 @@ function loadDetailMap(){
 	// create vecotr layer containing hydrological measurement stations
 	detailLayer = new OpenLayers.Layer.Vector("detailLayer", {
 		styleMap: styleMap,
-		strategies: [new OpenLayers.Strategy.Fixed()],
+		strategies: [filterStrategy, new OpenLayers.Strategy.Fixed()],
 		protocol: new OpenLayers.Protocol.HTTP({
 			url: "data/hydromessstationen.geojson",
 			format: new OpenLayers.Format.GeoJSON()
 		})
 	});
-	console.log(detailLayer);
 
 	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 	detailMap.removeControl(detailMap.controls[4]);
@@ -126,7 +121,7 @@ function loadOverviewMap() {
 	});
 	
 	// add select control to main map
-	overviewMap.addControl(selectFeature);
+	overviewMap.addConLaol(selectFeature);
 	selectFeature.activate();
 	
 	overviewLayer.events.on({
@@ -135,8 +130,9 @@ function loadOverviewMap() {
 			displayObjectData(selectedId);
 		},
 		'featureselected': function(evt){
-			zoomToFeature(2415);
-			displayObjectData(2415);	
+			previousId = selectedId;
+			selectedId = evt.feature.data['edv_nr4'];
+			changeStation(selectedId);
 		}
 	})
 
