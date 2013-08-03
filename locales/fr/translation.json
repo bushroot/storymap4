@@ -1,12 +1,8 @@
 {
-  "app": {
-    "name": "i18nextfr"
-  },
-  "nav": {
-    "home": "Home fr",
-    "page1": "Page One fr",
-    "page2": "Page Two fr",
- 	"overview": "Aperçu",
-	"details": "Détails"
-  }
+	"adminch": "Administration fédérale admin.ch",
+	"depart": "Département de l'environnement, des transports, de l'énergie et de la communication",	
+	"FOEN": "Office fédéral de l'environnement OFEV"
+
 }
+
+
