@@ -53,7 +53,6 @@ function buildFilterStrategy(idSel)	{
 function loadDetailMap(){ 
 
 	var filterStrategy = buildFilterStrategy(idSelection);
-	console.log(filterStrategy);
 
 	// create detail map 
 	detailMap = new GeoAdmin.Map("detailMap", {
