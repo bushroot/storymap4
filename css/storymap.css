@@ -99,7 +99,7 @@ h1 {
   border: solid 2px #FFFFFF;
   margin: 10px;
   border-radius: 10px;
-  z-Index: 100000;
+  z-Index: 10000;
 }
 
 h1.infobox{
