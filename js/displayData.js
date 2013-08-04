@@ -23,8 +23,9 @@ function createHyperlink(id){
 
 function displayObjectData(id){
 	var featureData = getFeatureFromId(selectedId).data;
-	$("#d-station").html(featureData.lhg_name);
-	$("#d-stationNumber").html(featureData.edv_nr4);
+	console.log(featureData);
+	$("#d-station").html(featureData.name);
+	$("#d-stationNumber").html(featureData.nr);
 	$("#d-date").html(getPropertyFromId(id, "date"));
 	$("#d-time").html(getPropertyFromId(id, "time"));
 	$("#d-temperature").html(getPropertyFromId(id, "temp"));
