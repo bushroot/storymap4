@@ -1,24 +1,47 @@
 {
+
+"text": {	
 	"adminch": "Bundesverwaltung admin.ch",
 	"depart": "Departement für Umwelt, Verkehr, Energie und Kommunikation",	
 	"FOEN": "Bundesamt für Umwelt BAFU",
+	
 	"overview": "Übersicht",
 	"detailview": "Detailansicht",
 	"moreInfo": "Informationen",
 	"share": "Teilen",	
 	"language": "Sprache",
+	
+	"infoboxTitle": "hier der titel",
+	"abstract": "hier das abstract",
+	"infoboxMoreInfo": "hier mehr informationen",
+	"dep": "hier das department",
+	"": "",
+	"": "",
+	"": "",
+
+
 	"station": "Station:",
 	"rank": "Rang:",
 	"temperature": "Temperatur:",
 	"date": "Datum:",
 	"time": "Zeit:",
-	"detail": "Details:",
+	"detail": "Details",
 	"stationNumber": "Stationsnummer:",
 	"": "",
 	"": "",
 	"": "",
 	"": "",
-	"": "",
-	"": "",
 	"": ""
+},
+
+"html": {
+    "infolinks": [
+	"<a href='http://www.bfe.admin.ch/talsperren' target='_blank'>Tätigkeiten der Aufsichtsbehörde</a></br>", 
+	"<a class='infobox' href='http://www.bfe.admin.ch/geoinformation/05061/05251/05395/index.html?lang=de' target='_blank'>Karte aller Stauanlagen unter Bundesaufsicht</a> <br>",
+	"<a class='infobox'  href='http://www.bfe.admin.ch/geoinformation/05061/05251/index.html?lang=de' target='_blank'>Geobasisdaten Stauanlagen</a> <br>",
+	"<a class='infobox' href='http://www.bfe.admin.ch/geoinformation/05403/05570/05571/index.html?lang=de' target='_blank'>Karte Wasserkraftpotentiale</a>" 
+    ]
+}
+
+
 }

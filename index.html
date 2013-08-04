@@ -102,14 +102,14 @@
         					<span class="icon-bar"></span>
       					</a>
       					<div style="text-align: left;" class="btn-group">
-						<button type="button" class="btn btn-default multilang" data-i18n="overview" onclick="changeToOverview()"></button>
-						<button type="button" class="btn btn-default multilang" data-i18n="detailview" onclick="changeToDetails()"></button>
+						<button type="button" class="btn btn-default multilang" data-i18n="text.overview" onclick="changeToOverview()"></button>
+						<button type="button" class="btn btn-default multilang" data-i18n="text.detailview" onclick="changeToDetails()"></button>
 					</div>
       					<div style="text-align: left;" class="nav-collapse collapse" id="spanClasses" style="height: auto;">
         					<ul class="nav">
-							<li><a id="moreInfo" class="multilang" href="#" data-i18n="moreInfo"></a></li>  
+							<li><a id="moreInfo" class="multilang" href="#" data-i18n="text.moreInfo"></a></li>  
 							<li class="dropdown open">
-								<a class="dropdown-toggle multilang" role="button" data-toggle="dropdown" data-target="#" href="#" data-i18n="language"></a>	
+								<a class="dropdown-toggle multilang" role="button" data-toggle="dropdown" data-target="#" href="#" data-i18n="text.language"></a>	
 								<ul class="dropdown-menu">
 									<li id="de" onclick="toggleLang('de');"><a>Deutsch</a></li>
 									<li id="fr" onclick="toggleLang('fr');"><a>Français</a></li>
@@ -118,7 +118,7 @@
 								</ul>
 							</li>
 							<li class="dropdown open">  
-                				<a class="dropdown-toggle multilang" role="button" data-toggle="dropdown" data-target="#" href="#" data-i18n="share"></a>  
+                				<a class="dropdown-toggle multilang" role="button" data-toggle="dropdown" data-target="#" href="#" data-i18n="text.share"></a>  
                   				<ul class="dropdown-menu">  
 									<li><a href="http://www.facebook.com/sharer.php?u=http%3a%2f%2fstorymaps.geo.admin.ch/storymaps/storymap3/?&t=geo.admin.ch%20Storymaps" title="Facebook" target="_blank"><img class="icon" src="./img/facebook_big.png" alt="Facebook" ></a></li> 
 									<li><a href="http://twitter.com/intent/tweet?url=http%3a%2f%2fstorymaps.geo.admin.ch/storymaps/storymap3&t=geo.admin.ch%20Storymaps" title="Twitter" target="_blank"><img class="icon" src="./img/twitter_big.png" alt="Facebook"></a></li> 
@@ -134,61 +134,43 @@
 
 	<!-- mainContent -->
 	<div id="mainContent">
-		
 
-
-
-
-<div id="infobox" style="display: block;">
-	<div id="close_box" style="position: absolute; right: 8px; top: 8px; cursor: pointer;">
-		<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
-			<g>
-				<path id="svg_1" d="m3.13264,16.88795c-3.7922,-3.81782 -3.7922,-10.00817 0,-13.82607c3.79341,-3.81782 9.94103,-3.81782 13.73441,0c3.79223,3.81785 3.79223,10.00824 0,13.82607c-3.79337,3.81839 -9.941,3.81839 -13.73441,0zm12.01788,-12.09795c-2.84504,-2.86366 -7.45632,-2.86366 -10.30019,0c-2.84503,2.86366 -2.84503,7.50617 0,10.36983c2.84386,2.86369 7.45515,2.86369 10.30019,0c2.84393,-2.86373 2.84393,-7.50618 0,-10.36983zm-7.72543,9.50579l-1.71652,-1.72869l2.57476,-2.5922l-2.57476,-2.59216l1.71652,-1.72873l2.57476,2.59277l2.5748,-2.59277l1.71648,1.72873l-2.57476,2.59216l2.57476,2.5922l-1.71648,1.72869l-2.5748,-2.59277l-2.57476,2.59277z" fill="white"></path>
-			 </g>
-		</svg>
-	</div>
-	<div class="title">
-		<h1 class="infobox">Die 25 grössten Stauanlagen der Schweiz</h1>
+		<!-- infobox -->
+		<div id="infobox" style="display: block;">
+			<div id="close_box" style="position: absolute; right: 8px; top: 8px; cursor: pointer;">
+				<svg width="20" height="20" xmlns="http://www.w3.org/2000/svg">
+					<g>
+						<path id="svg_1" d="m3.13264,16.88795c-3.7922,-3.81782 -3.7922,-10.00817 0,-13.82607c3.79341,-3.81782 9.94103,-3.81782 13.73441,0c3.79223,3.81785 3.79223,10.00824 0,13.82607c-3.79337,3.81839 -9.941,3.81839 -13.73441,0zm12.01788,-12.09795c-2.84504,-2.86366 -7.45632,-2.86366 -10.30019,0c-2.84503,2.86366 -2.84503,7.50617 0,10.36983c2.84386,2.86369 7.45515,2.86369 10.30019,0c2.84393,-2.86373 2.84393,-7.50618 0,-10.36983zm-7.72543,9.50579l-1.71652,-1.72869l2.57476,-2.5922l-2.57476,-2.59216l1.71652,-1.72873l2.57476,2.59277l2.5748,-2.59277l1.71648,1.72873l-2.57476,2.59216l2.57476,2.5922l-1.71648,1.72869l-2.5748,-2.59277l-2.57476,2.59277z" fill="white"></path>
+					 </g>
+				</svg>
+			</div>
+			<div class="title">
+				<h1 class="infobox multilang" data-i18n="text.infoboxTitle"></h1>
 	
-	</div>
-	<div class="abstract">
-		<div class="inner">
-			Das Bundesamt für Energie übt die direkte Sicherheitsaufsicht über die 206 grössten Stauanlagen der Schweiz aus, von denen drei Viertel der Wasserkraftnutzung dienen. 25 dieser Stauanlagen sind höher als 100 Meter, vier sogar höher als 200 Meter. Mit der 285 Meter hohen Grande Dixence steht in der Schweiz zudem immer noch die höchste Gewichtsstaumauer der Welt.
+			</div>
+			<div class="abstract">
+				<div class="inner multilang" data-i18n="text.abstract"></div>
+			</div>
+			<div class="moreinfo">
+				<div class="inner">
+					<h2 class="infobox multilang" data-i18n="text.infoboxMoreInfo"></h2>
+					<h3 class="infobox multilang" data-i18n="text.dep"></h3>
+					<p class="infobox multilang" data-i18n="[html]html.infolinks;">
+
+					</p>
+				</div>
+			</div>
+			<div class="colophon">
+				<div class="inner">
+					<ul>
+						<li>Umgesetzt mit: <a href="http://api.geo.admin.ch" target="_blank">api.geo.admin.ch</a><br>
+						</li><li><a href="http://www.geo.admin.ch/internet/geoportal/en/home/geoadmin/contact.html#copyright" target="_blank">Copyright und Datenschutzerklärung</a><br>
+					</li></ul>
+				</div>
+			</div>
 		</div>
-	</div>
-	<div class="moreinfo">
-		<div class="inner">
-			<h2 class="infobox">Weitere Informationen</h2>
-			<h3 class="infobox">Bundesamt für Energie</h3>
-			<p class="infobox"><a href="http://www.bfe.admin.ch/talsperren" target="_blank">Tätigkeiten der Aufsichtsbehörde</a></br>  
-			<a class="infobox" href="http://www.bfe.admin.ch/geoinformation/05061/05251/05395/index.html?lang=de" target="_blank">Karte aller Stauanlagen unter Bundesaufsicht</a> <br>
-			<a class="infobox"  href="http://www.bfe.admin.ch/geoinformation/05061/05251/index.html?lang=de" target="_blank">Geobasisdaten Stauanlagen</a> <br>
-			<a class="infobox" href="http://www.bfe.admin.ch/geoinformation/05403/05570/05571/index.html?lang=de" target="_blank">Karte Wasserkraftpotentiale</a> 
-			</p>
-		</div>
-	</div>
-	<div class="colophon">
-		<div class="inner">
-			<ul>
-				<li>Umgesetzt mit: <a href="http://api.geo.admin.ch" target="_blank">api.geo.admin.ch</a><br>
-				</li><li><a href="http://www.geo.admin.ch/internet/geoportal/en/home/geoadmin/contact.html#copyright" target="_blank">Copyright und Datenschutzerklärung</a><br>
-			</li></ul>
-		</div>
-	</div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
+	
+		<!-- maps -->	
 		<div id="maps">	
 			<div id="overviewMapContainer">
 			<!-- overview map -->
@@ -199,6 +181,8 @@
 				<div id="detailMap"></div>
 			</div>
 		</div>
+
+		<!-- information -->
 		<div id="infos">
 			<div id="objectInfoContainer">
 				<!-- object info -->
@@ -207,11 +191,11 @@
 					<table class="objectDetails"> 
 						<tr class="objectDetails firstrow">
 							<td class="objectDetails leftcolumn" id="stName">
-								<div class="multilang" data-i18n="station"></div>
+								<div class="multilang" data-i18n="text.station"></div>
 								<div id="d-station"></div>	
 							</td>
 							<td class="objectDetails right column" rowspan="2">
-								<div class="multilang" data-i18n="rank"></div>
+								<div class="multilang" data-i18n="text.rank"></div>
 								<div id="counter">
 									<div>
 										<svg width="60.00000000000001" height="30.000000000000004" xmlns="http://www.w3.org/2000/svg">
@@ -236,30 +220,30 @@
 						</tr>
 						<tr class="objectDetails">
 							<td class="objectDetails leftcolumn">
-								<div class="multilang" data-i18n="temperature"></div>
+								<div class="multilang" data-i18n="text.temperature"></div>
 								<div style="float: left;"id="d-temperature"></div>	
 								<div id="celcius">&nbsp;C°</div>	
 							</td>						
 						</tr>
 						<tr class="objectDetails leftcolumn" >
 							<td class="objectDetails">	
-								<div class="multilang" data-i18n="date"></div>
+								<div class="multilang" data-i18n="text.date"></div>
 								<div id="d-date"></div>	
 							</td>
 						</tr>
 						<tr class="objectDetails">
 							<td class="objectDetails">	
-								<div class="multilang" data-i18n="time"></div>
+								<div class="multilang" data-i18n="text.time"></div>
 								<div id="d-time"> </div>
 							</td>
 							<td class="objectDetails rightcolumn">	
-								<div class="multilang" data-i18n="stationNumber"></div>
+								<div class="multilang" data-i18n="text.stationNumber"></div>
 								<div id="d-stationNumber" ></div>
 							</td>
 						</tr>
 						<tr class="objectDetails lastrow">
 							<td class="objectDetails lastrow" colspan="2">
-								<a href="" target="_blank" id="details" class="multilang" data-i18n="detail"></a>
+								<a href="" target="_blank" id="details" class="multilang" data-i18n="text.detail"></a>
 							</td>
 						</tr>
 					</table> 
