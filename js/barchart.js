@@ -7,8 +7,7 @@ function loadChart(){
 
 	var svgWidth = $('#barChart').width()-40;
 	var svgHeight = $("#barChart").height()-40; 
-	var yAxisWidth = 25;	
-	var histoWidth = svgWidth - 40;
+	var histoWidth = svgWidth - 80;
 	var histoHeight = svgHeight - 60;
 	
 
@@ -45,7 +44,7 @@ function loadChart(){
 	var padding =  svgHeight - histoHeight;  
 	var chart = svg.append("g")
 		.attr("class", "axis")
-		.attr("transform", "translate( 24, " + padding + ")");
+		.attr("transform", "translate( 44, " + padding + ")");
 		
 	
 	//dataset = svg.selectAll("rect").data().length; 
@@ -132,6 +131,7 @@ $(window).resize(function(){
 	$("#rect-" + selectedId).tipsy('hide');
 	$("#svgChart").remove();	
 	loadChart();
+	$("#rect-" + selectedId).tipsy('show');
 });
 
 

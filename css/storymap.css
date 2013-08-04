@@ -342,9 +342,10 @@ td.objectDetails {
 }
 
 h1.tips{
-	font-size: 1em;
+	font-size: 12px;
 	margin: 0;
 	line-height: 1.2em;
+	max-width: 160px;
 }
 
 
