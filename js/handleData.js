@@ -95,6 +95,8 @@ function filterStations(xml, callback){
 		idSelection[j] = selection[j].strnr;
 	}
 
+//	addName();	
+
 	// select random measurment station id
 	selectedId = selectRandomId(idSelection);
 
@@ -139,14 +141,25 @@ function getFeatureFromId(id) {
 // Returns: upsdated selection {array}
 //*********************************************************** 
 
-function createMatrix(){
+function addNames(){
+		
+	tempLayer = new OpenLayers.Layer.Vector("tempLayer", {
+		strategies: [new OpenLayers.Strategy.Fixed()],
+		protocol: new OpenLayers.Protocol.HTTP({
+			url: "data/hydromessstationen.geojson",
+			format: new OpenLayers.Format.GeoJSON()
+		})
+	});
+
 	for(var i=0; i<selection.length; i++){
 		var id = selection[i].strnr;
-		var feature = getFeatureFromId(id);
-		try {var name = feature.data['nr'];} catch(err) {var name = "unknown"; }
+		var features = overviewLayer.getFeaturesByAttribute('nr', id);
+ 		var feature = features[0];
+		try {var name = feature.data['name'];} catch(err) {var name = "unknown"; }
 		selection[i].name = name; 
 	}
 }
+
 
 
 

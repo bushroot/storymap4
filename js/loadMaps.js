@@ -128,6 +128,7 @@ function loadOverviewMap() {
 		'loadend': function(evt){
 			zoomToFeature(selectedId);
 			displayObjectData(selectedId);
+			addNames();
 		},
 		'featureselected': function(evt){
 			previousId = selectedId;
