@@ -1,5 +1,14 @@
 
 
+//***********************************************
+// close navbar (mobilie only) when clicking somewhere on the page 
+//***********************************************
+$(document).on('click',function(){
+    $('.collapse').collapse('hide');
+})
+
+
+
 
 // reset with of div that are defined when toggle the view in the mobile view
 $(window).resize (function makeDefaultCss() {
