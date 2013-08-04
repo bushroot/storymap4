@@ -74,7 +74,7 @@
 ,{"type":"Feature","geometry":{"type":"MultiPoint","coordinates":[[658530,218290]]},"properties":{"nr":2608,"name":"Sellenbodenbach-Neuenkirch","url":"2608.html"}}
 ,{"type":"Feature","geometry":{"type":"MultiPoint","coordinates":[[698640,223020]]},"properties":{"nr":2609,"name":"Alp-Einsiedeln","url":"2609.html"}}
 ,{"type":"Feature","geometry":{"type":"MultiPoint","coordinates":[[708060,123950]]},"properties":{"nr":2612,"name":"Riale di Pincascia-Lavertezzo","url":"2612.html"}}
-,{"type":"Feature","geometry":{"type":"MultiPoint","coordinates":[[611740,272310]]},"properties":{"nr":2613,"name":"Rhein-Weil, Palmrainbrücke ( D )","url":"2613.html"}}
+,{"type":"Feature","geometry":{"type":"MultiPoint","coordinates":[[611740,272310]]},"properties":{"nr":2613,"name":"Rhein-Weil, Palmrainbrücke (D)","url":"2613.html"}}
 ,{"type":"Feature","geometry":{"type":"MultiPoint","coordinates":[[830800,168700]]},"properties":{"nr":2617,"name":"Rom-Müstair","url":"2617.html"}}
 ,{"type":"Feature","geometry":{"type":"MultiPoint","coordinates":[[669900,154075]]},"properties":{"nr":2623,"name":"Rhone-Oberwald","url":"2623.html"}}
 ,{"type":"Feature","geometry":{"type":"MultiPoint","coordinates":[[689179,281880.4]]},"properties":{"nr":2288,"name":"Rhein - Neuhausen, Flurlingerbrück","url":"2288.html"}}
