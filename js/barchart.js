@@ -8,14 +8,12 @@ function loadChart(){
 	var svgWidth = $('#barChart').width()-40;
 	var svgHeight = $("#barChart").height()-40; 
 	var yAxisWidth = 25;	
-	var histoWidth = svgWidth - yAxisWidth;
+	var histoWidth = svgWidth - 40;
 	var histoHeight = svgHeight - 60;
-	var horPadding = 35; 
-	var verPadding = -5; 
 	
 
 	// define scale of x-axis
-	var xScale = d3.scale.linear().domain([0, data.length]).range([20, histoWidth - 20]);
+	var xScale = d3.scale.linear().domain([0, data.length]).range([0, histoWidth]);
 		
 	// define scale of y-axis
 	var yScale = d3.scale.linear().domain([0, d3.max(data, function(datum) {
@@ -31,7 +29,7 @@ function loadChart(){
 		'height': svgHeight 
 	});
 
-	// text label for the y axis
+/*	// text label for the y axis
 	svg.append("text")      
         	.attr("x", 0)
         	.attr("y", 40)
@@ -42,13 +40,12 @@ function loadChart(){
 		.scale(yScale)
 		.orient("left")
 		.ticks(5);
-	
+*/	
 	// add chart element
-	var padding =  svgHeight - histoHeight + verPadding;  
+	var padding =  svgHeight - histoHeight;  
 	var chart = svg.append("g")
 		.attr("class", "axis")
-		.attr("transform", "translate(" + horPadding + ", " + padding + ")") 
-		.call(yAxis);
+		.attr("transform", "translate( 24, " + padding + ")");
 		
 	
 	//dataset = svg.selectAll("rect").data().length; 
