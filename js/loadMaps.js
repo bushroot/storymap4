@@ -53,6 +53,7 @@ function buildFilterStrategy(idSel)	{
 function loadDetailMap(){ 
 
 	var filterStrategy = buildFilterStrategy(idSelection);
+	console.log(filterStrategy);
 
 	// create detail map 
 	detailMap = new GeoAdmin.Map("detailMap", {
@@ -63,7 +64,7 @@ function loadDetailMap(){
 	// create vecotr layer containing hydrological measurement stations
 	detailLayer = new OpenLayers.Layer.Vector("detailLayer", {
 		styleMap: styleMap,
-		strategies: [new OpenLayers.Strategy.Fixed()],
+		strategies: [filterStrategy, new OpenLayers.Strategy.Fixed()],
 		protocol: new OpenLayers.Protocol.HTTP({
 			url: "data/hydromessstationen.geojson",
 			format: new OpenLayers.Format.GeoJSON()

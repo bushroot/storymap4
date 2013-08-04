@@ -19,7 +19,7 @@ OpenLayers.Filter.DataId = OpenLayers.Class(OpenLayers.Filter, {
     },
     evaluate: function(feature) {
         for (var i=0, len=this.fids.length; i<len; i++) {
-            var fid = feature.data.edv_nr4;
+            var fid = feature.data.nr;
             if (fid == this.fids[i]) {
                 return true;
             }
