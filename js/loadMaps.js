@@ -129,6 +129,7 @@ function loadOverviewMap() {
 			zoomToFeature(selectedId);
 			displayObjectData(selectedId);
 			addNames();
+			$("#rect-" + selectedId).tipsy('show');
 		},
 		'featureselected': function(evt){
 			previousId = selectedId;

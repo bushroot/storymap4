@@ -88,13 +88,13 @@ function loadChart(){
 		title: function(){
 		//	var name = dataset[ii].damname;
 			var number = getPropertyFromId(selectedId, "temp");
-			return '<h1 class="tips" >' +"name"+ '<br>' + number + ' C°  </h1>';
+			var name = getPropertyFromId(selectedId, "name");
+			return '<h1 class="tips" >' + name + '<br>' + number + ' C°  </h1>';
 		}
 	});
 
 	// apply highlight and tooltip when chart loaded
 	highlightBar(selectedId);
-	$("#rect-" + selectedId).tipsy('show');
 	
 }
 
