@@ -18,7 +18,15 @@ $("#close_box").ready(function() {
 });
 
 
+//***********************************************
+// show infobox with click info button (only mobile)
+//***********************************************
 
+$("#close_box").ready(function() {
+  $("#moreInfo").click(function() {
+    $(infobox).show();
+  });
+});
 
 
 
