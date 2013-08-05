@@ -76,6 +76,28 @@ function loadDetailMap(){
 	//add vector to detail map 
 	detailMap.addLayer(detailLayer);
 
+	//create select feature control  
+	selectDetailFeature = new OpenLayers.Control.SelectFeature(detailLayer,{
+		clickout: false,	
+		hover: false
+	});
+	
+	// add select control to main map
+	detailMap.addControl(selectDetailFeature);
+	selectDetailFeature.activate();
+	
+	detailLayer.events.on({
+		'loadend': function(evt){
+			zoomToFeature(selectedId);
+			selectDetailFeatureFromId(selectedId);
+		}/*,
+		'featureselected': function(evt){
+			previousId = selectedId;
+			selectedId = evt.feature.data['nr'];
+			changeStation(selectedId);
+		}*/
+	})
+
 
 }
 
@@ -115,21 +137,21 @@ function loadOverviewMap() {
 	overviewMap.addLayer(overviewLayer);
 
 	//create select feature control  
-	selectFeature = new OpenLayers.Control.SelectFeature(overviewLayer,{
+	selectOverviewFeature = new OpenLayers.Control.SelectFeature(overviewLayer,{
 		clickout: false,	
 		hover: false
 	});
 	
 	// add select control to main map
-	overviewMap.addControl(selectFeature);
-	selectFeature.activate();
+	overviewMap.addControl(selectOverviewFeature);
+	selectOverviewFeature.activate();
 	
 	overviewLayer.events.on({
 		'loadend': function(evt){
-			zoomToFeature(selectedId);
 			displayObjectData(selectedId);
 			addNames();
 			$("#rect-" + selectedId).tipsy('show');
+			selectOverviewFeatureFromId(selectedId);
 		},
 		'featureselected': function(evt){
 			previousId = selectedId;

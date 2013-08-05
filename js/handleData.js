@@ -128,7 +128,7 @@ function selectRandomId(idArray){
 //*********************************************************** 
 
 function getOverviewFeatureFromId(id) {
-	var features = overview.getFeaturesByAttribute('nr', id);
+	var features = overviewLayer.getFeaturesByAttribute('nr', id);
  	var feature = features[0];
 	return feature;
 }
@@ -150,7 +150,35 @@ function getDetailFeatureFromId(id) {
 
 
 
+/////*********************************************************** 
+//  select detail map feature from id
+//
+// 	Input: measurement station id {int} 
+//*********************************************************** 
+
+function selectDetailFeatureFromId(selectedId){
+	var feat = getDetailFeatureFromId(selectedId);
+	selectDetailFeature.unselectAll();
+	selectDetailFeature.select(feat); 	
+}
+
+
+
 ///*********************************************************** 
+//  select overview map feature from id
+//
+// 	Input: measurement station id {int} 
+//*********************************************************** 
+
+function selectOverviewFeatureFromId(selectedId){
+	var feat = getOverviewFeatureFromId(selectedId);
+	selectOverviewFeature.unselectAll();
+	selectOverviewFeature.select(feat); 	
+}
+
+
+
+//*********************************************************** 
 //  create an pbject containing all information  
 //
 // Returns: upsdated selection {array}
@@ -174,8 +202,6 @@ function addNames(){
 		selection[i].name = name; 
 	}
 }
-
-
 
 
 
@@ -232,20 +258,6 @@ function getIndexFromId(id) {
 
 
 
-
-///*********************************************************** 
-//  Select feature by Id (edv_nr4)
-//
-// 	Input: id {int} 
-//*********************************************************** 
-
-function selectFeatureById(selectedId){
-	var featDetail = detailLayer.getFeaturesByAttribute("nr", selectedId)[0];
-	selectFeature.select(featDetail);
-}
-
-
-
 ///*********************************************************** 
 //  Change data 
 //
@@ -259,7 +271,6 @@ function changeStation(selectedId) {
 	highlightBar(selectedId);
 	$("#rect-" + previousId).tipsy('hide');
 	$("#rect-" + selectedId).tipsy('show');
-	selectFeatureById(selectedId);
 }
 
 

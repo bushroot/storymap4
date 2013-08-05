@@ -67,6 +67,8 @@ function loadChart(){
 			selectedId = barId;
 			changeStation(selectedId);
 			overviewMap.zoomToMaxExtent();	
+			selectOverviewFeatureFromId(selectedId);
+			selectDetailFeatureFromId(selectedId);
 		})
 
 		

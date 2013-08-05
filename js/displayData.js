@@ -47,6 +47,8 @@ function moveOneRank(direction){
 	previousId = selectedId;
 	selectedId = selection[idx].strnr;
 	changeStation(selectedId);
+	selectOverviewFeatureFromId(selectedId);
+	selectDetailFeatureFromId(selectedId);
 }
 
 
