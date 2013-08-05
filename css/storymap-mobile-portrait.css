@@ -60,16 +60,20 @@ p.infobox, a.infobox {
   font-size: 15px;
 }
 
+#infobox a {
+  font-size: 13px;
+}
+
 #infobox ul {
   list-style: square outside;
   color: #ccc;
 }
 #infobox li {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .colophon {
-  font-size: 10px;
+  font-size: 13px;
 }
 
 .inner {
