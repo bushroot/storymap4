@@ -90,12 +90,14 @@ function loadDetailMap(){
 		'loadend': function(evt){
 			zoomToFeature(selectedId);
 			selectDetailFeatureFromId(selectedId);
-		}/*,
+		},
 		'featureselected': function(evt){
 			previousId = selectedId;
 			selectedId = evt.feature.data['nr'];
 			changeStation(selectedId);
-		}*/
+			selectOverviewFeatureFromId(selectedId);
+			overviewMap.zoomToMaxExtent();	
+		}
 	})
 
 
