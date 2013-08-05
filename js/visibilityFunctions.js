@@ -12,21 +12,22 @@ $(".docol").on('click',function(){
 
 
 // reset with of div that are defined when toggle the view in the mobile view
-$(window).resize (function makeDefaultCss() {
-	var omcwidth = document.getElementById("overviewMapContainer").style.width;
-	if ((omcwidth != '""') && ($(window).width() > 760)) {
-		document.getElementById("overviewMapContainer").style.width = "";
-		document.getElementById("barChartContainer").style.width = "";
-		$("#barChartContainer").css({"visibility": ""});
-	}
-	var dmcwidth = document.getElementById("detailMapContainer").style.width;
-	if ((dmcwidth != '""') && ($(window).width() > 760)) {
-		document.getElementById("detailMapContainer").style.width = "";
-		document.getElementById("objectInfoContainer").style.width = "";
-		$("#objectInfoContainer").css({"visibility": ""});
-	}    
-})
-
+if ( $.browser.msie && $.browser.version <= 8) {
+	$(window).resize (function makeDefaultCss() {
+		var omcwidth = document.getElementById("overviewMapContainer").style.width;
+		if ((omcwidth != '""') && ($(window).width() > 760)) {
+			document.getElementById("overviewMapContainer").style.width = "";
+			document.getElementById("barChartContainer").style.width = "";
+			$("#barChartContainer").css({"visibility": ""});
+		}
+		var dmcwidth = document.getElementById("detailMapContainer").style.width;
+		if ((dmcwidth != '""') && ($(window).width() > 760)) {
+			document.getElementById("detailMapContainer").style.width = "";
+			document.getElementById("objectInfoContainer").style.width = "";
+			$("#objectInfoContainer").css({"visibility": ""});
+		}    
+	})
+}
 
 
 

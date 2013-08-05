@@ -18,9 +18,6 @@ function initiation(){
 	}
 	else{
 		loadXmlData(afterDataLoad);
-		// Find a better solution: solve empty "filterStrategy issue" !!!!!!! 
-		
-		
 	}
 
 }
