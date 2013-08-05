@@ -63,12 +63,14 @@ function loadChart(){
 		.attr("cursor", "pointer")	
 		.on("click",function (d,i){
 			var barId = data[i].strnr;
-			previousId = selectedId;
+		//	previousId = selectedId;
 			selectedId = barId;
 			changeStation(selectedId);
 			overviewMap.zoomToMaxExtent();	
 			selectOverviewFeatureFromId(selectedId);
 			selectDetailFeatureFromId(selectedId);
+			$("#rect-" + previousId).tipsy('show');
+			$("#rect-" + selectedId).tipsy('show');
 		})
 
 		
@@ -93,10 +95,16 @@ function loadChart(){
 			return '<h1 class="tips" >' + name + '<br>' + number + ' C°  </h1>';
 		}
 	});
+	
 
 	// apply highlight and tooltip when chart loaded
 	highlightBar(selectedId);
 	
+//	if ($("#barChartContainer").width() == 0) {
+//		$("#rect-" + selectedId).tipsy('show');
+//	}
+
+
 }
 
 
@@ -129,13 +137,15 @@ function unHighlightBar(previousId){
 // 
 //***********************************************
 
-$(window).resize(function(){
-	$("#rect-" + selectedId).tipsy('hide');
-	$("#svgChart").remove();	
-	loadChart();
-	$("#rect-" + selectedId).tipsy('show');
-});
 
+$(window).resize(function(){
+	if ($("#barChartContainer").width() != 0) {
+		$("#rect-" + selectedId).tipsy('hide');
+		$("#svgChart").remove();	
+		loadChart();
+		$("#rect-" + selectedId).tipsy('show');
+	}	
+});
 
 
 

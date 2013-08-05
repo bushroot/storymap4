@@ -44,7 +44,7 @@ function changeToDetails(){
 	$(".tipsy").css({"visibility": "hidden"});
 	$("#objectInfoContainer").width("100%");
 	$("#objectInfoContainer").css({"visibility": "visible"});
-	$("#rect-" + selectedId).tipsy('hide');
+//	$("#rect-" + selectedId).tipsy('hide');
 }
 
 

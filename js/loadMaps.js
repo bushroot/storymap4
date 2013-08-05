@@ -94,7 +94,7 @@ function loadDetailMap(){
 		'featureselected': function(evt){
 			previousId = selectedId;
 			selectedId = evt.feature.data['nr'];
-			changeStation(selectedId);
+		//	changeStation(selectedId);
 			overviewMap.zoomToMaxExtent();	
 			if (overviewLayer.selectedFeatures.length !=0){
 				if (overviewLayer.selectedFeatures[0].data.nr != selectedId){

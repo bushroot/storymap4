@@ -334,10 +334,14 @@ function changeStation(selectedId) {
 	zoomToFeature(selectedId);
 	displayObjectData(selectedId);		
 	unHighlightBar(previousId);
+	
 	highlightBar(selectedId);
-	$("#rect-" + previousId).tipsy('hide');
-	$("#rect-" + selectedId).tipsy('show');
+	if ($("#barChartContainer").width() != 0) {
+		$("#rect-" + previousId).tipsy('hide');
+		$("#rect-" + selectedId).tipsy('show');
+	}
 }
+
 
 
 
