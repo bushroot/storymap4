@@ -95,11 +95,12 @@ function loadDetailMap(){
 			previousId = selectedId;
 			selectedId = evt.feature.data['nr'];
 			changeStation(selectedId);
-			selectOverviewFeatureFromId(selectedId);
 			overviewMap.zoomToMaxExtent();	
+			if (overviewLayer.selectedFeatures[0].data.nr != selectedId) {
+				selectOverviewFeatureFromId(selectedId)
+			};
 		}
 	})
-
 
 }
 
@@ -159,6 +160,9 @@ function loadOverviewMap() {
 			previousId = selectedId;
 			selectedId = evt.feature.data['nr'];
 			changeStation(selectedId);
+			if (detailLayer.selectedFeatures[0].data.nr != selectedId) {
+				selectDetailFeatureFromId(selectedId);
+			};
 		}
 	})
 
