@@ -12,7 +12,9 @@ $(".docol").on('click',function(){
 
 
 // reset with of div that are defined when toggle the view in the mobile view
-if ( $.browser.msie && $.browser.version <= 8) {
+
+
+if (!$.browser.msie) {
 	$(window).resize (function makeDefaultCss() {
 		var omcwidth = document.getElementById("overviewMapContainer").style.width;
 		if ((omcwidth != '""') && ($(window).width() > 760)) {
@@ -31,6 +33,7 @@ if ( $.browser.msie && $.browser.version <= 8) {
 
 
 
+
 function changeToDetails(){
 	$("#overviewMapContainer").width("0%");
 	$("#detailMapContainer").width("100%");
@@ -41,6 +44,7 @@ function changeToDetails(){
 	$(".tipsy").css({"visibility": "hidden"});
 	$("#objectInfoContainer").width("100%");
 	$("#objectInfoContainer").css({"visibility": "visible"});
+	$("#rect-" + selectedId).tipsy('hide');
 }
 
 
