@@ -19,6 +19,7 @@ var previousId;
 // Proxy for cross domain data access
 // OpenLayers.ProxyHost= "../../../../cgi-bin/proxy.cgi?url=";
 
+
 function loadXmlData(){
 	var format = new OpenLayers.Format.XML();
 	OpenLayers.Request.GET({
@@ -26,36 +27,103 @@ function loadXmlData(){
 		url: "data/sms.xml",
 		success: function(request) {
 			if(!request.responseXML.documentElement) {
-        		xml = format.read(request.responseText).documentElement; //Chrome and FF
+				xml = format.read(request.responseText).documentElement; //IE
 			} else {
-    			xml = request.responseXML; // IE
+    			xml = request.responseXML; // chrome and FF
 			}
-			filterStations(xml, afterDataLoad);
+			filterStationsChrome(xml, afterDataLoad);
 		},
 		failure: function(request) {
 			console.log("XML loading failed!");
 		}
 	});
-/*
+}
+
+
+//***********************************************
+// function to check how to parse the xml 
+//***********************************************
+
 //check if the first node is an element node
-function getfirstchild(n)	{
+function checkParseStyle(n) {
+	var browser;
 	x=n.firstChild;
-	while (x.nodeType!=1){
-  		x=x.nextSibling;
+	if (x.nodeType!=1){
+  		browser = "ChromeFF";
   	}
-	return x;
+	if (x.nodeType==1) {
+		browser = "IE";
+	}
+	return browser;
 }
-*/
 
+//***********************************************
+// reduce XML data to warmes measurments (output JSON) in Chrome and FF 
+//***********************************************
+
+
+function filterStationsChrome(xml, callback){
+	var tempRecords = new Array();
+	var records = xml.getElementsByTagName("MesPar");
+	
+	for (var i =0; i < records.length; i++){
+	
+		// get all records that measure the water temperature
+		var typvalue = records[i].getAttributeNode("Typ").nodeValue;	
+
+		// get the required values from the records and write to array
+		if (typvalue == 03){
+
+		var browser = checkParseStyle(records[i]);
+	
+		//	var date = new String();			
+		
+		// get values
+		var strnr = records[i].getAttributeNode("StrNr").nodeValue;	
+		
+		if (browser == "IE") {
+			var temp = records[i].childNodes[3].childNodes[0].nodeValue; 
+			var date = records[i].childNodes[1].childNodes[0].nodeValue;
+			var time = records[i].childNodes[2].childNodes[0].nodeValue;
+		} else {
+			var temp = records[i].childNodes[7].childNodes[0].nodeValue;
+			var date = records[i].childNodes[3].childNodes[0].nodeValue;
+			var time = records[i].childNodes[5].childNodes[0].nodeValue;
+		}
+
+			// add value to array
+			var rec = new Object();
+			rec.strnr = parseInt(strnr);
+			rec.temp = parseFloat(temp);	
+			rec.date = date;
+			rec.time = time;	
+			tempRecords.push(rec);
+		}
+	}
+	// sord the measurement stations accorging to the measured water temperature
+	tempRecords = tempRecords.sort(function(a,b){return b.temp - a.temp});
+	// reduce array to n bigges records	
+	for (var j=0; j<25; j++ ) {
+		var x = tempRecords[j]	
+		selection.push(x);
+	}
+	for (var j=0; j<selection.length; j++){
+		idSelection[j] = selection[j].strnr;
+	}
+
+	// select random measurment station id
+	selectedId = selectRandomId(idSelection);
+
+callback();
 }
 
 
 //***********************************************
-// reduce XML data to warmes measurments (output JSON) 
+// reduce XML data to warmes measurments (output JSON) in IE 
 //***********************************************
 
 
-function filterStations(xml, callback){
+function filterStationsIe(xml, callback){
 	var tempRecords = new Array();
 	var records = xml.getElementsByTagName("MesPar");
 	for (var i =0; i < records.length; i++){
@@ -66,8 +134,7 @@ function filterStations(xml, callback){
 		// get the required values from the records and write to array
 		if (typvalue == 03){
 			
-			var date = new String();			
-			var date = new String();			
+		//	var date = new String();			
 			
 			// get values
 			var strnr = records[i].getAttributeNode("StrNr").nodeValue;	
@@ -79,7 +146,7 @@ function filterStations(xml, callback){
 			var rec = new Object();
 			rec.strnr = parseInt(strnr);
 			rec.temp = parseFloat(temp);	
-			rec.date = date;	
+			rec.date = date;
 			rec.time = time;	
 			tempRecords.push(rec);
 		}
@@ -102,7 +169,6 @@ function filterStations(xml, callback){
 
 callback();
 }
-
 
 
 ///*********************************************************** 
@@ -216,10 +282,10 @@ function getPropertyFromId(id, property){
 	for(var i=0; i<selection.length; i++){
 		if (selection[i].strnr == id){
 			var x = selection[i];
-			var temp = x[property];
+			var out = x[property];
 		}
 	}
-	return temp;
+	return out;
 }
 
 
