@@ -96,9 +96,11 @@ function loadDetailMap(){
 			selectedId = evt.feature.data['nr'];
 			changeStation(selectedId);
 			overviewMap.zoomToMaxExtent();	
-			if (overviewLayer.selectedFeatures[0].data.nr != selectedId) {
-				selectOverviewFeatureFromId(selectedId)
-			};
+			if (overviewLayer.selectedFeatures.length !=0){
+				if (overviewLayer.selectedFeatures[0].data.nr != selectedId){
+					selectOverviewFeatureFromId(selectedId)
+				};
+			}
 		}
 	})
 
