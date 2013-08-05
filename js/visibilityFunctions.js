@@ -3,10 +3,11 @@
 //***********************************************
 // close navbar (mobilie only) when clicking somewhere on the page 
 //***********************************************
+/*
 $(document).on('click',function(){
     $('.collapse').collapse('hide');
 })
-
+*/
 
 
 

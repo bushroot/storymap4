@@ -42,6 +42,12 @@ table.objectDetails{
 /*  infoboxinfobox*/
 /* ************************************* */
 
+#infobox {
+  right: 40px;
+  left: 40px;
+  top: 30px;
+  width: auto;
+}
 
 
 h1.infobox{
