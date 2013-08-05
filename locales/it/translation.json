@@ -11,7 +11,7 @@
 	"share": "Teilen",	
 	"language": "Lingua",
 	
-	"infoboxTitle": " fiumi “più caldi” della Svizzera",
+	"infoboxTitle": "I fiumi “più caldi” della Svizzera",
 	"abstract": "La Divisione Idrologia dell’Ufficio Federale dell’Ambiente gestisce una rete di circa 80 stazioni di monitoraggio della temperatura dei corsi d’acqua. Oltre alle variazioni annuali della temperatura, è possibile osservare varie fluttuazioni giornaliere. La temperatura dell’acqua è visualizzata in real-time (aggiornamenti ogni ora), per cui la classifica delle stazioni potrebbe cambiare.",
 	"infoboxMoreInfo": "Ulteriori informazioni",
 	"dep": "Ufficio Federale dell’Ambiente",
@@ -29,8 +29,8 @@
     "infolinks": [
 		"<a href='http://www.bafu.admin.ch/hydrologie/01831/01841/index.html?lang=it' target='_blank'>Rete di misurazione delle temperature</a></br>", 
 		"<a class='infobox' href='http://www.hydrodaten.admin.ch/it/index.html#aktuelle_situation_gewaesser' target='_blank'>Dati idrologici attuali</a> <br>",
-		"<a class='infobox'  href='http://s.geo.admin.ch/465352d97' target='_blank'>Mappa delle stazioni idrologiche</a> <br>",
-		"<a class='infobox' href='http://s.geo.admin.ch/10ec72dc1' target='_blank'>Mappa delle stazioni di misurazione della temperatura</a>"
+		"<a class='infobox'  href='http://s.geo.admin.ch/7d94ba893' target='_blank'>Mappa delle stazioni idrologiche</a> <br>",
+		"<a class='infobox' href='http://s.geo.admin.ch/9a5ce079c' target='_blank'>Mappa delle stazioni di misurazione della temperatura</a>"
 	],
 	"disclaimer": [
 		"<ul>",
