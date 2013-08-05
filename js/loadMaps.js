@@ -150,7 +150,7 @@ function loadOverviewMap() {
 //*********************************************************** 
 
 function zoomToFeature(selectedId){
-	var feature = getFeatureFromId(selectedId);	
+	var feature = getDetailFeatureFromId(selectedId);	
 	var center = feature.geometry.getBounds().getCenterLonLat();
 	center.lon = center.lon + 50;
 	detailMap.setCenter(center, 10, false, true); 

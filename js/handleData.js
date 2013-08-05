@@ -117,17 +117,32 @@ function selectRandomId(idArray){
 	var id = idArray[randomIdx];
 	return id; 
 }
+
  
 
-
 ///*********************************************************** 
-//  Get feature accoring to the "main" id (measuremen station id)
+//  Get overview feature accoring to the "main" id (measuremen station id)
 //
 // 	Input: measurement station id {int} 
 // 	Returns: OpenLayers feature object
 //*********************************************************** 
 
-function getFeatureFromId(id) {
+function getOverviewFeatureFromId(id) {
+	var features = overview.getFeaturesByAttribute('nr', id);
+ 	var feature = features[0];
+	return feature;
+}
+
+
+
+///*********************************************************** 
+//  Get detail fetaure accoring to the "main" id (measuremen station id)
+//
+// 	Input: measurement station id {int} 
+// 	Returns: OpenLayers feature object
+//*********************************************************** 
+
+function getDetailFeatureFromId(id) {
 	var features = detailLayer.getFeaturesByAttribute('nr', id);
  	var feature = features[0];
 	return feature;
