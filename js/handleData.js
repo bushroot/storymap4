@@ -336,7 +336,7 @@ function changeStation(selectedId) {
 	
 	highlightBar(selectedId);
 	if ($("#barChartContainer").width() != 0) {
-		$("#rect-" + previousId).tipsy('hide');
+		$(".tipsy").remove();
 		$("#rect-" + selectedId).tipsy('show');
 	}
 }
