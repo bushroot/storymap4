@@ -134,7 +134,7 @@ p.infobox, a.infobox {
 
 #infobox ul {
   list-style: square outside;
-  margin: 0 10;
+  margin-left: 10px;
   color: #ccc;
 }
 

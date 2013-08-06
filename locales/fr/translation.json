@@ -20,11 +20,11 @@
 
 	"station": "Station:",
 	"rank": "Rang:",
-	"temperature": "Temperature",
+	"temperature": "Température",
 	"date": "Date",
 	"time": "Temps:",
 	"detail": "Détails",
-	"stationNumber": "Numéro de la staion"
+	"stationNumber": "Numéro de la station"
 },
 
 "html": {
