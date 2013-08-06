@@ -43,31 +43,31 @@ table.objectDetails{
 /* ************************************* */
 
 #infobox {
-  right: 40px;
-  left: 40px;
-  top: 30px;
+  right: 10px;
+  left: 10px;
+  top: 20px;
   width: auto;
 }
 
 
 h1.infobox{
-  font-size: 20px;
+  font-size: 16px;
 }
 
 h2.infobox {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 h3.infobox {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 p.infobox, a.infobox {
-  font-size: 15px;
+  font-size: 12px;
 }
 
 #infobox a {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 #infobox ul {
@@ -75,15 +75,15 @@ p.infobox, a.infobox {
   color: #ccc;
 }
 #infobox li {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .colophon {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 .inner {
-  font-size: 15px;
+  font-size: 12px;
 }
 
 
