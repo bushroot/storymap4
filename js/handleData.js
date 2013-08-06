@@ -112,7 +112,7 @@ function filterStationsChrome(xml, callback){
 	}
 
 	// select random measurment station id
-	selectedId = selectRandomId(idSelection);
+	selectedId = selectBiggestId(idSelection);
 
 callback();
 }
@@ -165,7 +165,7 @@ function filterStationsIe(xml, callback){
 //	addName();	
 
 	// select random measurment station id
-	selectedId = selectRandomId(idSelection);
+	selectedId = selectBiggest(idSelection);
 
 callback();
 }
@@ -178,9 +178,8 @@ callback();
 // 	Returns: id (int) 
 ///*********************************************************** 
 
-function selectRandomId(idArray){
-	var randomIdx = Math.floor(Math.random()*25);
-	var id = idArray[randomIdx];
+function selectBiggestId(idArray){
+	var id = idArray[0];
 	return id; 
 }
 
