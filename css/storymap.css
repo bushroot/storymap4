@@ -276,14 +276,24 @@ table.objectDetails{
 	width: 100%;
 	margin: 10px 15px;
 	font-size: 1em;
+	height: 100%;
 }
 
 
+tr.objectDetails {
+	height: 16%;
+}
 
 td.objectDetails {
 	padding: 5px;
 	width: 50%;
 	vertical-align: top;	
+	height: auto;
+}
+
+div.objectDetails {
+	height: 1.3em;
+	line-height: 1.3em;
 }
 
 #d-station{
@@ -294,11 +304,13 @@ td.objectDetails {
 #d-temperature{
 	font-weight: bold;
 	font-size: 230%;
+	height: auto; 
 }
 
 #celcius{
 	font-weight: bold;
 	font-size: 230%;
+	height: auto; 
 }
 
 #d-date{
@@ -323,14 +335,19 @@ td.objectDetails {
 	font-weight: bold;
 	font-size: 300%;
 	margin: 3px 0px 2px 0px;
+	text-align: center;
 }
 
-.firstrow{
-	height: 68px;	
+.flash{
+	text-align: center;
+}
+
+#firstRow{
+	height: 24%;
 }
 
 .lastrow{
-	height: 50px;
+	height: 10%;
 	vertical-align: middle !important;	
 }
 

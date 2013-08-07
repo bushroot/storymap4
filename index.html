@@ -97,7 +97,7 @@
 		<div class="navbar">
   			<div class="navbar-inner">
     				<div class="container" style="text-align: center;">
-					<a class="brand"  href="http://geo.admin.ch" target="_blank"><img src="./img/admin.png" style="height: 25px;"></a>
+					<a class="brand"  href="http://geo.admin.ch" target="_blank"><img id="ch" src="./img/admin.png" style="height: 25px;"></a>
       					<a style="text-align: left;" class="btn btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse" data-original-title="" title="">
 						<span class="icon-bar"></span>
         					<span class="icon-bar"></span>
@@ -189,25 +189,25 @@
 				<div  id="objectInfo">
 					
 					<table class="objectDetails"> 
-						<tr class="objectDetails firstrow">
+						<tr class="objectDetails" id="firstRow">
 							<td class="objectDetails leftcolumn" id="stName">
-								<div class="multilang" data-i18n="text.station"></div>
-								<div id="d-station"></div>	
+								<div class="multilang objectDetails " data-i18n="text.station"></div>
+								<div id="d-station" class="objectDetails"></div>	
 							</td>
-							<td class="objectDetails right column" rowspan="2">
-								<div class="multilang" data-i18n="text.rank"></div>
-								<div id="counter">
-									<div>
+							<td class="objectDetails objectDetails right column" rowspan="3">
+								<div class="multilang " data-i18n="text.rank"></div>
+								<div id="counter " class="objectDetails">
+									<div class="flash">
 										<svg width="60.00000000000001" height="30.000000000000004" xmlns="http://www.w3.org/2000/svg">
 											<g>
 												<class>countNav</class>
 												<path id="svg_1" d="m0.07216,25.77658l30.12131,-25.68195l29.70567,25.77727" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="null" fill="#000000" cursor="pointer" onclick="moveOneRank('up')" />
 											</g>
 										</svg>
-									</div>
+									</div >
 									<div id="d-rank" class="ranker">
 									</div>
-									<div>
+									<div class="flash">
 										<svg width="60.00000000000001" height="30.000000000000004" xmlns="http://www.w3.org/2000/svg">
 											 <g>
 												<class>countNav</class>
@@ -220,29 +220,29 @@
 						</tr>
 						<tr class="objectDetails">
 							<td class="objectDetails leftcolumn">
-								<div class="multilang" data-i18n="text.temperature"></div>
-								<div style="float: left;"id="d-temperature"></div>	
-								<div id="celcius">&nbsp;C°</div>	
+								<div class="multilang objectDetails" data-i18n="text.temperature"></div>
+								<div style="float: left;"id="d-temperature" class="objectDetails"></div>	
+								<div id="celcius" class="objectDetails">&nbsp;C°</div>	
 							</td>						
 						</tr>
 						<tr class="objectDetails leftcolumn" >
 							<td class="objectDetails">	
-								<div class="multilang" data-i18n="text.date"></div>
-								<div id="d-date"></div>	
+								<div class="multilang objectDetails" data-i18n="text.date"></div>
+								<div id="d-date" class="objectDetails"></div>	
 							</td>
 						</tr>
 						<tr class="objectDetails">
 							<td class="objectDetails">	
-								<div class="multilang" data-i18n="text.time"></div>
-								<div id="d-time"> </div>
+								<div class="multilang objectDetails" data-i18n="text.time"></div>
+								<div id="d-time" class="objectDetails"> </div>
 							</td>
 							<td class="objectDetails rightcolumn">	
-								<div class="multilang" data-i18n="text.stationNumber"></div>
-								<div id="d-stationNumber" ></div>
+								<div class="multilang objectDetails" data-i18n="text.stationNumber"></div>
+								<div id="d-stationNumber"  class="objectDetails"></div>
 							</td>
 						</tr>
 						<tr class="objectDetails lastrow">
-							<td class="objectDetails lastrow" colspan="2">
+							<td class="objectDetails lastrow " colspan="2">
 								<a href="" target="_blank" id="details" class="multilang" data-i18n="text.detail"></a>
 							</td>
 						</tr>

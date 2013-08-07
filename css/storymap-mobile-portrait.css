@@ -1,4 +1,16 @@
 
+
+
+
+
+
+
+
+
+/* ************************************* */
+/*  main layout */
+/* ************************************* */
+
 #header-mobile {
 	display: inline;	
 }
@@ -23,6 +35,13 @@
 	width: 0%;
 	visibility: hidden;
 }
+
+
+
+/* ************************************* */
+/*  deiverse */
+/* ************************************* */
+
 #spanClasses{
 	z-Index: 100000;
 	background-color: white;
@@ -36,6 +55,7 @@ table.objectDetails{
 	width: 30px;
 	height: 30px;
 }
+
 
 
 /* ************************************* */
@@ -87,5 +107,42 @@ p.infobox, a.infobox {
 }
 
 
+
+
+
+/* ************************************* */
+/*  Smartphone small*/
+/* ************************************* */
+
+
+
+@media all and (max-height: 650px){
+
+#infos {
+	height: 50%;
+	font-size: 0.8em;
+}
+
+#maps {
+	height: 50%;
+}
+
+
+
+
+
+
+}
+
+
+@media all and (max-width: 358px){
+a.brand {
+	display: none !important;
+}	
+img#ch {
+	display: none; 
+}
+
+}
 
 
