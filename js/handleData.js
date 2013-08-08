@@ -6,6 +6,8 @@ var selection = new Array();
 var idSelection = new Array();
 var selectedId; 
 var previousId;
+var firstLoad = true;
+
 
 
 //***********************************************
@@ -20,7 +22,7 @@ var previousId;
 // OpenLayers.ProxyHost= "../../../../cgi-bin/proxy.cgi?url=";
 
 
-function loadXmlData(){
+function loadXmlData(callback){
 	var format = new OpenLayers.Format.XML();
 	OpenLayers.Request.GET({
 		//url: "http://www.hydrodaten.admin.ch/lhg/SMS.xml",
@@ -34,7 +36,7 @@ function loadXmlData(){
 			} else {
     			xml = request.responseXML; 
 			}
-			filterStationsChrome(xml, afterDataLoad);
+			filterStationsChrome(xml, callback);
 		},
 		failure: function(request) {
 			console.log("XML loading failed!");
@@ -252,7 +254,7 @@ function selectOverviewFeatureFromId(selectedId){
 // Returns: upsdated selection {array}
 //*********************************************************** 
 
-function addNames(){
+function addNames(callback){
 		
 	tempLayer = new OpenLayers.Layer.Vector("tempLayer", {
 		strategies: [new OpenLayers.Strategy.Fixed()],
@@ -269,6 +271,8 @@ function addNames(){
 		try {var name = feature.data['name'];} catch(err) {var name = "unknown"; }
 		selection[i].name = name; 
 	}
+callback();
+
 }
 
 
@@ -331,7 +335,7 @@ function getIndexFromId(id) {
 //
 // 	Input: measurement station id {int} 
 //*********************************************************** 
-
+/*
 function changeStation(selectedId) {
 	zoomToFeature(selectedId);
 	displayObjectData(selectedId);		
@@ -342,8 +346,10 @@ function changeStation(selectedId) {
 		$(".tipsy").remove();
 		$("#rect-" + selectedId).tipsy('show');
 	}
+	selectDetailFetureFromId(selectedId);
+	selectOverviewFetureFromId(selectedId);
 }
-
+*/
 
 
 

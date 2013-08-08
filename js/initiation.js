@@ -1,10 +1,44 @@
-
+/*
 function afterDataLoad(){
 		loadDetailMap();
-		setTimeout(function(){loadOverviewMap(),600});
-		setTimeout(function(){displayObjectData(selectedId)},800);
-		setTimeout(function(){loadChart(),800});
-		}
+		loadOverviewMap();
+//		displayObjectData(selectedId);
+//		loadChart();
+}		
+*/
+
+
+function afterDataLoad() {
+	loadOverviewMap(afterLoadOverviewMap);
+}
+
+
+function afterLoadOverviewMap() {
+	addNames(afterAddName);
+}
+
+
+function afterAddName() {
+	loadDetailMap(afterLoadDetailMap);
+}
+
+function afterLoadDetailMap() {
+	displayObjectData(selectedId);
+	afterLoadChart();
+//	selectDetailFetureFromId(selectedId);
+//	selectOverviewFetureFromId(selectedId);
+
+}
+
+
+function afterLoadChart(){
+	loadChart(selectDetailFeatureFromId(selectedId));
+	firstLoad = false;
+}
+
+			//displayObjectData(selectedId);
+
+
 
 
 function initiation(){

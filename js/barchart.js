@@ -65,12 +65,15 @@ function loadChart(){
 			var barId = data[i].strnr;
 		//	previousId = selectedId;
 			selectedId = barId;
-			changeStation(selectedId);
-			overviewMap.zoomToMaxExtent();	
 			selectOverviewFeatureFromId(selectedId);
 			selectDetailFeatureFromId(selectedId);
-			$("#rect-" + previousId).tipsy('show');
+			zoomToFeature(selectedId);
+			overviewMap.zoomToMaxExtent();	
+			$(".tipsy").remove();
 			$("#rect-" + selectedId).tipsy('show');
+			unHighlightBar();
+			highlightBar(selectedId);
+			displayObjectData(selectedId);
 		})
 
 		
@@ -99,6 +102,7 @@ function loadChart(){
 
 	// apply highlight and tooltip when chart loaded
 	highlightBar(selectedId);
+	$("#rect-" + selectedId).tipsy('show');
 	
 //	if ($("#barChartContainer").width() == 0) {
 //		$("#rect-" + selectedId).tipsy('show');
@@ -126,8 +130,8 @@ function highlightBar(selectedId){
 // Input: id of the previously selected measur station {int}
 //***********************************************
 
-function unHighlightBar(previousId){
-	d3.select("#rect-" + previousId).style("fill", fillColor);
+function unHighlightBar(){
+	d3.selectAll("rect").style("fill", fillColor);
 }
 
 

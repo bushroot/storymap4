@@ -32,13 +32,11 @@ if (!$.browser.msie) {
 }
 
 
-
-
 function changeToDetails(){
 	$("#overviewMapContainer").width("0%");
 	$("#detailMapContainer").width("100%");
 	detailMap.destroy();
-	loadDetailMap();	
+	loadDetailMap();
 	$("#barChartContainer").width("0%");
 	$("#barChartContainer").css({"visibility": "hidden"});
 	$(".tipsy").css({"visibility": "hidden"});

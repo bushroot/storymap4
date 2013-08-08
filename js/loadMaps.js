@@ -50,7 +50,7 @@ function buildFilterStrategy(idSel)	{
 }
 
 
-function loadDetailMap(){ 
+function loadDetailMap(callback){ 
 
 	var filterStrategy = buildFilterStrategy(idSelection);
 
@@ -89,18 +89,26 @@ function loadDetailMap(){
 	detailLayer.events.on({
 		'loadend': function(evt){
 			zoomToFeature(selectedId);
-			selectDetailFeatureFromId(selectedId);
+			//selectDetailFeatureFromId(selectedId);
+			if (callback) 
+				{callback();} 
+			else {selectDetailFeatureFromId(selectedId);}
 		},
 		'featureselected': function(evt){
 			previousId = selectedId;
 			selectedId = evt.feature.data['nr'];
-		//	changeStation(selectedId);
-			overviewMap.zoomToMaxExtent();	
 			if (overviewLayer.selectedFeatures.length !=0){
 				if (overviewLayer.selectedFeatures[0].data.nr != selectedId){
 					selectOverviewFeatureFromId(selectedId)
 				};
 			}
+			overviewMap.zoomToMaxExtent();	
+			zoomToFeature(selectedId);
+			$(".tipsy").remove();
+			if( $("#barChartContainer").width()!="0")   {$("#rect-" + selectedId).tipsy('show');}
+			unHighlightBar();
+			highlightBar(selectedId);
+			displayObjectData(selectedId);
 		}
 	})
 
@@ -112,7 +120,7 @@ function loadDetailMap(){
 //
 //*********************************************************** 
 
-function loadOverviewMap() {
+function loadOverviewMap(callback) {
 
 	var filterStrategy = buildFilterStrategy(idSelection);
 	// create overview map 
@@ -153,18 +161,26 @@ function loadOverviewMap() {
 	
 	overviewLayer.events.on({
 		'loadend': function(evt){
-			displayObjectData(selectedId);
-			addNames();
 			$("#rect-" + selectedId).tipsy('show');
-			selectOverviewFeatureFromId(selectedId);
+		//	selectOverviewFeatureFromId(selectedId);
+			//if (firstLoad == false) {callback();}
+			if (callback) 
+				{callback();} 
+			else {selectOverviewFeatureFromId(selectedId);}
 		},
 		'featureselected': function(evt){
 			previousId = selectedId;
 			selectedId = evt.feature.data['nr'];
-			changeStation(selectedId);
 			if (detailLayer.selectedFeatures[0].data.nr != selectedId) {
 				selectDetailFeatureFromId(selectedId);
 			};
+			overviewMap.zoomToMaxExtent();	
+			zoomToFeature(selectedId);
+			$(".tipsy").remove();
+			if( $("#barChartContainer").width()!="0")   {$("#rect-" + selectedId).tipsy('show');}
+			unHighlightBar();
+			highlightBar(selectedId);
+			displayObjectData(selectedId);
 		}
 	})
 

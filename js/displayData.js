@@ -46,7 +46,12 @@ function moveOneRank(direction){
 	if (direction == "down" && idx < 24){idx = idx+1};
 	previousId = selectedId;
 	selectedId = selection[idx].strnr;
-	changeStation(selectedId);
+	zoomToFeature(selectedId);
+	overviewMap.zoomToMaxExtent();	
+	$(".tipsy").remove();
+	if($("#barChartContainer").width() != 0){$("#rect-" + selectedId).tipsy('show');}
+	unHighlightBar();
+	highlightBar(selectedId);
 	selectOverviewFeatureFromId(selectedId);
 	selectDetailFeatureFromId(selectedId);
 }
