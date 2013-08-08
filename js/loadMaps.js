@@ -72,9 +72,22 @@ function loadDetailMap(callback){
 
 	// 
 	detailMap.removeControl(detailMap.controls[4]);
-	
 	//add vector to detail map 
 	detailMap.addLayer(detailLayer);
+	
+	//change attribution in map
+	var FOEN = "FOEN";
+	switch(lang){
+		case "de": FOEN = "BAFU";
+		break;
+		case "fr": FOEN = "OFEV";
+		break;
+		case "it": FOEN = "UFAM";
+		break;
+		case "en": FOEN = "FOEN";
+		break;
+	}
+	detailMap.attributionCtrl.div.innerHTML = 'Data:<a href="http://www.swisstopo.admin.ch/internet/swisstopo/' +lang+ '/home.html" target="_blank"> swisstopo</a>, <a href="http://www.bafu.admin.ch/index.html?lang=' +lang+ '" target="_blank">' +FOEN+ '</a>';	
 
 	//create select feature control  
 	selectDetailFeature = new OpenLayers.Control.SelectFeature(detailLayer,{
@@ -148,6 +161,21 @@ function loadOverviewMap(callback) {
 	
 	//add vector to overview map
 	overviewMap.addLayer(overviewLayer);
+
+	//change attribution in map
+	var FOEN = "FOEN";
+	switch(lang){
+		case "de": FOEN = "BAFU";
+		break;
+		case "fr": FOEN = "OFEV";
+		break;
+		case "it": FOEN = "UFAM";
+		break;
+		case "en": FOEN = "FOEN";
+		break;
+	}
+	overviewMap.attributionCtrl.div.innerHTML = 'Data:<a href="http://www.swisstopo.admin.ch/internet/swisstopo/' +lang+ '/home.html" target="_blank"> swisstopo</a>, <a href="http://www.bafu.admin.ch/index.html?lang=' +lang+ '" target="_blank">' +FOEN+ '</a>';	
+
 
 	//create select feature control  
 	selectOverviewFeature = new OpenLayers.Control.SelectFeature(overviewLayer,{
