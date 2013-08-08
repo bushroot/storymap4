@@ -1,11 +1,3 @@
-/*
-function afterDataLoad(){
-		loadDetailMap();
-		loadOverviewMap();
-//		displayObjectData(selectedId);
-//		loadChart();
-}		
-*/
 
 
 function afterDataLoad() {
@@ -25,8 +17,6 @@ function afterAddName() {
 function afterLoadDetailMap() {
 	displayObjectData(selectedId);
 	afterLoadChart();
-//	selectDetailFetureFromId(selectedId);
-//	selectOverviewFetureFromId(selectedId);
 
 }
 
@@ -35,10 +25,6 @@ function afterLoadChart(){
 	loadChart(selectDetailFeatureFromId(selectedId));
 	firstLoad = false;
 }
-
-			//displayObjectData(selectedId);
-
-
 
 
 function initiation(){

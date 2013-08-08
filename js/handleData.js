@@ -167,7 +167,6 @@ function filterStationsIe(xml, callback){
 		idSelection[j] = selection[j].strnr;
 	}
 
-//	addName();	
 
 	// select random measurment station id
 	selectedId = selectBiggest(idSelection);
@@ -327,29 +326,6 @@ function getIndexFromId(id) {
 	}
 	return index;
 }
-
-
-
-///*********************************************************** 
-//  Change data 
-//
-// 	Input: measurement station id {int} 
-//*********************************************************** 
-/*
-function changeStation(selectedId) {
-	zoomToFeature(selectedId);
-	displayObjectData(selectedId);		
-	unHighlightBar(previousId);
-	
-	highlightBar(selectedId);
-	if ($("#barChartContainer").width() != 0) {
-		$(".tipsy").remove();
-		$("#rect-" + selectedId).tipsy('show');
-	}
-	selectDetailFetureFromId(selectedId);
-	selectOverviewFetureFromId(selectedId);
-}
-*/
 
 
 

@@ -76,16 +76,6 @@ function loadChart(){
 			displayObjectData(selectedId);
 		})
 
-		
-/*
-			fid = dataset[i].reservoir_stabil_id;
-			ii = i;
-			getObjectinfo(fid);				
-			zoomToFeature(fid);	
-			selectOverviewFeature(fid);
-			highlightBar(fid);	
-*/
-	
 	// define tipsy tooltip
 	$(".bar").tipsy({
 		trigger:' manual', 
@@ -104,10 +94,6 @@ function loadChart(){
 	highlightBar(selectedId);
 	$("#rect-" + selectedId).tipsy('show');
 	
-//	if ($("#barChartContainer").width() == 0) {
-//		$("#rect-" + selectedId).tipsy('show');
-//	}
-
 
 }
 

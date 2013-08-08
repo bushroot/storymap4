@@ -10,10 +10,6 @@ $(".docol").on('click',function(){
 
 
 
-
-// reset with of div that are defined when toggle the view in the mobile view
-
-
 if (!$.browser.msie) {
 	$(window).resize (function makeDefaultCss() {
 		var omcwidth = document.getElementById("overviewMapContainer").style.width;
@@ -42,7 +38,6 @@ function changeToDetails(){
 	$(".tipsy").css({"visibility": "hidden"});
 	$("#objectInfoContainer").width("100%");
 	$("#objectInfoContainer").css({"visibility": "visible"});
-//	$("#rect-" + selectedId).tipsy('hide');
 }
 
 

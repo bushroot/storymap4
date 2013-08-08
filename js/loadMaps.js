@@ -70,7 +70,7 @@ function loadDetailMap(callback){
 		})
 	});
 
-	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	// 
 	detailMap.removeControl(detailMap.controls[4]);
 	
 	//add vector to detail map 
@@ -143,7 +143,7 @@ function loadOverviewMap(callback) {
 		})
 	});
 	
-	// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+	// 
 	overviewMap.removeControl(overviewMap.controls[4]);
 	
 	//add vector to overview map
